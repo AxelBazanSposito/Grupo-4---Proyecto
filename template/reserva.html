@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../static/img/fabicon/logo-simplificado-fondo-negro.ico">
+    <title>Vegan - Reservas</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <title>Reserva</title>
+</head>
+<body>
+    <header class="barra">
+        <nav id="navBar">
+            <img src="../static/img/logos/Logo-Horrizontal v2.png" alt="">
+            <div id="nav-Menu">
+                <a href="../index.html">Home</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./platos.html">Platos</a>
+                <a href="./bebidas y licuados.html">Bebidas y Licuados</a>
+                <a href="./reserva.html">Reserva</a>
+                <a href="./locales.html">Locales</a>
+                <a href="./contacto.html">Contacto</a>
+            </div>
+
+            <div id="navLogin">
+                <a href="./admin/login.html">Login/Registrarse</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main id="main-reserva">
+
+        <section>
+            <h1>Reservas</h1>
+            <h3>Realise su reserva aqui</h3>
+        </section>
+
+        <section>
+            <form action="">
+                <div>
+                    <label for="fecha-reserva">Seleccione una fecha:</label>
+                    <input type="date">
+                </div>
+    
+                <div>
+                    <label for="hora-reserva">Seleccione una hora:</label>
+                    <input type="time">
+                    <h6>*Recuerde que el horario es de...</h6>
+                </div>
+    
+                <div>
+                    <label for="cantidad-reserva">Seleccione la cantidad de comensales:</label>
+                    <input type="number">
+                </div>
+                
+                <div>
+                    <label for="mail-reserva">Mail:</label>
+                    <input type="email">
+                    <h6>*Se enviara un mail de confirmacion con el codigo de reserva</h6>
+                </div>
+
+                <div>
+                    <label for="nombre-reserva">A nombre de aquien se hace la reserva:</label>
+                    <input type="text">
+                </div>
+
+                <div class="select-local-reserva">
+                    <label for="local-reserva">Seleccione un local:</label>
+                    <select id="local-reserva" class="local-reserva">
+                        <option value="">Seleccione local</option>
+                        <option value="1">Local 1</option>
+                        <option value="2">Local 2</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button>Reservar</button>
+                </div>
+    
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+header{
+    background-color: white;
+    /* height: 50PX; */
+}
+
+#navBar{
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "logoPequeño navegacion login";
+    place-items: center;
+
+    background-color: rgba(71, 71, 71, 0.85);
+    border-bottom: 5px solid rgba(0, 255, 0, 0.5);
+}
+
+nav .navBarLogo{
+    height: 100%;
+    padding-bottom: 5px;
+}
+
+nav .navBarLogo #navImg{
+    grid-area: logoPequeño;
+    height: 100%;
+}
+
+nav #navMenu{
+    grid-area: navegacion;
+}
+
+nav #navMenu a:hover{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.9);
+    /* padding: 12px 0px; */
+    /* font-size: 1.5em; */
+}
+
+nav #navLogin a:hover{
+    color: white;
+}
+
+nav #navLogin{
+    grid-area: login;
+    background-color: gray;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+nav #navMenu a{
+    text-decoration: none;
+    color: rgba(0, 255, 0, 0.5);
+    font-size: 1.2em;
+    padding: 5px 20px;
+}
+
+nav #navLogin a{
+    text-decoration: none;
+    color: rgba(0, 255, 0, 0.5);
+    font-size: 1.2em;
+}
+
+.iniciarButton{
+    width: 50%;
+    justify-self: center;
+}
+
+.iniciarButton button{
+    width: 100%;
+    height: 2em;
+    background-color: rgba(0, 128, 0, 0.50);
+    border: 3px solid rgb(0, 128, 0);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.iniciarButton button:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+/* FORMATO DEL MAIN */
+
+#contLoging{
+    background-color: rgba(128, 128, 128, 0.8);
+    width: 800px;
+    height: 90%;
+    margin: 0 auto;
+}
+
+h1 , h2{
+    text-align: center;
+}
+
+#formLoging div{
+    display: grid;
+    margin: 10px;
+}
+
+h1{
+    font-size: 3em;
+    grid-area: titulo;
+}
+h2{
+    font-size: 1.5em;
+}
+
+.registerLogin{
+    text-align: center;
+}
+
+.recordarLogin {
+    display: grid;
+    grid-template-columns: (12, 1fr);
+    grid-template-areas: "check texto";
+}
+
+.checkRecordarLogin{
+    justify-self: end;
+}
+
+.textRecordarLogin{
+    padding: 0 1em;
+}
+
+/* no va */
+main{
+    background-color: green;
+    height: 1000pX;
+    background-image: url(../img/backgrounds/jason-leung-poI7DelFiVA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 5em;
+}
+footer{
+    background-color: violet;
+    height: 50px;
+}

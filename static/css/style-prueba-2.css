@@ -1,0 +1,133 @@
+:root{
+    --bg-color-nav: rgba(71, 71, 71, 0.85);
+    --bg-color-button: rgba(128, 128, 128, 0.9);
+    --primary-color: rgba(0, 255, 0, 1);
+    --primary-color-opacity-50: rgba(0, 255, 0, 0.5);
+    --secondary-color: white;    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/* ---------------- Barra Navegacion ------------------ */
+
+/* Creamos el grid de la barra de navegacion y le damos formato */
+#navBar{
+    position: fixed;
+    background-color: var(--bg-color-nav);
+    border-bottom: 5px solid var(--primary-color-opacity-50);
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "logoPequeño navegacion login";
+
+    place-items: center;
+}
+
+/* Modifica "Logo" de la barra de navegacion */
+
+nav #navLogo{
+    height: 100%;
+    padding-bottom: 5px;
+}
+
+nav #navLogo #navImg{
+    grid-area: logoPequeño;
+    height: 100%;
+}
+
+nav #navLogo #navLogoIcono{
+    display: none;
+}
+
+/* Modifica "Menu" de la barra de navegacion */
+
+nav #navMenu{
+    grid-area: navegacion;
+    height: 100%;
+    place-content: center;
+}
+
+nav #navMenu .navMenuLink{
+    text-decoration: none;
+    color: var(--primary-color-opacity-50);
+    font-size: 1.2em;
+    padding: 5px 20px;
+}
+
+#navMenu .navMenuLogo img{
+    height: 100%;
+    display: none;
+}
+
+/* Modifica "Login" en la barra de navegacion */
+nav #navLogin{
+    grid-area: login;
+
+    background-color: var(--bg-color-button);
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+nav #navLogin .navLoginLink{
+    text-decoration: none;
+    color: var(--primary-color-opacity-50);
+    font-size: 1.2em;
+}
+
+/* Modifica los links de Menu y login para que cuando le pasemos el puntero por enseima cambien */
+nav #navMenu .navMenuLink:hover{
+    color: var(--secondary-color);
+    background-color: var(--bg-color-button);
+}
+nav #navLogin .navLoginLink:hover{
+    color: var(--secondary-color);
+}
+
+/* Para pantallas de 800px a 1079px */
+
+@media screen and (min-width: 800px) and (max-width: 1079px){
+
+    #navBar{
+        grid-template-columns: 8fr 2fr;
+        grid-template-rows: 50px;
+        grid-template-areas:
+        "navegacion login";
+    }
+    /* Modifica Logo */
+    #navLogo {
+        display: none;
+    }
+
+    /* Modifica Menu */
+    nav #navMenu .navMenuLink{
+        font-size: 1em;
+    }
+
+    /* Modifica Login */
+    nav #navLogin{
+        grid-area: login;
+        border-radius: 30px;
+        padding: 3px 6px;
+    }    
+    nav #navLogin .navLoginLink{
+        font-size: 1em;
+    }
+}
+
+
+/* ------ Home ----- */
+
+
+
+/* ------ reserva ------ */
+
+

@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url("../img/backgrounds/pngegg\ v2.png"), url("../img/backgrounds/fondo\ negro.png");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .ecosistema {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .menu {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .contacto {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Modificacion de la barra de navegacion. */
+
+  header nav div a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header img {
+    height: 70px;
+  }
