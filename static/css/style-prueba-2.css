@@ -48,6 +48,10 @@ nav #navLogo #navLogoDesplegable{
     display: none;
 }
 
+nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono{
+    color:var(--primary-color)
+}
+
 /* Modifica "Menu" de la barra de navegacion */
 nav #navMenu{
     grid-area: navegacion;
@@ -131,20 +135,20 @@ nav #navLogin .navLoginLink:hover{
 
         /* Para el desplegable */
     nav #navLogo #navLogoDesplegable{
-        background-color: red;
+        /* background-color: red; */
         height: 80%;
         margin-top: 7px;
         display: block;
     }
 
     nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono{
-        background-color: green;
+        /* background-color: green; */
         list-style: none;
         max-width: 36px;
     }
 
     nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono i{
-        background-color: white;
+        /* background-color: white; */
         padding: 8px 9px;
         border-radius: 20px;
     }
@@ -153,22 +157,35 @@ nav #navLogin .navLoginLink:hover{
         background-color: var(--bg-color-button);
         padding: 8px 9px;
         border-radius: 20px;
+        color: var(--secondary-color);
     }
 
     nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista{
-        background-color: white;
+        /* background-color: white; */
         display: none;
         width: 150px;
     }
 
     nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono:hover #navLogoDesplegableLista{
         display: block;
+        list-style: none;
+        position: relative;
+        top: 12px;
     }
 
     nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista #navLogoDesplegableBotones{
-        background-color: rgba(137, 43, 226, 0.473);
+        background-color: var(--bg-color-nav);
+        height: 30px;
+    }
+    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista #navLogoDesplegableBotones:hover{
+        border-bottom: 3px solid var(--primary-color);
     }
 
+    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista #navLogoDesplegableBotones a{
+        text-decoration: none;
+        color: var(--primary-color);
+        padding-left: 5px;
+    }
 
         /* Para la IMAGEN */
     nav #navLogo #navImg{
