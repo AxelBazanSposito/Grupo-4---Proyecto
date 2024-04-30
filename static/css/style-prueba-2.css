@@ -54,6 +54,10 @@ nav #navLogo #navLogoDesplegable{
     display: none;
 }
 
+nav #navLogo #navImgSimplificado{
+    display: none;
+}
+
 nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono{
     color:var(--primary-color)
 }
@@ -88,8 +92,17 @@ nav #navLogin{
 
 nav #navLogin .navLoginLink{
     text-decoration: none;
-    color: var(--primary-color-opacity-50);
+    color: var(--primary-color);
     font-size: 1.2em;
+
+}
+
+nav #navLogin a i{
+    margin: 3px 3px 3px 0px;
+}
+
+nav #navLogin #navLoginLinkIcono{
+    display: none;
 }
 
 /* Modifica los links de Menu y login para que cuando le pasemos el puntero por enseima cambien */
@@ -104,15 +117,31 @@ nav #navLogin .navLoginLink:hover{
 /* Para pantallas de 800px a 1079px */
 @media screen and (min-width: 800px) and (max-width: 1079px){
 
-    #navBar{
+    /* #navBar{
         grid-template-columns: 8fr 2fr;
         grid-template-rows: 50px;
         grid-template-areas:
         "navegacion login";
-    }
+    } */
+
     /* Modifica Logo */
+
     #navLogo {
+        /* display: none; */
+        /* background-color: red; */
+    }
+
+    nav #navLogo #navImg{
         display: none;
+    }
+
+    nav #navLogo #navImgSimplificado{
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        margin-top: 2px;;
+        
     }
 
     /* Modifica Menu */
@@ -220,7 +249,14 @@ nav #navLogin .navLoginLink:hover{
     nav #navLogin #navLoginLinkTexto{
         display: none;
     }
+
+    nav #navLogin #navLoginLinkIcono{
+        display: block;
+    }
     
+    nav #navLogin a i{
+        margin: 0px;
+    }
 }
 
 /* ---------------- CSS del register ------------------ */

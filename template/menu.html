@@ -1,30 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Vegan - Platos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vegan - Menú</title>
     <link rel="shortcut icon" href="../static/img/fabicon/logo-simplificado-fondo-negro.ico">
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style-prueba-2.css">
+
+    <script src="https://kit.fontawesome.com/95e43c16b2.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-    <header class="barra">
+    <header>
         <nav id="navBar">
-            <img src="../static/img/logos/Logo-Horrizontal v2.png" alt="">
-            <div id="nav-Menu">
-                <a href="../index.html">Home</a>
-                <a href="./nosotros.html">Nosotros</a>
-                <a href="./platos.html">Platos</a>
-                <a href="./bebidas y licuados.html">Bebidas y Licuados</a>
-                <a href="./reserva.html">Reserva</a>
-                <a href="./locales.html">Locales</a>
-                <a href="./contacto.html">Contacto</a>
+            <div id="navLogo">
+                <ul id="navLogoDesplegable">
+                    <li id="navLogoDesplegableIcono"><i class="fa-solid fa-bars"></i>
+
+                        <ul id="navLogoDesplegableLista">
+
+                            <li id="navLogoDesplegableBotones">
+                                <a href="../index.html">Home</a>
+                            </li>
+
+                            <li id="navLogoDesplegableBotones">
+                                <a href="./menu.html">Menú</a>
+                            </li>
+
+                            <li id="navLogoDesplegableBotones">
+                                <a href="./reserva.html">Reserva</a>
+                            </li id="navLogoDesplegableBotones">
+
+                            <li id="navLogoDesplegableBotones">
+                                <a href="./nosotros.html">Nosotros</a>
+                            </li>
+
+                            <li id="navLogoDesplegableBotones">
+                                <a href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="../index.html"><img id="navImg" src="../static/img/logos/Logo-Horrizontal v2.png"
+                        alt="Logo de Vegan"></a>
+
+                <a href="../../index.html"><img id="navImgSimplificado" src="../static/img/logos/Logo-Solo.png"
+                        alt="Logo de Vegan"></a>
+            </div>
+
+            <div id="navMenu">
+                <a class="navMenuLogo" href="../index.html"><img id="navImg"
+                        src="../static/img/logos/Logo-Horrizontal v2.png" alt="Logo de Vegan"></a>
+                <a class="navMenuLink" href="../index.html">Home</a>
+                <a class="navMenuLink" href="./menu.html">Menú</a>
+                <a class="navMenuLink" href="./reserva.html">Reserva</a>
+                <a class="navMenuLink" href="./nosotros.html">Nosotros</a>
+                <a class="navMenuLink" href="./contacto.html">Contacto</a>
             </div>
 
             <div id="navLogin">
-                <a href="./admin/login.html">Login/Registrarse</a>
+                <a class="navLoginLink" id="navLoginLinkIcono" href="./admin/login.html"><i
+                        class="fa-solid fa-circle-user"></i></a>
+                <a class="navLoginLink" id="navLoginLinkTexto" href="./admin/login.html"><i
+                        class="fa-solid fa-circle-user"></i> Login</a>
             </div>
 
         </nav>
@@ -39,4 +84,5 @@
     </footer>
 
 </body>
+
 </html>
