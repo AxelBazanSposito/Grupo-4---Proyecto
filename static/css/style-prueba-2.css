@@ -126,10 +126,10 @@ nav #navLogin .navLoginLink:hover{
 
     /* Modifica Logo */
 
-    #navLogo{
-        /* display: none; */
-        /* background-color: red; */
-    }
+    /* #navLogo{
+        display: none;
+        background-color: red;
+    } */
 
     nav #navLogo #navImg{
         display: none;
