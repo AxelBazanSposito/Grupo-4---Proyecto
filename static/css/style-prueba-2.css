@@ -272,24 +272,25 @@ nav #navLogin .navLoginLink:hover{
     background-color: var(--bg-color-nav);
     margin: 0 auto;
     margin-top: 10px;
-    width: 75%;
+    width: 55%;
     height: 800px;
     border: 5px solid var(--bg-color-nav-opacity-50);
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
     box-shadow: 5px 5px 15px 5px #000000;
     margin-bottom: 30px;
 }
-    /* crea y modifica el contenedor del formulario */
+    /* crea y modifica el contenedor del h1, h2 y formulario */
 .mainRegister #contLoging{
     display: grid;
+    grid-template-rows: 10% 10% 80%;
     grid-template-areas: 
     "titulo"
     "subtitulo"
     "formulario";
 
-    /* place-content: center; */
     width: 100%;
-
+    height: 100%;
+    align-items: center;
     background-color: blueviolet;
 }
 
@@ -298,23 +299,119 @@ nav #navLogin .navLoginLink:hover{
     font-size: 2.5em;
     text-align: center;
 
-
+    height: 90%;
     background-color: aqua;
 }
 
 .mainRegister #contLoging h2{
     grid-area: subtitulo;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
 
+    height: 90%;
     background-color: orangered;
 }
 
 .mainRegister #contLoging form{
     grid-area: formulario;
 
-    
+
+    height: 90%;
     background-color: lawngreen;
+}
+
+    /* crea y modifica el grid del formulario */
+
+.mainRegister form div{
+
+    display: grid;
+    grid-template-areas:
+    "nombreRegistro"
+    "apellidoRegistro"
+    "cumpleañosRegistro"
+    "mailRegistro"
+    "contraseñaRegistro"
+    "confirmContraRegistro"
+    "terminosRegistro"
+    "botonesRegistro"
+    "recuperarRegistro";
+
+    place-items: center;
+    height: 95%;
+
+    background-color: red;
+}
+
+.mainRegister form div div{
+    width: 90%;
+    background-color: white;
+}
+
+.mainRegister form div div label{
+    width: 100%;
+    text-align:start;
+    background-color: yellow;
+}
+
+.mainRegister form div div input{
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+        /* modifica el div de Terminos y condiciones */
+.mainRegister form div div label input{
+    width: 5%;
+}
+
+.mainRegister form div #terminosRegister {
+    place-content: center;
+    justify-content: stretch;
+}
+
+.mainRegister form div #terminosRegister label{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: baseline;
+    /* width: 150%; */
+    background-color: grey;
+}
+
+.mainRegister form div #terminosRegister label:hover{
+    color: var(--secondary-color);
+}
+
+
+        /* modifica el div de los botones */
+.mainRegister form div #botonesRegister{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.mainRegister form div #botonesRegister button{
+    width: 45%;
+}
+
+        /* modifica el div de Recuperar contraseña */
+.mainRegister form div #recPassRegister{
+    display: flex;
+    place-content: center;
+    gap: 3%;
+}
+
+    /* modifica ancho del form para pantallas de 800 a 1079px */
+@media screen and (min-width: 800px) and (max-width: 1079px){
+    .mainRegister{
+        width: 65%;
+    }
+}
+    /* modifica ancho del form para pantallas de 800 a 1079px */
+@media screen and (max-width: 799px){
+    .mainRegister{
+        width: 75%;
+    }
 }
 
 /* pruebas */
