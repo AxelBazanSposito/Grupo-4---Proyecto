@@ -370,6 +370,7 @@ nav #navLogin .navLoginLink:hover{
 
 .mainRegister form div #fechaRegistro{
     text-indent: 6px;
+    padding-right: 10px;
 }
 
 
@@ -466,27 +467,44 @@ nav #navLogin .navLoginLink:hover{
 } */
 
 /* Menú-Carta */
-.mainMenu{
-    background-image: url(../img/backgrounds/patrick-schneider-5xltWMpkN3E-unsplash.jpg);
+.bodyMenu{
+    /* background-image: url(../img/backgrounds/patrick-schneider-5xltWMpkN3E-unsplash.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 1000px;
+}
+
+.mainMenu{
+    background-color: red;
+    height: 700px;
 }
 
 .mainCarta{
     background-color: #3f413d37;
     padding-left: 25px;
     scroll-padding-top: 500px;
+
+    /* background-color: blue; */
+}
+
+.boxesContainer{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    background-color: white;
 }
 
 .cardBox {
-    position: relative;
+    /* position: relative; */
     /* float: left; */
     font-size: 1.2em;
     margin: 1% 0 0 1%;
     perspective: 800px;
     transition: all 0.3s ease 0s;
     width: 23.7%;
+
+    background-color: orange;
   }
   .cardBox:hover .card {
     transform: rotateY(180deg);
@@ -525,7 +543,7 @@ nav #navLogin .navLoginLink:hover{
     margin: 0 0 5% 0;
   }
    
-  pCard {
+  .pCard {
     margin-bottom: 1.8em;
   }
    
@@ -538,7 +556,7 @@ nav #navLogin .navLoginLink:hover{
     padding: 0 7px 4px 6px;
   }
    
-  aCard {
+  .aCard {
     padding: 0.3em 0.5em;
     background: #333;
     color: #fff;
@@ -584,7 +602,7 @@ nav #navLogin .navLoginLink:hover{
     background-repeat: no-repeat;
     background-size: cover;
   }
-  aCard:hover {
+  .aCard:hover {
     background: #fff;
     color: #333;
     text-shadow: 0 0 1px #333;
