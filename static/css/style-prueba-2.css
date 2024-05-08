@@ -37,6 +37,8 @@ header{
     "logoPequeño navegacion login";
 
     place-items: center;
+
+    z-index: 1;
 }
 
 /* Modifica "Logo" de la barra de navegacion */
@@ -466,9 +468,9 @@ nav #navLogin .navLoginLink:hover{
     margin-bottom: 30px;
 } */
 
-/* Menú-Carta */
+/* ---------------- Menu Carta ------------------ */
 .bodyMenu{
-    /* background-image: url(../img/backgrounds/patrick-schneider-5xltWMpkN3E-unsplash.jpg); */
+    background-image: url(../img/backgrounds/patrick-schneider-5xltWMpkN3E-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -485,7 +487,7 @@ nav #navLogin .navLoginLink:hover{
     padding-left: 25px;
     scroll-padding-top: 500px;
 
-    /* background-color: blue; */
+    background-color: blue;
 }
 
 .boxesContainer{
@@ -493,6 +495,7 @@ nav #navLogin .navLoginLink:hover{
     flex-direction: row;
     height: 500px;
     background-color: white;
+    
 }
 
 .cardBox {
@@ -503,7 +506,6 @@ nav #navLogin .navLoginLink:hover{
     perspective: 800px;
     transition: all 0.3s ease 0s;
     width: 23.7%;
-
     background-color: orange;
   }
   .cardBox:hover .card {
@@ -534,6 +536,7 @@ nav #navLogin .navLoginLink:hover{
   .back {
     transform: rotateY( 180deg);
   }
+
   .hCard {
     background: #024e0565;
     color: #fff;
