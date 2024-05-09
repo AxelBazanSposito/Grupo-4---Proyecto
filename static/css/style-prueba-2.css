@@ -1,16 +1,16 @@
-:root{
+:root {
     --bg-color-nav: rgba(71, 71, 71, 0.85);
     --bg-color-nav-opacity-50: rgba(71, 71, 71, 0.50);
     --bg-color-button: rgba(128, 128, 128, 0.9);
     --primary-color: rgba(0, 255, 0, 1);
     --primary-color-opacity-50: rgba(0, 255, 0, 0.5);
-    --secondary-color: white;    
+    --secondary-color: white;
 }
 
 
-*{
+* {
     margin: 0;
-    padding: 0;    
+    padding: 0;
     box-sizing: border-box;
     font-size: 20px;
 }
@@ -19,12 +19,12 @@
 
 /* Crea el espacio donde va la barra de navegacion */
 
-header{
+header {
     height: 55px;
 }
 
 /* Creamos el grid de la barra de navegacion y le damos formato */
-#navBar{
+#navBar {
     position: fixed;
     background-color: var(--bg-color-nav);
     border-bottom: 5px solid var(--primary-color-opacity-50);
@@ -34,7 +34,7 @@ header{
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-rows: 50px;
     grid-template-areas:
-    "logoPequeño navegacion login";
+        "logoPequeño navegacion login";
 
     place-items: center;
 
@@ -42,49 +42,49 @@ header{
 }
 
 /* Modifica "Logo" de la barra de navegacion */
-nav #navLogo{
+nav #navLogo {
     height: 100%;
     padding-bottom: 5px;
 }
 
-nav #navLogo #navImg{
+nav #navLogo #navImg {
     grid-area: logoPequeño;
     height: 100%;
 }
 
-nav #navLogo #navLogoDesplegable{
+nav #navLogo #navLogoDesplegable {
     display: none;
 }
 
-nav #navLogo #navImgSimplificado{
+nav #navLogo #navImgSimplificado {
     display: none;
 }
 
-nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono{
-    color:var(--primary-color)
+nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono {
+    color: var(--primary-color)
 }
 
 /* Modifica "Menu" de la barra de navegacion */
-nav #navMenu{
+nav #navMenu {
     grid-area: navegacion;
     height: 100%;
     place-content: center;
 }
 
-nav #navMenu .navMenuLink{
+nav #navMenu .navMenuLink {
     text-decoration: none;
     color: var(--primary-color-opacity-50);
     font-size: 1.2em;
     padding: 5px 20px;
 }
 
-#navMenu .navMenuLogo img{
+#navMenu .navMenuLogo img {
     height: 100%;
     display: none;
 }
 
 /* Modifica "Login" en la barra de navegacion */
-nav #navLogin{
+nav #navLogin {
     grid-area: login;
 
     background-color: var(--bg-color-button);
@@ -92,32 +92,33 @@ nav #navLogin{
     padding: 5px 10px;
 }
 
-nav #navLogin .navLoginLink{
+nav #navLogin .navLoginLink {
     text-decoration: none;
     color: var(--primary-color);
     font-size: 1.2em;
 
 }
 
-nav #navLogin a i{
+nav #navLogin a i {
     margin: 3px 3px 3px 0px;
 }
 
-nav #navLogin #navLoginLinkIcono{
+nav #navLogin #navLoginLinkIcono {
     display: none;
 }
 
 /* Modifica los links de Menu y login para que cuando le pasemos el puntero por enseima cambien */
-nav #navMenu .navMenuLink:hover{
+nav #navMenu .navMenuLink:hover {
     color: var(--secondary-color);
     background-color: var(--bg-color-button);
 }
-nav #navLogin .navLoginLink:hover{
+
+nav #navLogin .navLoginLink:hover {
     color: var(--secondary-color);
 }
 
 /* Para pantallas de 800px a 1079px */
-@media screen and (min-width: 800px) and (max-width: 1079px){
+@media screen and (min-width: 800px) and (max-width: 1079px) {
 
     /* #navBar{
         grid-template-columns: 8fr 2fr;
@@ -133,162 +134,168 @@ nav #navLogin .navLoginLink:hover{
         background-color: red;
     } */
 
-    nav #navLogo #navImg{
+    nav #navLogo #navImg {
         display: none;
     }
 
-    nav #navLogo #navImgSimplificado{
+    nav #navLogo #navImgSimplificado {
         display: block;
         max-width: 100%;
         max-height: 100%;
         margin: auto;
-        margin-top: 2px;;
-        
+        margin-top: 2px;
+        ;
+
     }
 
     /* Modifica Menu */
-    nav #navMenu .navMenuLink{
+    nav #navMenu .navMenuLink {
         font-size: 1em;
     }
 
     /* Modifica Login */
-    nav #navLogin{
+    nav #navLogin {
         grid-area: login;
         border-radius: 30px;
         padding: 3px 6px;
-    }    
-    nav #navLogin .navLoginLink{
+    }
+
+    nav #navLogin .navLoginLink {
         font-size: 1em;
     }
 }
 
 /* Para pantallas de MENOS de 800px */
 
-@media screen and (max-width: 799px){
+@media screen and (max-width: 799px) {
+
     /* Modifica el area de LOGO */
-    nav #navLogo{
+    nav #navLogo {
         place-items: center;
     }
 
-        /* Para el desplegable */
-    nav #navLogo #navLogoDesplegable{
+    /* Para el desplegable */
+    nav #navLogo #navLogoDesplegable {
         /* background-color: red; */
         height: 80%;
         margin-top: 7px;
         display: block;
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono{
+    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono {
         /* background-color: green; */
         list-style: none;
         max-width: 36px;
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono i{
+    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono i {
         /* background-color: white; */
         padding: 8px 9px;
         border-radius: 20px;
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono:hover i{
+    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono:hover i {
         background-color: var(--bg-color-button);
         padding: 8px 9px;
         border-radius: 20px;
         color: var(--secondary-color);
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista{
+    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista {
         /* background-color: white; */
         display: none;
         width: 150px;
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono:hover #navLogoDesplegableLista{
+    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono:hover #navLogoDesplegableLista {
         display: block;
         list-style: none;
         position: relative;
         top: 12px;
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista #navLogoDesplegableBotones{
+    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista #navLogoDesplegableBotones {
         background-color: var(--bg-color-nav);
         height: 30px;
     }
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista #navLogoDesplegableBotones:hover{
+
+    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista #navLogoDesplegableBotones:hover {
         border-bottom: 3px solid var(--primary-color);
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista #navLogoDesplegableBotones a{
+    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista #navLogoDesplegableBotones a {
         text-decoration: none;
         color: var(--primary-color);
         padding-left: 5px;
     }
 
-        /* Para la IMAGEN */
-    nav #navLogo #navImg{
+    /* Para la IMAGEN */
+    nav #navLogo #navImg {
         display: none;
     }
 
     /* Modifica el area de MENÚ */
-    nav #navMenu .navMenuLink{
+    nav #navMenu .navMenuLink {
         display: none;
     }
 
-    nav #navMenu .navMenuLogo #navImg{
+    nav #navMenu .navMenuLogo #navImg {
         display: block;
         height: 80%;
     }
 
     /* Modifica el area de LOGIN */
-    nav #navLogin{
+    nav #navLogin {
         background-color: transparent;
     }
 
-    nav #navLogin:hover{
+    nav #navLogin:hover {
         background-color: var(--bg-color-button);
     }
 
-    nav #navLogin #navLoginLinkTexto{
+    nav #navLogin #navLoginLinkTexto {
         display: none;
     }
 
-    nav #navLogin #navLoginLinkIcono{
+    nav #navLogin #navLoginLinkIcono {
         display: block;
     }
-    
-    nav #navLogin a i{
+
+    nav #navLogin a i {
         margin: 0px;
     }
 }
 
-/* ---------------- CSS del register ------------------ */
+    /* ---------------- CSS del register ------------------ */
 
-.bodyRegister{
+.bodyRegister {
     background-image: url(../img/backgrounds/paul-griffin-WWST6E8LxeE-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-    /* modifica el main */
-.mainRegister{
+
+        /* modifica el main */
+.mainRegister {
     background-color: var(--bg-color-nav);
     margin: 0 auto;
     margin-top: 10px;
     width: 45%;
     height: 800px;
     border: 5px solid var(--bg-color-nav-opacity-50);
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
     box-shadow: 5px 5px 15px 5px #000000;
     margin-bottom: 30px;
 }
-    /* crea y modifica el contenedor del h1, h2 y formulario */
-.mainRegister #contLoging{
+
+        /* crea y modifica el contenedor del h1, h2 y formulario */
+.mainRegister #contLoging {
     display: grid;
     grid-template-rows: 10% 10% 80%;
-    grid-template-areas: 
-    "titulo"
-    "subtitulo"
-    "formulario";
+    grid-template-areas:
+        "titulo"
+        "subtitulo"
+        "formulario";
 
     width: 100%;
     height: 100%;
@@ -296,7 +303,7 @@ nav #navLogin .navLoginLink:hover{
     /* background-color: blueviolet; */
 }
 
-.mainRegister #contLoging h1{
+.mainRegister #contLoging h1 {
     grid-area: titulo;
     font-size: 2.5em;
     text-align: center;
@@ -305,7 +312,7 @@ nav #navLogin .navLoginLink:hover{
     /* background-color: aqua; */
 }
 
-.mainRegister #contLoging h2{
+.mainRegister #contLoging h2 {
     grid-area: subtitulo;
     font-size: 1.4em;
     text-align: center;
@@ -315,7 +322,7 @@ nav #navLogin .navLoginLink:hover{
     /* background-color: orangered; */
 }
 
-.mainRegister #contLoging form{
+.mainRegister #contLoging form {
     grid-area: formulario;
 
 
@@ -323,21 +330,21 @@ nav #navLogin .navLoginLink:hover{
     /* background-color: lawngreen; */
 }
 
-    /* crea y modifica el grid del formulario */
+        /* crea y modifica el grid del formulario */
 
-.mainRegister form div{
+.mainRegister form div {
 
     display: grid;
     grid-template-areas:
-    "nombreRegistro"
-    "apellidoRegistro"
-    "cumpleañosRegistro"
-    "mailRegistro"
-    "contraseñaRegistro"
-    "confirmContraRegistro"
-    "terminosRegistro"
-    "botonesRegistro"
-    "recuperarRegistro";
+        "nombreRegistro"
+        "apellidoRegistro"
+        "cumpleañosRegistro"
+        "mailRegistro"
+        "contraseñaRegistro"
+        "confirmContraRegistro"
+        "terminosRegistro"
+        "botonesRegistro"
+        "recuperarRegistro";
 
     place-items: center;
     height: 95%;
@@ -345,14 +352,14 @@ nav #navLogin .navLoginLink:hover{
     /* background-color: red; */
 }
 
-.mainRegister form div div{
+.mainRegister form div div {
     width: 90%;
     /* background-color: white; */
 }
 
-.mainRegister form div div label{
+.mainRegister form div div label {
     width: 100%;
-    text-align:start;
+    text-align: start;
     font-weight: bold;
     color: var(--secondary-color);
     padding-left: 15px;
@@ -360,24 +367,24 @@ nav #navLogin .navLoginLink:hover{
     /* background-color: yellow; */
 }
 
-.mainRegister form div div input{
+.mainRegister form div div input {
     width: 100%;
     /* height: 1.6em; */
     border-radius: 50px;
     outline-color: var(--primary-color);
-    text-indent:15px
+    text-indent: 15px
 }
 
-        /* modifica el input de Cumpleaños */
+/* modifica el input de Cumpleaños */
 
-.mainRegister form div #fechaRegistro{
+.mainRegister form div #fechaRegistro {
     text-indent: 6px;
     padding-right: 10px;
 }
 
 
         /* modifica el div de Terminos y condiciones */
-.mainRegister form div div label input{
+.mainRegister form div div label input {
     width: 5%;
 }
 
@@ -386,7 +393,7 @@ nav #navLogin .navLoginLink:hover{
     justify-content: stretch;
 }
 
-.mainRegister form div #terminosRegister label{
+.mainRegister form div #terminosRegister label {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -395,19 +402,19 @@ nav #navLogin .navLoginLink:hover{
     /* background-color: grey; */
 }
 
-.mainRegister form div #terminosRegister label:hover{
+.mainRegister form div #terminosRegister label:hover {
     color: var(--secondary-color);
 }
 
 
         /* modifica el div de los botones */
-.mainRegister form div #botonesRegister{
+.mainRegister form div #botonesRegister {
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
 }
 
-.mainRegister form div #botonesRegister button{
+.mainRegister form div #botonesRegister button {
     /* width: 45%; */
     width: 80%;
     background-color: var(--primary-color-opacity-50);
@@ -416,38 +423,199 @@ nav #navLogin .navLoginLink:hover{
     color: var(--secondary-color);
 }
 
-.mainRegister form div #botonesRegister button:hover{
+.mainRegister form div #botonesRegister button:hover {
     color: rgba(255, 255, 255, 0.5);
     border-color: var(--primary-color-opacity-50);
 }
 
         /* modifica el div de Recuperar contraseña */
-.mainRegister form div #recPassRegister{
+.mainRegister form div #recPassRegister {
     display: flex;
     place-content: center;
     gap: 3%;
 }
 
-    /* modifica ancho del form para pantallas de 800 a 1079px */
-@media screen and (min-width: 800px) and (max-width: 1079px){
-    .mainRegister{
+        /* modifica ancho del form para pantallas de 800 a 1079px */
+@media screen and (min-width: 800px) and (max-width: 1079px) {
+    .mainRegister {
         width: 60%;
     }
 }
-    /* modifica ancho del form para pantallas de 800 a 1079px */
-@media screen and (max-width: 799px){
-    .mainRegister{
+
+        /* modifica ancho del form para pantallas de 800 a 1079px */
+@media screen and (max-width: 799px) {
+    .mainRegister {
         width: 85%;
     }
-    .mainRegister #contLoging h2{
+
+    .mainRegister #contLoging h2 {
         font-size: 1.1em;
         margin: 1%;
 
     }
-    .mainRegister #contLoging form{
+
+    .mainRegister #contLoging form {
         height: 95%;
     }
 }
+
+    /* ---------------- CSS del LOGIN ------------------ */
+
+.bodyLogin {
+    background-image: url(../img/backgrounds/jason-leung-poI7DelFiVA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+        /* Modifica el Main */
+.mainLogin {
+    background-color: var(--bg-color-nav);
+    margin: 70px auto;
+    width: 35%;
+    height: 500px;
+    border: 5px solid var(--bg-color-nav-opacity-50);
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    margin-bottom: 30px;
+}
+
+        /* Crear el grid dentro del main y asigna los divs las areas */
+.contLogin {
+    display: grid;
+    grid-template-rows: 10% 10% 80%;
+    grid-template-areas:
+        "titulo"
+        "subtitulo"
+        "formulario";
+
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+    /* background-color: red; */
+}
+
+.contLogin h1 {
+    grid-area: titulo;
+    font-size: 2.5em;
+    text-align: center;
+
+    height: 90%;
+    /* background-color: aqua; */
+}
+
+.contLogin h2 {
+    grid-area: subtitulo;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 5%;
+
+    height: 90%;
+    /* background-color: orangered; */
+}
+
+.contLogin form {
+    grid-area: formulario;
+
+
+    height: 90%;
+    /* background-color: lawngreen; */
+}
+
+.mainLogin form div {
+
+    display: grid;
+    grid-template-areas:
+        "nombreLogin"
+        "contraseñaLogin"
+        "recordarmeLogin"
+        "botonLogin"
+        "recuperarLogin"
+        "registrarLogin";
+
+    place-items: center;
+    height: 95%;
+
+    /* background-color: red; */
+}
+
+.mainLogin form div div {
+    width: 90%;
+    /* background-color: white; */
+}
+
+.mainLogin form div div label {
+    width: 100%;
+    text-align: start;
+    font-weight: bold;
+    color: var(--secondary-color);
+    padding-left: 15px;
+    text-shadow: 2px 2px 2px black;
+    /* background-color: yellow; */
+}
+
+.mainLogin form div div input {
+    width: 100%;
+    border-radius: 50px;
+    outline-color: var(--primary-color);
+    text-indent: 15px
+}
+
+        /* modifica el div de Terminos y condiciones */
+.mainLogin form div div label input {
+    width: 5%;
+}
+
+.mainLogin form div .recordarLogin{
+    place-content: center;
+    justify-content: stretch;
+}
+
+.mainLogin form div .recordarLogin label {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: baseline;
+    /* width: 150%; */
+    /* background-color: grey; */
+}
+
+.mainLogin form div .recordarLogin label:hover {
+    color: var(--secondary-color);
+}
+
+        /* modifica el div de los botones */
+.mainLogin form div .iniciarButton {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+        
+.mainLogin form div .iniciarButton button {
+/* width: 45%; */
+    width: 80%;
+    background-color: var(--primary-color-opacity-50);
+    font-weight: bold;
+    border-color: transparent;
+    color: var(--secondary-color);
+}
+        
+.mainLogin form div .iniciarButton button:hover {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: var(--primary-color-opacity-50);
+}
+        
+        /* modifica el div de Recuperar contraseña y Crear cuenta*/
+.mainLogin form div #recPassRegister , #registerLogin{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    gap: 3%;
+    /* background-color: green; */
+}
+
+
 
 /* pruebas */
 /* body{
@@ -468,8 +636,8 @@ nav #navLogin .navLoginLink:hover{
     margin-bottom: 30px;
 } */
 
-/* ---------------- Menu Carta ------------------ */
-.bodyMenu{
+/* ---------------- CSS Menu/Carta ------------------ */
+.bodyMenu {
     background-image: url(../img/backgrounds/patrick-schneider-5xltWMpkN3E-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -477,12 +645,12 @@ nav #navLogin .navLoginLink:hover{
     height: 1000px;
 }
 
-.mainMenu{
+.mainMenu {
     background-color: red;
     height: 700px;
 }
 
-.mainCarta{
+.mainCarta {
     background-color: #3f413d37;
     padding-left: 25px;
     scroll-padding-top: 500px;
@@ -490,12 +658,12 @@ nav #navLogin .navLoginLink:hover{
     background-color: blue;
 }
 
-.boxesContainer{
+.boxesContainer {
     display: flex;
     flex-direction: row;
     height: 500px;
     background-color: white;
-    
+
 }
 
 .cardBox {
@@ -507,11 +675,13 @@ nav #navLogin .navLoginLink:hover{
     transition: all 0.3s ease 0s;
     width: 23.7%;
     background-color: orange;
-  }
-  .cardBox:hover .card {
+}
+
+.cardBox:hover .card {
     transform: rotateY(180deg);
-  }
-  .card {
+}
+
+.card {
     background: #222;
     cursor: default;
     height: 300px;
@@ -520,8 +690,10 @@ nav #navLogin .navLoginLink:hover{
     width: 100%;
     -webkit-animation: giro 1s 1;
     animation: giro 1s 1;
-  }
-  .front, .back {
+}
+
+.front,
+.back {
     backface-visibility: hidden;
     box-sizing: border-box;
     color: white;
@@ -532,34 +704,35 @@ nav #navLogin .navLoginLink:hover{
     position: absolute;
     text-align: center;
     width: 100%;
-  }
-  .back {
-    transform: rotateY( 180deg);
-  }
+}
 
-  .hCard {
+.back {
+    transform: rotateY(180deg);
+}
+
+.hCard {
     background: #024e0565;
     color: #fff;
     text-align: center;
     margin: 0 0 5% 0;
     padding: 0.5em;
     margin: 0 0 5% 0;
-  }
-   
-  .pCard {
+}
+
+.pCard {
     margin-bottom: 1.8em;
-  }
-   
-  strong {
+}
+
+strong {
     background: #fff;
     border-radius: 100%;
     color: #222;
     font-size: 1.5em;
     line-height: 30px;
     padding: 0 7px 4px 6px;
-  }
-   
-  .aCard {
+}
+
+.aCard {
     padding: 0.3em 0.5em;
     background: #333;
     color: #fff;
@@ -567,111 +740,122 @@ nav #navLogin .navLoginLink:hover{
     border-radius: 1px;
     font-size: 0.9em;
     transition: all 0.2s ease 0s;
-  }
+}
 
-  #cardUno{
+#cardUno {
     background-image: url(../img/menu/comidas/arroz-alcachofa-W-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 500px;
-  }
-  #cardUnoBack{
+}
+
+#cardUnoBack {
     background-image: url(../img/menu/comidas/arroz-alcachofa-W-1back.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 500px;
-  }
-  #cardDos{
+}
+
+#cardDos {
     background-image: url(../img/menu/comidas/Tallarines\ a\ la\ carbonara.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 428px;
-  }
-  #cardDosBack{
+}
+
+#cardDosBack {
     background-image: url(../img/menu/comidas/Tallarines\ a\ la\ carbonara\ back.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 428px;
-  }
-  #cardTres{
+}
+
+#cardTres {
     background-image: url(../img/menu/comidas/garbanzos.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-  #cardTresBack{
+}
+
+#cardTresBack {
     background-image: url(../img/menu/comidas/garbanzos\ back.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  .aCard:hover {
+}
+
+.aCard:hover {
     background: #fff;
     color: #333;
     text-shadow: 0 0 1px #333;
-  }
-  .cardBox:nth-child(2) .card {
+}
+
+.cardBox:nth-child(2) .card {
     -webkit-animation: giro 1.5s 1;
     animation: giro 1.5s 1;
-  }
-   
-  .cardBox:nth-child(3) .card {
+}
+
+.cardBox:nth-child(3) .card {
     -webkit-animation: giro 2s 1;
     animation: giro 2s 1;
-  }
-   
-  .cardBox:nth-child(4) .card {
+}
+
+.cardBox:nth-child(4) .card {
     -webkit-animation: giro 2.5s 1;
     animation: giro 2.5s 1;
-  }
-  @keyframes giro {
+}
+
+@keyframes giro {
     from {
-      transform: rotateY( 180deg);
+        transform: rotateY(180deg);
     }
+
     to {
-      transform: rotateY( 0deg);
+        transform: rotateY(0deg);
     }
-  }
-  
-  @-webkit-keyframes giro {
+}
+
+@-webkit-keyframes giro {
     from {
-      transform: rotateY( 180deg);
+        transform: rotateY(180deg);
     }
+
     to {
-      transform: rotateY( 0deg);
+        transform: rotateY(0deg);
     }
-  }
-  @media screen and (max-width: 767px) {
-  
+}
+
+@media screen and (max-width: 767px) {
+
     .cardBox {
-      margin-left: 2.8%;
-      margin-top: 3%;
-      width: 46%;
+        margin-left: 2.8%;
+        margin-top: 3%;
+        width: 46%;
     }
-  
+
     .card {
-      height: 285px;
+        height: 285px;
     }
-  
+
     .cardBox:last-child {
-      margin-bottom: 3%;
+        margin-bottom: 3%;
     }
-  
-  }
-  
-  
-  @media screen and (max-width: 480px) {
-  
+
+}
+
+
+@media screen and (max-width: 480px) {
+
     .cardBox {
-      width: 94.5%;
-      height: 290px;
+        width: 94.5%;
+        height: 290px;
     }
-  
-  }
+
+}
 
 
 
-footer{
+footer {
     background-color: black;
     color: white;
     height: 100px;
@@ -682,5 +866,3 @@ footer{
 
 
 /* ------ reserva ------ */
-
-

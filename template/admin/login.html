@@ -15,32 +15,32 @@
     <script src="https://kit.fontawesome.com/95e43c16b2.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bodyLogin">
 
     <header>
         <nav id="navBar">
             <div id="navLogo">
                 <ul id="navLogoDesplegable">
                     <li id="navLogoDesplegableIcono"><i class="fa-solid fa-bars"></i>
-                        
+
                         <ul id="navLogoDesplegableLista">
 
                             <li id="navLogoDesplegableBotones">
                                 <a href="../../index.html">Home</a>
                             </li>
-        
+
                             <li id="navLogoDesplegableBotones">
                                 <a href="../menu.html">Menú</a>
                             </li>
-        
+
                             <li id="navLogoDesplegableBotones">
                                 <a href="../reserva.html">Reserva</a>
                             </li id="navLogoDesplegableBotones">
-        
+
                             <li id="navLogoDesplegableBotones">
                                 <a href="../nosotros.html">Nosotros</a>
                             </li>
-        
+
                             <li id="navLogoDesplegableBotones">
                                 <a href="../contacto.html">Contacto</a>
                             </li>
@@ -52,7 +52,7 @@
                         alt="Logo de Vegan"></a>
 
                 <a href="../../index.html"><img id="navImgSimplificado" src="../../static/img/logos/Logo-Solo.png"
-                            alt="Logo de Vegan"></a>
+                        alt="Logo de Vegan"></a>
             </div>
 
             <div id="navMenu">
@@ -69,17 +69,17 @@
                 <a class="navLoginLink" id="navLoginLinkIcono" href="../admin/login.html"><i
                         class="fa-solid fa-circle-user"></i></a>
                 <a class="navLoginLink" id="navLoginLinkTexto" href="../admin/login.html"><i
-                    class="fa-solid fa-circle-user"></i> Login</a>
+                        class="fa-solid fa-circle-user"></i> Login</a>
             </div>
 
         </nav>
     </header>
 
-    <main>
-        <div id="contLoging">
+    <main class="mainLogin">
+        <div class="contLogin">
             <h1>Iniciar sesión</h1>
             <h2>Por favor inicie sesión para poder acceder a su cuenta.</h2>
-            <form action="" id="formLoging">
+            <form action="" id="formLogin">
                 <div>
                     <div>
                         <label for="mailLogin">Mail</label>
@@ -88,18 +88,23 @@
 
                     <div>
                         <label for="passLogin">Contraseña</label>
-                        <input type="password" >
+                        <input type="password">
                     </div>
                     <div class="recordarLogin">
-                        <input class="checkRecordarLogin" type="checkbox">
-                        <label class="textRecordarLogin" for="">Recordarme</label>
+                        <label>
+                            <input type="checkbox" value="first_checkbox" />Recordarme
+                        </label>
                     </div>
                     <div class="iniciarButton">
                         <button>INICIAR SESIÓN</button>
                     </div>
 
-                    <div class="registerLogin">
-                        <p>¿Aun no tienes cuenta? <a href="./register.html">Registrese aqui</a> </p>
+                    <div id="recPassRegister">
+                        <p>¿Olvido su contraseña?</p> <a href="./register.html">Click aqui</a>
+                    </div>
+
+                    <div id="registerLogin">
+                        <p>¿Aun no tienes cuenta?</p> <a href="./register.html">Registrese aqui</a>
                     </div>
 
                 </div>
