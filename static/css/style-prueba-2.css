@@ -5,6 +5,7 @@
     --primary-color: rgba(0, 255, 0, 1);
     --primary-color-opacity-50: rgba(0, 255, 0, 0.5);
     --secondary-color: white;
+
 }
 
 
@@ -695,6 +696,11 @@ nav #navLogin .navLoginLink:hover {
     text-indent: 15px;
 }
 
+.mainReserva form div select option{
+
+    width: 80%;
+}
+
 /* pruebas */
 /* body{
     background-image: url(../img/backgrounds/jason-leung-poI7DelFiVA-unsplash.jpg);
@@ -806,7 +812,7 @@ strong {
     border-radius: 100%;
     color: #222;
     font-size: 1.5em;
-    line-height: 30px;
+    line-height: 100px;
     padding: 0 7px 4px 6px;
 }
 
