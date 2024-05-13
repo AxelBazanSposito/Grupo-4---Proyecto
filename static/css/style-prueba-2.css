@@ -266,7 +266,7 @@ nav #navLogin .navLoginLink:hover {
     }
 }
 
-/* ---------------- CSS del register ------------------ */
+    /* ---------------- CSS del register ------------------ */
 
 .bodyRegister {
     background-image: url(../img/backgrounds/paul-griffin-WWST6E8LxeE-unsplash.jpg);
@@ -275,7 +275,7 @@ nav #navLogin .navLoginLink:hover {
     background-size: cover;
 }
 
-/* modifica el main */
+        /* modifica el main */
 .mainRegister {
     background-color: var(--bg-color-nav);
     margin: 0 auto;
@@ -288,7 +288,7 @@ nav #navLogin .navLoginLink:hover {
     margin-bottom: 30px;
 }
 
-/* crea y modifica el contenedor del h1, h2 y formulario */
+        /* crea y modifica el contenedor del h1, h2 y formulario */
 .mainRegister #contLoging {
     display: grid;
     grid-template-rows: 10% 10% 80%;
@@ -330,7 +330,7 @@ nav #navLogin .navLoginLink:hover {
     /* background-color: lawngreen; */
 }
 
-/* crea y modifica el grid del formulario */
+        /* crea y modifica el grid del formulario */
 
 .mainRegister form div {
 
@@ -383,7 +383,7 @@ nav #navLogin .navLoginLink:hover {
 }
 
 
-/* modifica el div de Terminos y condiciones */
+        /* modifica el div de Terminos y condiciones */
 .mainRegister form div div label input {
     width: 5%;
 }
@@ -407,7 +407,7 @@ nav #navLogin .navLoginLink:hover {
 }
 
 
-/* modifica el div de los botones */
+        /* modifica el div de los botones */
 .mainRegister form div #botonesRegister {
     display: flex;
     flex-flow: wrap;
@@ -428,21 +428,21 @@ nav #navLogin .navLoginLink:hover {
     border-color: var(--primary-color-opacity-50);
 }
 
-/* modifica el div de Recuperar contraseña */
+        /* modifica el div de Recuperar contraseña */
 .mainRegister form div #recPassRegister {
     display: flex;
     place-content: center;
     gap: 3%;
 }
 
-/* modifica ancho del form para pantallas de 800 a 1079px */
+        /* modifica ancho del form para pantallas de 800 a 1079px */
 @media screen and (min-width: 800px) and (max-width: 1079px) {
     .mainRegister {
         width: 60%;
     }
 }
 
-/* modifica ancho del form para pantallas de 800 a 1079px */
+        /* modifica ancho del form para pantallas de 800 a 1079px */
 @media screen and (max-width: 799px) {
     .mainRegister {
         width: 85%;
@@ -459,7 +459,7 @@ nav #navLogin .navLoginLink:hover {
     }
 }
 
-/* ---------------- CSS del LOGIN ------------------ */
+    /* ---------------- CSS del LOGIN ------------------ */
 
 .bodyLogin {
     background-image: url(../img/backgrounds/jason-leung-poI7DelFiVA-unsplash.jpg);
@@ -468,9 +468,8 @@ nav #navLogin .navLoginLink:hover {
     background-size: cover;
 }
 
-/* Modifica el Main */
-.mainLogin,
-.mainReserva {
+        /* Modifica el Main */
+.mainLogin {
     background-color: var(--bg-color-nav);
     margin: 70px auto;
     width: 35%;
@@ -481,9 +480,8 @@ nav #navLogin .navLoginLink:hover {
     margin-bottom: 30px;
 }
 
-/* Crear el grid dentro del main y asigna los divs las areas */
-.contLogin,
-.contReserva {
+        /* Crear el grid dentro del main y asigna los divs las areas */
+.contLogin {
     display: grid;
     grid-template-rows: 10% 10% 80%;
     grid-template-areas:
@@ -498,8 +496,7 @@ nav #navLogin .navLoginLink:hover {
     /* background-color: red; */
 }
 
-.contLogin h1,
-.contReserva h1 {
+.contLogin h1 {
     grid-area: titulo;
     font-size: 2.5em;
     text-align: center;
@@ -508,8 +505,7 @@ nav #navLogin .navLoginLink:hover {
     /* background-color: aqua; */
 }
 
-.contLogin h2,
-.contReserva h2 {
+.contLogin h2 {
     grid-area: subtitulo;
     font-size: 1.4em;
     text-align: center;
@@ -519,9 +515,10 @@ nav #navLogin .navLoginLink:hover {
     /* background-color: orangered; */
 }
 
-.contLogin form,
-.contReserva form {
+.contLogin form {
     grid-area: formulario;
+
+
     height: 90%;
     /* background-color: lawngreen; */
 }
@@ -543,14 +540,12 @@ nav #navLogin .navLoginLink:hover {
     /* background-color: red; */
 }
 
-.mainLogin form div div,
-.mainReserva form div div {
+.mainLogin form div div {
     width: 90%;
     /* background-color: white; */
 }
 
-.mainLogin form div div label,
-.mainReserva form div div label {
+.mainLogin form div div label {
     width: 100%;
     text-align: start;
     font-weight: bold;
@@ -560,20 +555,19 @@ nav #navLogin .navLoginLink:hover {
     /* background-color: yellow; */
 }
 
-.mainLogin form div div input,
-.mainReserva form div div input {
+.mainLogin form div div input {
     width: 100%;
     border-radius: 50px;
     outline-color: var(--primary-color);
     text-indent: 15px
 }
 
-/* modifica el div de Terminos y condiciones */
+        /* modifica el div de Terminos y condiciones */
 .mainLogin form div div label input {
     width: 5%;
 }
 
-.mainLogin form div .recordarLogin {
+.mainLogin form div .recordarLogin{
     place-content: center;
     justify-content: stretch;
 }
@@ -591,30 +585,29 @@ nav #navLogin .navLoginLink:hover {
     color: var(--secondary-color);
 }
 
-/* modifica el div de los botones */
+        /* modifica el div de los botones */
 .mainLogin form div .iniciarButton {
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
 }
-
-.mainLogin form div .iniciarButton button, .mainReserva form div #reservarButton button {
-    /* width: 45%; */
+        
+.mainLogin form div .iniciarButton button {
+/* width: 45%; */
     width: 80%;
     background-color: var(--primary-color-opacity-50);
     font-weight: bold;
     border-color: transparent;
     color: var(--secondary-color);
 }
-
+        
 .mainLogin form div .iniciarButton button:hover {
     color: rgba(255, 255, 255, 0.5);
     border-color: var(--primary-color-opacity-50);
 }
-
-/* modifica el div de Recuperar contraseña y Crear cuenta*/
-.mainLogin form div #recPassRegister,
-#registerLogin {
+        
+        /* modifica el div de Recuperar contraseña y Crear cuenta*/
+.mainLogin form div #recPassRegister , #registerLogin{
     display: flex;
     flex-direction: row;
     place-content: center;
@@ -622,78 +615,7 @@ nav #navLogin .navLoginLink:hover {
     /* background-color: green; */
 }
 
-/* modifica ancho del form para pantallas de 800 a 1079px */
-@media screen and (min-width: 800px) and (max-width: 1079px) {
 
-    .mainLogin,
-    .mainReserva {
-        width: 60%;
-    }
-}
-
-/* modifica ancho del form para pantallas de 800 a 1079px */
-@media screen and (max-width: 799px) {
-
-    .mainLogin,
-    .mainReserva {
-        width: 85%;
-    }
-
-    .mainLogin #contLoging h2 {
-        font-size: 1.1em;
-        margin: 1%;
-
-    }
-
-    .mainLogin #contLoging form {
-        height: 95%;
-    }
-
-    .mainLogin .contLogin h2 {
-        display: none;
-    }
-}
-
-/* ---------------- CSS del RESERVA ------------------ */
-.bodyReserva {
-    background-image: url(../img/backgrounds/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.mainReserva{
-    height: 700px;
-}
-
-.mainReserva form div {
-    display: grid;
-    grid-template-areas:
-        "fecha"
-        "hora"
-        "cantidad"
-        "mail"
-        "nombreReserva"
-        "local"
-        "botonReserva";
-
-    place-items: center;
-    height: 95%;
-
-    /* background-color: red; */
-}
-
-.mainReserva form div h6{
-    font-size: 18px;
-    width: 90%;
-}
-
-.mainReserva form div select{
-    width: 100%;
-    border-radius: 50px;
-    outline-color: var(--primary-color);
-    text-indent: 15px;
-}
 
 /* pruebas */
 /* body{
@@ -739,14 +661,14 @@ nav #navLogin .navLoginLink:hover {
 .boxesContainer {
     display: flex;
     flex-direction: row;
-    height: 500px;
+    height: 303px;
     background-color: white;
 
 }
 
 .cardBox {
-    /* position: relative; */
-    /* float: left; */
+    /* position: relative;
+    float: left; */
     font-size: 1.2em;
     margin: 1% 0 0 1%;
     perspective: 800px;
@@ -802,12 +724,20 @@ nav #navLogin .navLoginLink:hover {
 }
 
 strong {
-    background: #fff;
+    background: #024e0565;
     border-radius: 100%;
-    color: #222;
+    color: #1e1d1d;
     font-size: 1.5em;
-    line-height: 30px;
-    padding: 0 7px 4px 6px;
+    line-height: 180px;
+    padding: 0px 7px 4px 6px;
+    
+    
+}
+
+strong:hover{
+    background: #f8f7f7;
+    color: #333333;
+    text-shadow: 0 0 1px #333;
 }
 
 .aCard {
