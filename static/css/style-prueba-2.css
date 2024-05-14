@@ -5,6 +5,7 @@
     --primary-color: rgba(0, 255, 0, 1);
     --primary-color-opacity-50: rgba(0, 255, 0, 0.5);
     --secondary-color: white;
+
 }
 
 
@@ -615,7 +616,78 @@ nav #navLogin .navLoginLink:hover {
     /* background-color: green; */
 }
 
+/* modifica ancho del form para pantallas de 800 a 1079px */
+@media screen and (min-width: 800px) and (max-width: 1079px) {
 
+    .mainLogin,
+    .mainReserva {
+        width: 60%;
+    }
+}
+
+/* modifica ancho del form para pantallas de 800 a 1079px */
+@media screen and (max-width: 799px) {
+
+    .mainLogin,
+    .mainReserva {
+        width: 85%;
+    }
+
+    .mainLogin #contLoging h2 {
+        font-size: 1.1em;
+        margin: 1%;
+
+    }
+
+    .mainLogin #contLoging form {
+        height: 95%;
+    }
+
+    .mainLogin .contLogin h2 {
+        display: none;
+    }
+}
+
+/* ---------------- CSS del RESERVA ------------------ */
+.bodyReserva {
+    background-image: url(../img/backgrounds/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mainReserva{
+    height: 700px;
+}
+
+.mainReserva form div {
+    display: grid;
+    grid-template-areas:
+        "fecha"
+        "hora"
+        "cantidad"
+        "mail"
+        "nombreReserva"
+        "local"
+        "botonReserva";
+
+    place-items: center;
+    height: 95%;
+
+    /* background-color: red; */
+}
+
+.mainReserva form div h6{
+    font-size: 18px;
+    width: 90%;
+}
+
+.mainReserva form div select{
+    width: 100%;
+    border-radius: 50px;
+    outline-color: var(--primary-color);
+    text-indent: 15px;
+}
 
 /* pruebas */
 /* body{
@@ -732,16 +804,8 @@ strong {
     border-radius: 100%;
     color: #1e1d1d;
     font-size: 1.5em;
-    line-height: 150px;
-    padding: 0px 7px 4px 6px;
-    
-    
-}
-
-strong:hover{
-    background: #f8f7f7;
-    color: #333333;
-    text-shadow: 0 0 1px #333;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
 }
 
 .aCard {
