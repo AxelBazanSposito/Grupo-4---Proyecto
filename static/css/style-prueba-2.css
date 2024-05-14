@@ -645,24 +645,27 @@ nav #navLogin .navLoginLink:hover {
     height: 1000px;
 }
 
-.mainMenu {
-    background-color: red;
+/* .mainMenu {
+    background-color: rgb(227, 221, 221);
     height: 700px;
-}
+} */
 
 .mainCarta {
     background-color: #3f413d37;
     padding-left: 25px;
+    padding-right: 25px;
     scroll-padding-top: 500px;
-
     background-color: blue;
+    
 }
 
 .boxesContainer {
     display: flex;
-    flex-direction: row;
-    height: 303px;
-    background-color: white;
+    flex-direction: column;
+    flex-flow: wrap;
+    height: 100%;
+    background-color: rgb(255, 0, 0);
+    gap: 3%;
 
 }
 
@@ -670,11 +673,12 @@ nav #navLogin .navLoginLink:hover {
     /* position: relative;
     float: left; */
     font-size: 1.2em;
-    margin: 1% 0 0 1%;
+    margin: 1% 0 1% 1%;
     perspective: 800px;
     transition: all 0.3s ease 0s;
-    width: 23.7%;
-    background-color: orange;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 166, 0);
 }
 
 .cardBox:hover .card {
@@ -833,12 +837,12 @@ strong:hover{
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
 
     .cardBox {
         margin-left: 2.8%;
         margin-top: 3%;
-        width: 46%;
+        width: 45%;
     }
 
     .card {
@@ -858,8 +862,15 @@ strong:hover{
         width: 94.5%;
         height: 290px;
     }
+    
+    .mainMenu{
+        height: 1000px;
+
+    }
 
 }
+
+
 
 
 
