@@ -804,7 +804,7 @@ strong {
     border-radius: 100%;
     color: #1e1d1d;
     font-size: 1.5em;
-    line-height: 30px;
+    line-height: 420%;
     padding: 0 7px 4px 6px;
 }
 
@@ -836,14 +836,14 @@ strong {
     background-image: url(../img/menu/comidas/Tallarines\ a\ la\ carbonara.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 428px;
+    background-size: 140%;
 }
 
 #cardDosBack {
     background-image: url(../img/menu/comidas/Tallarines\ a\ la\ carbonara\ back.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 428px;
+    background-size: 140%;
 }
 
 #cardTres {
