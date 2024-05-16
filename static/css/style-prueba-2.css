@@ -965,4 +965,61 @@ footer {
 
 
 
-/* ------ reserva ------ */
+/* ------ Footer ------ */
+
+.barFooter{
+    background-color: black;
+    height: 100px;
+
+    display: grid;
+    grid-template-areas: 
+    "redes redes"
+    "navegacion logo"
+    "copyright copyright";
+
+    color: white;
+}
+
+.barFooter .redesFooter{
+    grid-area: redes;
+    color: var(--primary-color);
+    height: 1.5em;
+
+    background-color: blue;
+}
+
+.barFooter .logoFooter{
+    grid-area: logo;
+
+    justify-self: end;
+    height: 130px;
+    margin-right: 5%;
+
+    background-color: orange;
+}
+
+.barFooter .logoFooter img{
+    height: 95%;
+}
+
+.barFooter .navegacionFooter{
+    grid-area: navegacion;
+    align-self: center;
+    background-color: brown;
+}
+
+.barFooter .navegacionFooter li{
+    align-self: center;
+}
+
+.barFooter .copyFooter{
+    grid-area: copyright;
+    color: var(--primary-color);
+
+    background-color: purple;
+}
+
+.barFooter .copyFooter p{
+    text-align: center;
+    height: 1.5em;
+}
