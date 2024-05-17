@@ -277,7 +277,7 @@ nav #navLogin .navLoginLink:hover {
 }
 
         /* modifica el main */
-.mainRegister {
+.mainRegister{
     background-color: var(--bg-color-nav);
     margin: 0 auto;
     margin-top: 10px;
@@ -734,18 +734,16 @@ nav #navLogin .navLoginLink:hover {
     height: 1000px;
 }
 
-/* .mainMenu {
-    background-color: rgb(227, 221, 221);
-    height: 700px;
-} */
+.mainMenu {
+    background-color: var(--bg-color-nav-opacity-50);
+}
 
 .mainCarta {
     background-color: #3f413d37;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 25px;
     scroll-padding-top: 500px;
-    background-color: blue;
-    
 }
 
 .boxesContainer {
@@ -753,7 +751,6 @@ nav #navLogin .navLoginLink:hover {
     flex-direction: column;
     flex-flow: wrap;
     height: 100%;
-    background-color: rgb(255, 0, 0);
     gap: 3%;
 
 }
@@ -767,7 +764,6 @@ nav #navLogin .navLoginLink:hover {
     transition: all 0.3s ease 0s;
     width: 30%;
     height: 100%;
-    background-color: rgb(255, 166, 0);
 }
 
 .cardBox:hover .card {
@@ -775,7 +771,7 @@ nav #navLogin .navLoginLink:hover {
 }
 
 .card {
-    background: #222;
+    background: #222222;
     cursor: default;
     height: 300px;
     transform-style: preserve-3d;
@@ -783,6 +779,8 @@ nav #navLogin .navLoginLink:hover {
     width: 100%;
     -webkit-animation: giro 1s 1;
     animation: giro 1s 1;
+    border-radius: 5%;
+    
 }
 
 .front,
@@ -797,6 +795,10 @@ nav #navLogin .navLoginLink:hover {
     position: absolute;
     text-align: center;
     width: 100%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    margin-bottom: 30px;
+    border-radius: 5%;
 }
 
 .back {
@@ -809,58 +811,64 @@ nav #navLogin .navLoginLink:hover {
     text-align: center;
     margin: 0 0 5% 0;
     padding: 0.5em;
-    margin: 0 0 5% 0;
+    
 }
 
 .pCard {
     margin-bottom: 1.8em;
+    background-color: hsla(0, 0%, 0%, 0.60);
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
 }
 
-strong {
-    background: #024e0565;
-    border-radius: 100%;
-    color: #1e1d1d;
-    font-size: 1.5em;
-    line-height: 420%;
-    padding: 0 7px 4px 6px;
-}
-
-.aCard {
+/* Ex boton de "volver" */
+/* .aCard {
     padding: 0.3em 0.5em;
     background: #333;
     color: #fff;
     text-decoration: none;
     border-radius: 1px;
     font-size: 0.9em;
+    line-height: 100%;
     transition: all 0.2s ease 0s;
+} */
+
+strong {
+    background: #024e0565;
+    border-radius: 100%;
+    color: #1e1d1d;
+    font-size: 1.5em;
+    line-height: 100%;
+    padding: 0 7px 4px 6px;
 }
 
 #cardUno {
     background-image: url(../img/menu/comidas/arroz-alcachofa-W-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 500px;
+    background-size: cover;
 }
 
 #cardUnoBack {
     background-image: url(../img/menu/comidas/arroz-alcachofa-W-1back.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 500px;
+    background-size: cover;
 }
 
 #cardDos {
     background-image: url(../img/menu/comidas/Tallarines\ a\ la\ carbonara.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: cover;
 }
 
 #cardDosBack {
     background-image: url(../img/menu/comidas/Tallarines\ a\ la\ carbonara\ back.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 140%;
+    background-size: cover;
 }
 
 #cardTres {
@@ -872,6 +880,48 @@ strong {
 
 #cardTresBack {
     background-image: url(../img/menu/comidas/garbanzos\ back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cardCuatro {
+    background-image: url(../img/menu/comidas/menu1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cardCuatroBack {
+    background-image: url(../img/menu/comidas/menu1back.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cardCinco {
+    background-image: url(../img/menu/comidas/menu2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cardCincoBack {
+    background-image: url(../img/menu/comidas/menu2back.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#cardSeis {
+    background-image: url(../img/menu/comidas/menu3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#cardSeisBack {
+    background-image: url(../img/menu/comidas/menu3back.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
