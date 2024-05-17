@@ -1019,54 +1019,75 @@ footer {
 
 .barFooter{
     background-color: black;
-    height: 100px;
+    /* background-color: var(--bg-color-nav); */
+    height: 100%;
 
     display: grid;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "redes redes"
     "navegacion logo"
     "copyright copyright";
 
-    color: white;
+
+    place-items: center    ;
+
+    color: var(--primary-color);
 }
 
 .barFooter .redesFooter{
     grid-area: redes;
     color: var(--primary-color);
     height: 1.5em;
-
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
     background-color: blue;
 }
 
 .barFooter .logoFooter{
     grid-area: logo;
-
-    justify-self: end;
+    width: 100%;
     height: 130px;
-    margin-right: 5%;
-
-    background-color: orange;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 15px ;
 }
 
 .barFooter .logoFooter img{
     height: 95%;
+
 }
 
 .barFooter .navegacionFooter{
     grid-area: navegacion;
-    align-self: center;
-    background-color: brown;
+    width: 100%;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .barFooter .navegacionFooter li{
-    align-self: center;
+    /* background-color: green; */
+    width: 90%;
+    padding-left: 15px;
+    
 }
 
 .barFooter .copyFooter{
     grid-area: copyright;
     color: var(--primary-color);
+    border-top: 1px  solid var(--primary-color);
+    border-width: 80%;
+    width: 100%;
 
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 .barFooter .copyFooter p{
