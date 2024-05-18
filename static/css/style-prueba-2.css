@@ -740,9 +740,7 @@ nav #navLogin .navLoginLink:hover {
 
 .mainCarta {
     background-color: #3f413d37;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
+    padding: 25px;
     scroll-padding-top: 500px;
 }
 
@@ -996,7 +994,6 @@ strong {
     
     .mainMenu{
         height: 1000px;
-
     }
 
 }
