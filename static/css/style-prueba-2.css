@@ -1020,28 +1020,50 @@ footer {
     height: 100%;
 
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 4fr 1fr 4fr;
     grid-template-areas: 
-    "redes redes"
-    "navegacion logo"
-    "copyright copyright";
+    "redes logo navegacion"
+    "copyright copyright copyright";
 
 
-    place-items: center    ;
+    place-items: center;
 
     color: var(--primary-color);
 }
 
 .barFooter .redesFooter{
     grid-area: redes;
-    color: var(--primary-color);
-    height: 1.5em;
+    color: var(--primary-color-opacity-50);
+    height: 100%;
     width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     justify-content: center;
     gap: 5%;
-    background-color: blue;
+    /* background-color: blue; */
+    padding:5%;
+}
+
+.barFooter .redesFooter div{
+    display: flex;
+    align-items: center;
+    /* background-color: orangered; */
+    width: 100%;
+}
+
+.barFooter .redesFooter i{
+    font-size: 1.5em;
+}
+.barFooter .redesFooter p{
+    font-size: 1.2em;
+    padding: 1% 0px;
+}
+
+.barFooter .redesFooter div p{
+    padding-left: 1%;
+    font-size: 0.9em;
+
 }
 
 .barFooter .logoFooter{
@@ -1050,13 +1072,15 @@ footer {
     height: 130px;
     /* background-color: orange; */
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
-    padding-right: 15px ;
+    padding: 15px;
 }
 
 .barFooter .logoFooter img{
     height: 95%;
+    border: 3px solid var(--primary-color-opacity-50);
+    border-radius: 10px;
 
 }
 
@@ -1068,13 +1092,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.barFooter .navegacionFooter li{
-    /* background-color: green; */
-    width: 90%;
-    padding-left: 15px;
-    
 }
 
 .barFooter .copyFooter{
