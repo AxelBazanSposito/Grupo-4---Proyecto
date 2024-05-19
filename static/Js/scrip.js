@@ -28,6 +28,8 @@ parrafoLocal.innerHTML="";
 
 let regexEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
+// VALIDA LOS CAMPOS.
+
 if(!regexEmail.test(inputEmail.value)){
     warningEmail=`El email no es valido.`
     valorEmail=true;
@@ -43,26 +45,33 @@ if(inputLocal.value=="default"){
     valorLocal=true;
 }
 
+// ESCRIBE POR PANTALLA LOS MENSAJES EN LOS "P".
 
 if(valorEmail){
     parrafoEmail.innerHTML=warningEmail;
 }else{
-    parrafo.innerHTML="Enviado";
-    formRegister.reset();
+    // parrafo.innerHTML="Enviado";
+    // formRegister.reset();
 }
 
 if(valorNombre){
     parrafoNombre.innerHTML=warningNombre;
 }else{
-    parrafo.innerHTML="Enviado";
-    formRegister.reset();
+    // parrafo.innerHTML="Enviado";
+    // formRegister.reset();
 }
 
 if(valorLocal){
     parrafoLocal.innerHTML=warningLocal;
 }else{
-    parrafo.innerHTML="Enviado";
-    formRegister.reset();
+    // parrafo.innerHTML="Enviado";
+    // formRegister.reset();
+}
+
+// BORRA TODO EL FORMULARIO SI TODOS LOS CAMPOS ESTAN BIEN.
+
+if(valorEmail && valorNombre && valorLocal){
+    formReserva.reset();
 }
 
 })
