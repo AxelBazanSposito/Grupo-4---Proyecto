@@ -993,10 +993,10 @@ strong {
         height: 290px;
     }
     
-    .mainMenu{
+    /* .mainMenu{ */
         /* height: 1000px; */
         /* max-height: max-content; */
-    }
+    /*} */
 
 }
 
@@ -1118,6 +1118,7 @@ footer {
     border-width: 80%;
     width: 100%;
 
+    background-color: black;
     /* background-color: purple; */
 }
 
@@ -1130,7 +1131,7 @@ footer {
 @media screen and (max-width: 799px) {
 
 .barFooter{
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "logo redes"
     "copyright copyright";
