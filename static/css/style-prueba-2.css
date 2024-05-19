@@ -735,6 +735,8 @@ nav #navLogin .navLoginLink:hover {
 
 .mainMenu {
     background-color: var(--bg-color-nav-opacity-50);
+    width: 100%;
+    max-height: max-content;
 }
 
 .mainCarta {
@@ -993,8 +995,7 @@ strong {
     
     .mainMenu{
         /* height: 1000px; */
-        max-height: max-content;
-        max-width: max-content;
+        /* max-height: max-content; */
     }
 
 }
