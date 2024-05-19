@@ -79,49 +79,54 @@
         <div class="contReserva">
             <h1>Reservas</h1>
             <h2>Realise su reserva aqui</h2>
-            <form action="" id="formReserva">
+            <form action="" id="formReserva" class="formReserva">
                 <div>
                     <div>
                         <label for="fecha-reserva">Seleccione una fecha:</label>
                         <input type="date">
+                        <p id="errorFecha" class="errorFecha"></p>
                     </div>
 
                     <div>
                         <label for="hora-reserva">Seleccione una hora:</label>
                         <input type="time">
-                        <h6>*Recuerde que el horario es de...</h6>
+                        <p id="errorHora" class="errorHora"></p>
                     </div>
 
                     <div>
                         <label for="cantidad-reserva">Seleccione la cantidad de comensales:</label>
                         <input type="number">
+                        <p id="errorCantidad" class="errorCantidad"></p>
                     </div>
 
                     <div>
-                        <label for="mail-reserva">Mail:</label>
+                        <label id="emailReserva" for="mail-reserva">Mail:</label>
                         <input type="email">
-                        <h6>*Se enviara un mail de confirmacion con el codigo de reserva</h6>
+                        <p id="errorEmail" class="errorEmail"></p>
                     </div>
 
                     <div>
                         <label for="nombre-reserva">A nombre de aquien se hace la reserva:</label>
-                        <input type="text">
+                        <input id="nombreReserva" type="text">
+                        <p id="errorNombre" class="errorNombre"></p>
                     </div>
 
                     <div class="select-local-reserva">
                         <label for="local-reserva">Seleccione un local:</label>
                         <select id="local-reserva" class="local-reserva">
-                            <option value="">Seleccione local</option>
+                            <option value="default">Seleccione local</option>
                             <option value="1">Local 1</option>
                             <option value="2">Local 2</option>
                         </select>
+                        <p id="errorLocal" class="errorLocal"></p>
                     </div>
 
                     <div class="reservarButton">
-                        <button>Reservar</button>
+                        <button type="submit">Reservar</button>
                     </div>
                 </div>
             </form>
+            <script src="../static/Js/scrip.js"></script>
         </div>
     </main>
 
