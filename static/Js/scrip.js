@@ -70,7 +70,7 @@ if(valorLocal){
 
 // BORRA TODO EL FORMULARIO SI TODOS LOS CAMPOS ESTAN BIEN.
 
-if(valorEmail && valorNombre && valorLocal){
+if(!valorEmail && !valorNombre && !valorLocal){
     formReserva.reset();
 }
 
