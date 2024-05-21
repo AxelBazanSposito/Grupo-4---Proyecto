@@ -1102,8 +1102,8 @@ footer {
 .contenedorContacto {
     /* padding-top: 50px; */
     margin: auto;
-    height: 75%;
-    width: 70%;
+    height: 95%;
+    width: 80%;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1111,23 +1111,40 @@ footer {
     "titulo titulo"
     "iframe formulario";
 
-    /* max-height: max-content; */
+    place-items: center;
 
-    background-color: yellowgreen;
+    background-color: var(--bg-color-button);
 }
 
 .tituloContacto{
     grid-area: titulo;
-    background-color: red;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    background-image: url(../img/backgrounds/1089110\ reducido.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
 }
 
 .iframeContacto{
     grid-area: iframe;
+    width: 100%;
+    height: 100%;
+    /* border-right: 1px solid black; */
     background-color: green;
+}
+
+.iframeContacto iframe {
+    width: 80%;
+    height: 80%;
+    margin: 10%;
 }
 
 .formContacto{
     grid-area: formulario;
+    width: 100%;
+    height: 100%;
     background-color: aqua;
 }
 
