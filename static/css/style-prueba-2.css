@@ -725,6 +725,28 @@ nav #navLogin .navLoginLink:hover {
     margin-bottom: 30px;
 } */
 
+/* ---------------- CSS Index/Home ------------------ */
+
+.bodyHome{
+    background-image: url(../img/backgrounds/chris-liverani-oCsaxvGCehM-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainHome{
+    background-color: hwb(0 20% 80% / 0.50);
+}
+
+.imgMainHome{
+    border-radius: 50%;
+    position: relative;
+    width: 20%;
+}
+
+
+
+
 /* ---------------- CSS Menu/Carta ------------------ */
 .bodyMenu {
     background-image: url(../img/backgrounds/patrick-schneider-5xltWMpkN3E-unsplash.jpg);
