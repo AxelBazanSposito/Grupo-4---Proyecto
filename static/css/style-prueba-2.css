@@ -1062,9 +1062,7 @@ footer {
     background-image: url(../img/backgrounds/1089110.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-
-
+    background-size: cover;    
 }
 
 .mainContacto{
@@ -1076,13 +1074,16 @@ footer {
     height: 100%;
     background-color: var(--bg-color-nav-opacity-50);
     /* margin: 50px; */
+    padding: 50px;
 }
 
 .contenedorContacto {
+    /* padding-top: 50px; */
     margin: auto;
     height: 75%;
     width: 70%;
 
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "titulo titulo"
