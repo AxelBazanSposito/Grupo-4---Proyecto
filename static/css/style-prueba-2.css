@@ -926,6 +926,48 @@ strong {
     background-size: cover;
 }
 
+#cardSiete{
+    background-image: url(../img/menu/bebidas/licuado\ de\ pistacchio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cardSieteBack{
+    background-image: url(../img/menu/bebidas/licuado\ de\ pistacchio\ back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cardOcho{
+    background-image: url(../img/menu/bebidas/licuado\ frutos\ rojos.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cardOchoBack{
+    background-image: url(../img/menu/bebidas/licuado\ frutos\ rojos\ back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cardNueve{
+    background-image: url(../img/menu/bebidas/smoothie\ anana\,\ limon\ y\ jengibre.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cardNueveBack{
+    background-image: url(../img/menu/bebidas/smoothie\ anana\,\ limon\ y\ jengibre\ back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .aCard:hover {
     background: #fff;
     color: #333;
