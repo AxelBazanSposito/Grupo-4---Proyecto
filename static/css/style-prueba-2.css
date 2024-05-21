@@ -747,9 +747,9 @@ nav #navLogin .navLoginLink:hover {
 .contenedorHome {
     display: grid;
     grid-template-areas:
-    "nada icono1 icono2 nada"
-    "icono3 home home icono4"
-    "nada icono5 icono6 nada";
+    "nada uno dos nada"
+    "tres home home cuatro"
+    "nada cinco seis nada";
 }
 
 .logoHome{
@@ -757,27 +757,27 @@ nav #navLogin .navLoginLink:hover {
 }
 
 .logoMenu{
-    grid-area: icono1;
+    grid-area: uno;
 }
 
 .logoReserva{
-    grid-area: icono2;
+    grid-area: dos;
 }
 
 .logoNotros{
-    grid-area: icono3;
+    grid-area: tres;
 }
 
 .logoContacto{
-    grid-area: icono4;
+    grid-area: cuatro;
 }
 
 .logoLogin{
-    grid-area: icono5;
+    grid-area: cinco;
 }
 
 .logoRegister{
-    grid-area: icono6;
+    grid-area: seis;
 }
 
 .contenedorHome .logoHome{
