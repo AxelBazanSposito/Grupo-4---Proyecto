@@ -733,6 +733,20 @@ nav #navLogin .navLoginLink:hover {
     background-size: cover;
 }
 
+.bienvenidaCarta{
+    font-size: xx-large;
+    position:relative;
+    margin-left: 40%;
+    margin-bottom: 3%;
+    margin-right: 40%;
+    padding-left: 6%;
+    padding: 1% 1% 1% 6%;
+    background-image: url(../img/backgrounds/Pizarra_Menus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+}
+
 .mainMenu {
     background-color: var(--bg-color-nav-opacity-50);
     width: 100%;
@@ -820,18 +834,6 @@ nav #navLogin .navLoginLink:hover {
     position: relative;
     border-radius: 5px;
 }
-
-/* Ex boton de "volver" */
-/* .aCard {
-    padding: 0.3em 0.5em;
-    background: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 1px;
-    font-size: 0.9em;
-    line-height: 100%;
-    transition: all 0.2s ease 0s;
-} */
 
 strong {
     background: #024e0565;
