@@ -752,9 +752,13 @@ nav #navLogin .navLoginLink:hover {
 
     display: grid;
     grid-template-areas:
-    "nada icono1 icono2 nada"
-    "icono3 home home icono4"
-    "nada icono5 icono6 nada";
+    "area1 area2 area3 area4"
+    "area5 area6 area6 area7"
+    "area8 area9 area10 area11";
+
+    justify-items: center;
+    align-items: center;
+    column-gap: 5%;
 }
 
 .logoHome{
@@ -775,27 +779,35 @@ nav #navLogin .navLoginLink:hover {
 }
 
 .logoMenu{
-    grid-area: icono1;
+    grid-area: area2;
+    background-color: black;
 }
 
 .logoReserva{
-    grid-area: icono2;
+    grid-area: area3;
+    background-color: red;
 }
 
-.logoNotros{
-    grid-area: icono3;
+.logoNosotros{
+    grid-area: area5;
+    justify-self: end;
+    background-color: blue;
 }
 
 .logoContacto{
-    grid-area: icono4;
+    grid-area: area7;
+    justify-self: start;
+    background-color: green;
 }
 
 .logoLogin{
-    grid-area: icono5;
+    grid-area: area9;
+    background-color: orange;
 }
 
 .logoRegister{
-    grid-area: icono6;
+    grid-area: area10;
+    background-color: brown;
 }
 
 .contenedorHome div{
