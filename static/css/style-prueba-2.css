@@ -1054,7 +1054,57 @@ footer {
 
 /* ------ Home ----- */
 
+/* ------ Contacto ------ */
 
+.bodyContacto {
+    background-image: url(../img/backgrounds/1089110.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.mainContacto{
+    height: 800px;
+    width: 100%;
+}
+
+.fondoContacto{
+    height: 100%;
+    background-color: var(--bg-color-nav-opacity-50);
+    /* margin: 50px; */
+}
+
+.contenedorContacto {
+    margin: auto;
+    height: 75%;
+    width: 70%;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "iframe formulario";
+
+    /* max-height: max-content; */
+
+    background-color: yellowgreen;
+}
+
+.tituloContacto{
+    grid-area: titulo;
+    background-color: red;
+}
+
+.iframeContacto{
+    grid-area: iframe;
+    background-color: green;
+}
+
+.formContacto{
+    grid-area: formulario;
+    background-color: aqua;
+}
 
 /* ------ Footer ------ */
 

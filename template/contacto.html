@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body class="bodyContacto">
     <header>
         <nav id="navBar">
             <div id="navLogo">
@@ -75,8 +75,48 @@
         </nav>
     </header>
 
-    <main>
-        Aca van a ir como contactarnos.
+    <main class="mainContacto">
+        <div class="fondoContacto">
+            <div class="contenedorContacto">
+                <div class="tituloContacto">
+                    <h1>Contactenos</h1>
+                </div>
+
+                <div class="iframeContacto">
+                    iframe
+                </div>
+
+                <div class="formContacto">
+                    <form action="" id="formContacto" class="formContacto">
+
+                        <div>
+                            <label for="nombreContacto">Nombre:</label>
+                            <input id="nombreContacto" type="text">
+                            <p id="errorNombre" class="errorNombre"></p>
+                        </div>
+
+                        <div>
+                            <label for="emailContacto">Email:</label>
+                            <input id="emailContacto" class="emailContacto" type="email">
+                            <p id="errorEmail" class="errorEmail"></p>
+                        </div>
+
+                        <div>
+                            <label for="asuntoContacto">Asunto:</label>
+                            <input id="asuntoContacto" type="text">
+                            <p id="errorAsunto" class="errorAsunto"></p>
+                        </div>
+
+                        <div>
+                            <label for="mensajeContacto">Mensaje:</label>
+                            <input id="mensajeContacto" type="text">
+                            <p id="errorMensaje" class="errorMensaje"></p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="barFooter">
@@ -90,13 +130,13 @@
                 <i class="fa-brands fa-square-facebook"></i>
                 <p>@VeganRestaurants</p>
             </div>
-            
+
             <p>Telefono</p>
             <div>
                 <i class="fa-brands fa-square-whatsapp"></i>
                 <p>+54 9 11 3887-2088</p>
             </div>
-            
+
         </div>
 
         <div class="logoFooter">
