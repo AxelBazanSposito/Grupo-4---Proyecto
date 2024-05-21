@@ -744,7 +744,45 @@ nav #navLogin .navLoginLink:hover {
     width: 20%;
 }
 
+.contenedorHome {
+    display: grid;
+    grid-template-areas:
+    "nada icono1 icono2 nada"
+    "icono3 home home icono4"
+    "nada icono5 icono6 nada";
+}
 
+.logoHome{
+    grid-area: home;
+}
+
+.logoMenu{
+    grid-area: icono1;
+}
+
+.logoReserva{
+    grid-area: icono2;
+}
+
+.logoNotros{
+    grid-area: icono3;
+}
+
+.logoContacto{
+    grid-area: icono4;
+}
+
+.logoLogin{
+    grid-area: icono5;
+}
+
+.logoRegister{
+    grid-area: icono6;
+}
+
+.contenedorHome .logoHome{
+    grid-area: home;
+}
 
 
 /* ---------------- CSS Menu/Carta ------------------ */
