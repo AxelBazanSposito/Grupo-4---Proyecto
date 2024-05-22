@@ -1,4 +1,4 @@
-const formReserva=document.getElementById("formReserva")
+const formReserva=document.getElementById("formReserva");
 
 const inputEmail=document.getElementById("emailReserva");
 const inputNombre=document.getElementById("nombreReserva");
