@@ -84,13 +84,31 @@
 
                 <div class="iframeContacto">
                     <h2>Visite nuestros locales</h2>
-                    <button class="central" type="submit">Casa Central</button>
-                    <button class="local1" type="submit">Sucursal 1</button>
-                    <button class="local2" type="submit">Sucursal 2</button>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8459958104368!2d-58.37504140321046!3d-34.60805559999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses-419!2sar!4v1716314881660!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <a class="central" target="iframeChange"
+                        href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8459958104368!2d-58.37504140321046!3d-34.60805559999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses-419!2sar!4v1716314881660!5m2!1ses-419!2sar">
+                        Central
+                    </a>
+
+                    <a class="local1" target="iframeChange"
+                        href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0169751871313!2d-58.37328732427249!3d-34.60373225749879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33532a8705b45%3A0xaf4ac850ee945d64!2sBolsa%20de%20Comercio%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1716369241407!5m2!1ses!2sar">
+                        Local 1
+                    </a>
+
+                    <a class="local2" target="iframeChange"
+                        href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13130.778391857664!2d-58.449234690482925!3d-34.63715726228959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbb7065d907f%3A0x9ce77385d2f35dd3!2sParque%20Chacabuco%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1716369327594!5m2!1ses!2sar">
+                        Local 2
+                    </a>
+
+                    <iframe name="iframeChange"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8459958104368!2d-58.37504140321046!3d-34.60805559999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses-419!2sar!4v1716314881660!5m2!1ses-419!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
-                <div class="formContacto">
+                <script src="../static/Js/scripMapa.js"></script>
+
+                <div class="formContenedorContacto">
                     <h2>Contactese con nosotros:</h2>
                     <form action="" id="formContacto" class="formContacto">
 
@@ -122,6 +140,7 @@
                 </div>
             </div>
         </div>
+
     </main>
 
     <footer class="barFooter">
