@@ -415,7 +415,7 @@ nav #navLogin .navLoginLink:hover {
     justify-content: space-around;
 }
 
-.mainRegister form div #botonesRegister button , .contactoButton {
+.mainRegister form div #botonesRegister button , .contactoButton button {
     /* width: 45%; */
     width: 80%;
     background-color: var(--primary-color-opacity-50);
@@ -593,7 +593,7 @@ nav #navLogin .navLoginLink:hover {
     justify-content: space-around;
 }
         
-.mainLogin form div .iniciarButton button , .mainReserva form div .reservarButton button, .contactoButton {
+.mainLogin form div .iniciarButton button , .mainReserva form div .reservarButton button, .contactoButton button {
 /* width: 45%; */
     width: 80%;
     background-color: var(--primary-color-opacity-50);
@@ -602,7 +602,7 @@ nav #navLogin .navLoginLink:hover {
     color: var(--secondary-color);
 }
         
-.mainLogin form div .iniciarButton button:hover , .mainReserva form div .reservarButton button:hover, .contactoButton:hover {
+.mainLogin form div .iniciarButton button:hover , .mainReserva form div .reservarButton button:hover, .contactoButton button:hover {
     color: rgba(255, 255, 255, 0.5);
     border-color: var(--primary-color-opacity-50);
 }
@@ -883,7 +883,7 @@ nav #navLogin .navLoginLink:hover {
 }
 
 .bienvenidaCarta{
-    font-size: xx-large;
+    /* font-size: xx-large;
     position:relative;
     margin-left: 40%;
     margin-bottom: 3%;
@@ -893,7 +893,32 @@ nav #navLogin .navLoginLink:hover {
     background-image: url(../img/backgrounds/Pizarra_Menus.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70% 100%;
+    background-size: 70% 100%; */
+    width: 80%;
+    height: 140px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    align-content: center;
+    justify-content: center;
+
+    background-image: url(../img/backgrounds/conjunto-especias-hierbas-aromaticas-indias-sobre-fondo-piedra-negra-curcuma-eneldo-pimenton-canela-azafran-albahaca-romero-cuchara-vista-superior-bosquejo_253362-8645.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+
+    margin: 0 auto;
+}
+
+.bienvenidaCarta h1{
+    width: 50%;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 2px black;
+    background-color: var(--primary-color-opacity-50);
+    place-self: center;
 }
 
 .mainMenu {
