@@ -34,32 +34,28 @@ parrafoMensaje.innerHTML="";
 
 let regexEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-let contador = 4;
+
 
 // VALIDA LOS CAMPOS.
 
 if(!regexEmail.test(inputEmail.value)){
     warningEmail=`El email no es valido.`
     valorEmail=true;
-    contador--;
 }
 
 if(inputNombre.value.length<3){
    warningNombre=`El nombre es corto.`
    valorNombre=true;
-   contador--;
 }
 
 if(inputAsunto.value.length<1){
     warningAsunto=`El mensaje debe incluir un Asunto.`
     valorAsunto=true;
-    contador--;
  }
 
 if(inputMensaje.value.length<1){
     warningMensaje=`El mensaje esta vacio.`
     valorMensaje=true;
-    contador--;
  }
 
 // ESCRIBE POR PANTALLA LOS MENSAJES EN LOS "P".
@@ -82,7 +78,7 @@ if(valorMensaje){
 
 // BORRA TODO EL FORMULARIO SI TODOS LOS CAMPOS ESTAN BIEN.
 
-if(!valorEmail && !valorNombre && !varlorAsunto && !valorMensaje && contador == 4){
+if(!valorEmail && !valorNombre && !varlorAsunto && !valorMensaje){
     formContacto.reset();
 }
 
