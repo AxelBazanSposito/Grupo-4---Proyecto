@@ -971,7 +971,7 @@ nav #navLogin .navLoginLink:hover {
     background-position: center;
     background-size:cover;
 
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .bienvenidaCarta h1{
@@ -993,8 +993,60 @@ nav #navLogin .navLoginLink:hover {
 
 .mainCarta {
     background-color: #3f413d37;
-    padding: 25px;
-    scroll-padding-top: 100px;
+    /* scroll-padding-top: 100px; */
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "subtituloPrincipal"
+    "Principales"
+    "subtituloAcompañamiento"
+    "Acompañamientos"
+    "subtituloBebidas"
+    "bebidas";
+    padding: 0 2%;
+    padding-bottom: 5%;
+}
+
+.mainCarta .bienvenidaCarta{
+    grid-area: titulo;
+}
+.mainCarta .principalMenu{
+    grid-area: subtituloPrincipal;
+}
+.mainCarta .principalPlatos{
+    grid-area: Principales;
+    margin-bottom: 5%;
+}
+.mainCarta .acompañamientoMenu{
+    grid-area: subtituloAcompañamiento;
+}
+.mainCarta .acompañamientoPlatos{
+    grid-area: Acompañamientos;
+    margin-bottom: 5%;
+}
+.mainCarta .bebidaMenu{
+    grid-area: subtituloBebidas;
+}
+.mainCarta .bebidasPlatos{
+    grid-area: bebidas;
+    margin-bottom: 5%;
+}
+
+.subtituloMenu{
+    width: 30%;
+    min-width: 325px;
+    height: 50px;
+    background-color: var(--primary-color-opacity-50);
+    margin: 20px 1%;
+}
+
+.subtituloMenu h2{
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 2px black;
 }
 
 .boxesContainer {
@@ -1010,7 +1062,7 @@ nav #navLogin .navLoginLink:hover {
     /* position: relative;
     float: left; */
     font-size: 1.2em;
-    margin: 1% 0 1% 1%;
+    /* margin: 1% 0 1% 1%; */
     perspective: 800px;
     transition: all 0.3s ease 0s;
     width: 30%;
@@ -1071,6 +1123,9 @@ nav #navLogin .navLoginLink:hover {
     text-align: center;
     position: relative;
     border-radius: 5px;
+
+    max-height: 150px;
+    overflow-y: auto;
 }
 
 strong {
@@ -1249,12 +1304,10 @@ strong {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 321px) and (max-width: 768px) {
 
     .cardBox {
-        margin-left: 2.8%;
-        margin-top: 3%;
-        width: 45%;
+        width: 48%;
     }
 
     .card {
@@ -1264,15 +1317,19 @@ strong {
     .cardBox:last-child {
         margin-bottom: 3%;
     }
-
+    .boxesContainer{
+        height: 50%;
+        margin: 0;
+    }
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
 
     .cardBox {
         width: 94.5%;
-        height: 290px;
+        height: 10%;
+        margin: 2%;
     }
     
     /* .mainMenu{ */
@@ -1280,6 +1337,37 @@ strong {
         /* max-height: max-content; */
     /*} */
 
+    .subtituloMenu{
+        margin: 20px auto;
+        display: grid;
+        align-items: center;
+    }
+
+    .subtituloMenu{
+        width: 90%;
+        min-width: 150px;
+        height: 50px;
+    }
+    
+    .subtituloMenu h2{
+        font-size: 1.6em;
+    }
+
+    .bienvenidaCarta{
+        width: 100%;
+        height: 100px;
+        margin: 0;
+    }
+    
+    .bienvenidaCarta h1{
+        width: 90%;
+        font-size: 2em;
+    }
+    
+    .boxesContainer{
+        gap:0;
+        justify-content: center;
+    }
 }
 
 
@@ -1377,7 +1465,7 @@ footer {
     /* background-color: green; */
 }
 
-.iframeContacto h2{
+.iframeContacto h2 {
     grid-area: subtitulo;
     width: 80%;
     text-align: center;
@@ -1499,6 +1587,7 @@ footer {
 .barFooter{
     background-color: black;
     /* background-color: var(--bg-color-nav); */
+    width: 100%;
     height: 100%;
     max-height: 266px;
     display: grid;
@@ -1523,14 +1612,14 @@ footer {
     align-items: start;
     justify-content: center;
     gap: 5%;
-    /* background-color: blue; */
+    background-color: black;
     padding:5%;
 }
 
 .barFooter .redesFooter div{
     display: flex;
     align-items: center;
-    /* background-color: orangered; */
+    background-color: black;
     width: 100%;
 }
 
@@ -1551,15 +1640,16 @@ footer {
 .barFooter .logoFooter{
     grid-area: logo;
     width: 100%;
-    height: 70%;
-    /* background-color: orange; */
+    height: 100%;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .barFooter .logoFooter img{
-    height: 100%;
+    height: 58%;
+    width: 70%;
     border: 3px solid var(--primary-color-opacity-50);
     border-radius: 10px;
 
@@ -1576,6 +1666,8 @@ footer {
     justify-content: center;
     align-items: end;
     padding-right: 15px;
+
+    background-color: black;
 }
 
 .barFooter .navegacionFooter a {
@@ -1597,18 +1689,25 @@ footer {
     border-top: 1px  solid var(--primary-color);
     border-width: 80%;
     width: 100%;
+    
+    display: grid;
+    grid-template-areas: "copy";
+    align-items: center;
+    justify-items: center;
 
     background-color: black;
     /* background-color: purple; */
 }
 
 .barFooter .copyFooter p{
+    grid-area: copy;
     text-align: center;
     height: 3em;
-    padding: 0.8em 0;
+    border-top: none;
+    /* padding: 0.8em 0; */
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (min-width: 389px) and (max-width: 768px) {
 
 .barFooter{
     grid-template-columns: 1fr 1fr;
@@ -1616,6 +1715,7 @@ footer {
     "logo redes"
     "copyright copyright";
     max-height: max-content;
+    width: 100%;
 }
 
 .barFooter .navegacionFooter{
@@ -1629,9 +1729,46 @@ footer {
 }
 .barFooter .copyFooter p{
     font-size: 0.8em;
-}
-.bodyMenu{
-    max-height: max-content;
+    /* padding: 0px 5px; */
 }
 
+}
+
+@media screen and (max-width: 388px){
+    .barFooter{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "logo redes"
+        "copyright copyright";
+        max-height: max-content;
+        width: 100%;
+    } 
+
+    .barFooter .navegacionFooter{
+        display: none;
+    }
+
+    .barFooter .logoFooter{
+        padding: 5%;
+    }
+    .barFooter .logoFooter img{
+        height: 75%;
+    }
+
+    .barFooter .redesFooter i{
+        font-size: 1.2em;
+    }
+    .barFooter .redesFooter p{
+        font-size: 0.9em;
+        padding: 1% 0px;
+    }    
+    .barFooter .redesFooter div p{
+        padding-left: 1%;
+        font-size: 0.6em;
+    }
+
+    .barFooter .copyFooter p{
+        font-size: 0.6em;
+        padding: 0px 5px;
+    }
 }
