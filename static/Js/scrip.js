@@ -38,7 +38,6 @@ formReserva.addEventListener("submit", e => {
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     // VALIDA LOS CAMPOS.
-    prompt(inputHora.value)
 
     if (!(inputHora.value == "09:00" ||
         inputHora.value == "09:30" ||
