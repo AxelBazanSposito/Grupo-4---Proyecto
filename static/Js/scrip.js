@@ -1,10 +1,11 @@
 const formReserva=document.getElementById("formReserva");
 
+const inputComensales=document.getElementById("comensalesReserva");
 const inputEmail=document.getElementById("emailReserva");
 const inputNombre=document.getElementById("nombreReserva");
-const inputLocal=document.getElementById("local-reserva");
+const inputLocal=document.getElementById("localReserva");
 
-
+const parrafoComensales=document.getElementById("errorComensales");
 const parrafoEmail=document.getElementById("errorEmail");
 const parrafoNombre=document.getElementById("errorNombre");
 const parrafoLocal=document.getElementById("errorLocal");
@@ -14,14 +15,17 @@ const parrafoLocal=document.getElementById("errorLocal");
 formReserva.addEventListener("submit",e=>{
 e.preventDefault();
 
+let warningComensales="";
 let warningEmail="";
 let warningNombre="";
 let warningLocal="";
 
+let valorComensales = false;
 let valorEmail=false;
 let valorNombre=false;
 let valorLocal=false;
 
+parrafoComensales.innerHTML="";
 parrafoEmail.innerHTML="";
 parrafoNombre.innerHTML="";
 parrafoLocal.innerHTML="";
@@ -29,6 +33,13 @@ parrafoLocal.innerHTML="";
 let regexEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 // VALIDA LOS CAMPOS.
+
+
+if(parseInt(inputComensales.value,10) < 1 || parseInt(inputComensales.value,10) > 25){
+    warningComensales=`La cantidad no es valida.`
+    valorComensales=true;
+    // prompt(parseInt(inputComensales.value))
+}
 
 if(!regexEmail.test(inputEmail.value)){
     warningEmail=`El email no es valido.`
@@ -46,6 +57,13 @@ if(inputLocal.value=="default"){
 }
 
 // ESCRIBE POR PANTALLA LOS MENSAJES EN LOS "P".
+
+if(valorComensales){
+    parrafoComensales.innerHTML=warningComensales;
+}else{
+    // parrafo.innerHTML="Enviado";
+    // formRegister.reset();
+}
 
 if(valorEmail){
     parrafoEmail.innerHTML=warningEmail;
@@ -70,7 +88,7 @@ if(valorLocal){
 
 // BORRA TODO EL FORMULARIO SI TODOS LOS CAMPOS ESTAN BIEN.
 
-if(!valorEmail && !valorNombre && !valorLocal){
+if(!valorEmail && !valorNombre && !valorLocal && !valorComensales){
     formReserva.reset();
 }
 

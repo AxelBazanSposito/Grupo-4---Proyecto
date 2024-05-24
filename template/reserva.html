@@ -82,21 +82,21 @@
             <form action="" id="formReserva" class="formReserva">
                 <div>
                     <div>
-                        <label for="fecha-reserva">Seleccione una fecha:</label>
+                        <label for="fecha-reserva">Fecha:</label>
                         <input type="date">
                         <p id="errorFecha" class="errorFecha"></p>
                     </div>
 
                     <div>
-                        <label for="hora-reserva">Seleccione una hora:</label>
-                        <input type="time">
+                        <label for="hora-reserva">Hora:</label>
+                        <input id="horareserva" class="horaReserva" type="time" min="09:00" max="18:00" value="09:00">
                         <p id="errorHora" class="errorHora"></p>
                     </div>
 
                     <div>
-                        <label for="cantidad-reserva">Seleccione la cantidad de comensales:</label>
-                        <input type="number">
-                        <p id="errorCantidad" class="errorCantidad"></p>
+                        <label for="cantidad-reserva">Cantidad de comensales:</label>
+                        <input id="comensalesReserva" class="comensalesReserva" type="number" min="1" max="25" value="1">
+                        <p id="errorComensales" class="errorComensales"></p>
                     </div>
 
                     <div>
@@ -113,7 +113,7 @@
 
                     <div class="select-local-reserva">
                         <label for="local-reserva">Seleccione un local:</label>
-                        <select id="local-reserva" class="local-reserva">
+                        <select id="localReserva" class="localReserva">
                             <option value="default">Seleccione local</option>
                             <option value="1">Local 1</option>
                             <option value="2">Local 2</option>
