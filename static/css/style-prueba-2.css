@@ -1038,7 +1038,7 @@ nav #navLogin .navLoginLink:hover {
     min-width: 325px;
     height: 50px;
     background-color: var(--primary-color-opacity-50);
-    margin: 20px 1%;
+    margin: 20px 0;
 }
 
 .subtituloMenu h2{
@@ -1591,7 +1591,7 @@ footer {
     height: 100%;
     max-height: 266px;
     display: grid;
-    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-columns: 4fr 1.5fr 4fr;
     grid-template-areas: 
     "redes logo navegacion"
     "copyright copyright copyright";
@@ -1648,7 +1648,7 @@ footer {
 }
 
 .barFooter .logoFooter img{
-    height: 58%;
+    /* height: 58%; */
     width: 70%;
     border: 3px solid var(--primary-color-opacity-50);
     border-radius: 10px;
@@ -1665,7 +1665,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    padding-right: 15px;
+    padding: 0 5%;
 
     background-color: black;
 }
@@ -1725,7 +1725,7 @@ footer {
     padding: 5%;
 }
 .barFooter .logoFooter img{
-    height: 75%;
+    width: 65%;
 }
 .barFooter .copyFooter p{
     font-size: 0.8em;
@@ -1752,7 +1752,7 @@ footer {
         padding: 5%;
     }
     .barFooter .logoFooter img{
-        height: 75%;
+        width: 55%;
     }
 
     .barFooter .redesFooter i{
@@ -1772,3 +1772,7 @@ footer {
         padding: 0px 5px;
     }
 }
+
+.horaReserva[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
