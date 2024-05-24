@@ -38,25 +38,26 @@ formReserva.addEventListener("submit", e => {
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     // VALIDA LOS CAMPOS.
-    
-    if (inputHora.value != "09:00" ||
-        inputHora.value != "09:30" ||
-        inputHora.value != "10:00" ||
-        inputHora.value != "10:30" ||
-        inputHora.value != "11:00" ||
-        inputHora.value != "11:30" ||
-        inputHora.value != "12:30" ||
-        inputHora.value != "13:00" ||
-        inputHora.value != "13:30" ||
-        inputHora.value != "14:00" ||
-        inputHora.value != "14:30" ||
-        inputHora.value != "15:00" ||
-        inputHora.value != "15:30" ||
-        inputHora.value != "16:00" ||
-        inputHora.value != "16:30" ||
-        inputHora.value != "17:00" ||
-        inputHora.value != "17:30" ||
-        inputHora.value != "18:00") {
+    prompt(inputHora.value)
+
+    if (!(inputHora.value == "09:00" ||
+        inputHora.value == "09:30" ||
+        inputHora.value == "10:00" ||
+        inputHora.value == "10:30" ||
+        inputHora.value == "11:00" ||
+        inputHora.value == "11:30" ||
+        inputHora.value == "12:30" ||
+        inputHora.value == "13:00" ||
+        inputHora.value == "13:30" ||
+        inputHora.value == "14:00" ||
+        inputHora.value == "14:30" ||
+        inputHora.value == "15:00" ||
+        inputHora.value == "15:30" ||
+        inputHora.value == "16:00" ||
+        inputHora.value == "16:30" ||
+        inputHora.value == "17:00" ||
+        inputHora.value == "17:30" ||
+        inputHora.value == "18:00")) {
         warningHora = `La hora no es valida.`
         valorHora = true;
         // prompt(parseInt(inputComensales.value))
