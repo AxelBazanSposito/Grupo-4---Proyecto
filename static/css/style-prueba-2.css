@@ -763,6 +763,13 @@ nav #navLogin .navLoginLink:hover {
     padding: 3%;
 }
 
+.contenedorNosotros h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    padding-bottom: 2%;
+    margin: 0 auto;
+}
+
 .imgNosotros{
     width: 40%;
     height: 40%;
@@ -771,21 +778,56 @@ nav #navLogin .navLoginLink:hover {
 }
 
 .contenedorImg{
-    text-align: center;
+    text-align: left;
 }
 
-.quienesSomos h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 150%;
-    padding-bottom: 2%;
-    margin: 0 auto;
-}
-
-.quienesSomos p{
+.contenedorNosotros p{
     font-family:'Times New Roman', Times, serif;
     font-size: 120%;
     text-align: justify;
     margin: 0 5%;
+}
+
+.menuNosotros{
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width: 800px){
+    .contenedorImg{
+        text-align: center;
+        width: auto;
+    }
+    .contenedorPrimario{
+        margin: 0;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .mainNosotros{
+        padding: 0;
+        background: hwb(0 100% 0% / 0.5);
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .contenedorImg{
+        text-align: center;
+        width: auto;
+    }
+
+    .contenedorPrimario{
+        margin: 0;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .mainNosotros{
+        padding: 0;
+        background: hwb(0 100% 0% / 0.5);
+    }
 }
 
 
