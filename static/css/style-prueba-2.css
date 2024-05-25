@@ -965,6 +965,11 @@ nav #navLogin .navLoginLink:hover {
     background-color: springgreen;
 }
 
+.parrafoHome{
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .logoHome, .logoContacto, .logoLogin, .logoMenu, .logoNosotros, .logoRegister, .logoReserva{
     border-radius: 150px;
     display: grid;
