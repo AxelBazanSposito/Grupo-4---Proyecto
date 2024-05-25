@@ -841,149 +841,118 @@ nav #navLogin .navLoginLink:hover {
 }
 
 .mainHome{
-    background-color: hwb(0 20% 80% / 0.50);
-}
+    background-color:var(--bg-color-nav-opacity-50);
+    width: 100%;
+    min-height: 1024px;
 
-.imgMainHome{
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    width: 20%;
 }
-
-.contenedorPrincipal{
+.grillaPrincipal{
+    width: 100%;
+    max-height: max-content;
+    padding: 0 2%;
+    padding-bottom: 5%;
     display: grid;
-    align-content: center;
-    align-items: center;
+    grid-template-areas: 
+    "titulo"
+    "cuerpo";
 }
 
-.contenedorHome {
-    width: 72%;
-    height: 1000px;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
-
-    display: grid;
-    grid-template-areas:
-    "area1 area2 area3 area4"
-    "area5 area6 area6 area7"
-    "area8 area9 area10 area11"
-    "texto texto texto texto";
-
-    justify-items: center;
-    align-items: center;
-    column-gap: 0%;
-    row-gap: 0%;
-
-    margin: 0 auto;
-}
-
-.logoHome{
-    grid-area: area6;
-    /* background-color: black; */
-    background-image: url(../img/logos/Logo\ Vegano\ \(verde\ y\ negro\).png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.logoMenu{
-    grid-area: area2;
-    /* background-color: black; */
-    background-image: url(../img/backgrounds/patrick-schneider-5xltWMpkN3E-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.logoReserva{
-    grid-area: area3;
-    /* background-color: red; */
-    background-image: url(../img/backgrounds/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.logoNosotros{
-    grid-area: area5;
-    justify-self: end;
-    /* background-color: blue; */
-    background-image: url(../img/backgrounds/pngegg\ v2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.logoContacto{
-    grid-area: area7;
-    justify-self: start;
-    /* background-color: green; */
-    background-image: url(../img/backgrounds/1089110.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.logoLogin{
-    grid-area: area9;
-    /* background-color: orange; */
-    background-image: url(../img/backgrounds/jason-leung-poI7DelFiVA-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.logoRegister{
-    grid-area: area10;
-    /* background-color: brown; */
-    background-image: url(../img/backgrounds/paul-griffin-WWST6E8LxeE-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-.contenedorHome div{
+.titulo{
+    grid-area: titulo;
+    background-color: black;
     width: 80%;
-    height: 80%;
-    min-width: 130px;
-    min-height: 130px;
-    max-width: 173px;
-    max-height: 173px;
-    aspect-ratio: 1/1;
+    max-height: 140px;
+    margin: 20px auto;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-content: center;
+    justify-content: center;
 }
 
-.contenedorHome .textoHome{
+/* Especifico para Home */
+.tituloHome{
+    grid-template-areas:
+    "logo1 texto logo2";
+}
+.titulo .tituloLogo1Home{
+    grid-area: logo1;
+    width: 100%;
+    max-width: 130px;
+    height: 80%;
+}
+.titulo .tituloTextoHome{
     grid-area: texto;
     width: 100%;
-    height: 70%;
-    max-width: none;
-    max-height: none;
-    background-color: springgreen;
+    max-width: 320px;
 }
 
-.parrafoHome{
-    max-width: 100%;
-    max-height: 100%;
+.titulo .tituloLogo2Home{
+    grid-area: logo2;
+    width: 100%;
+    max-width: 130px;
+    height: 80%;
+}
+/* ---------------------- */
+
+.titulo img{
+    max-height: 140px;
+    place-self: center;
 }
 
-.logoHome, .logoContacto, .logoLogin, .logoMenu, .logoNosotros, .logoRegister, .logoReserva{
-    border-radius: 150px;
-    display: grid;
-    align-items: center;
-    border: 3px solid var(--primary-color-opacity-50);
-}
-
-.logoHome a, .logoMenu a, .logoContacto a, .logoLogin a, .logoNosotros a, .logoRegister a, .logoReserva a {
-    text-align: center;
-}
-
-.logoHome img, .logoMenu img, .logoContacto img, .logoLogin img, .logoNosotros img, .logoRegister img, .logoReserva img {
+.cuerpo{
+    grid-area: cuerpo;
     width: 80%;
+    margin: 20px auto;
+
+    display:grid;
+    grid-template-areas: 
+    "seccion1"
+    "seccion2";
+
+    align-content: center;
+    justify-content: center;
 }
+
+.seccion1{
+    grid-area: seccion1;
+    display: grid;
+    grid-template-areas: 
+    "imagen titulo"
+    "imagen parrafo";
+}
+.imagenSeccion1{
+    grid-area: imagen;
+}
+.subSec1{
+    grid-area: titulo;
+}
+.parSec1{
+    grid-area: parrafo;
+}
+
+.seccion2{
+    grid-area: seccion2;
+    display: grid;
+    grid-template-areas: 
+    "titulo imagen"
+    "parrafo imagen";
+}
+.imagenSeccion2{
+    grid-area: imagen;
+}
+.subSec2{
+    grid-area: titulo;
+}
+.parSec2{
+    grid-area: parrafo;
+}
+
+.seccion img{
+    max-width: 225px;
+    /* max-height: 300px; */
+}
+
+
 
 /* ---------------- CSS Menu/Carta ------------------ */
 .bodyMenu {
@@ -1427,8 +1396,6 @@ footer {
     height: 100px;
 }
 
-/* ------ Home ----- */
-
 /* ------ Contacto ------ */
 
 .bodyContacto {
@@ -1439,20 +1406,22 @@ footer {
 }
 
 .mainContacto{
-    height: 800px;
+    min-height: 1024px;
     width: 100%;
+    background-color: var(--bg-color-nav-opacity-50);
 }
 
 .fondoContacto{
     height: 100%;
-    background-color: var(--bg-color-nav-opacity-50);
     padding: 20px 0px;
+    /* background-color: var(--primary-color-opacity-50); */
 }
 
 .contenedorContacto {
     /* padding-top: 50px; */
     margin: auto;
     height: 95%;
+    min-height: 800px;
     width: 80%;
 
     display: grid;
@@ -1472,6 +1441,7 @@ footer {
     grid-area: titulo;
     width: 100%;
     height: 70%;
+    max-height: 140px;
     background-image: url(../img/backgrounds/1089110\ reducido.jpg);
     background-repeat: no-repeat;
     background-position: center;
