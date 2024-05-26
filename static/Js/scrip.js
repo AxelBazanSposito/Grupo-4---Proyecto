@@ -93,6 +93,7 @@ formReserva.addEventListener("submit", e => {
         inputHora.value == "10:30" ||
         inputHora.value == "11:00" ||
         inputHora.value == "11:30" ||
+        inputHora.value == "12:00" ||
         inputHora.value == "12:30" ||
         inputHora.value == "13:00" ||
         inputHora.value == "13:30" ||
