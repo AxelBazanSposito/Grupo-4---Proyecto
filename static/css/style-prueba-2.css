@@ -48,7 +48,7 @@ nav #navLogo {
     padding-bottom: 5px;
 }
 
-nav #navLogo #navImg {
+nav #navLogo .navImg {
     grid-area: logoPequeño;
     height: 100%;
 }
@@ -135,7 +135,7 @@ nav #navLogin .navLoginLink:hover {
         background-color: red;
     } */
 
-    nav #navLogo #navImg {
+    nav #navLogo .navImg {
         display: none;
     }
 
@@ -231,7 +231,7 @@ nav #navLogin .navLoginLink:hover {
     }
 
     /* Para la IMAGEN */
-    nav #navLogo #navImg {
+    nav #navLogo .navImg {
         display: none;
     }
 
@@ -240,7 +240,7 @@ nav #navLogin .navLoginLink:hover {
         display: none;
     }
 
-    nav #navMenu .navMenuLogo #navImg {
+    nav #navMenu .navMenuLogo .navImg {
         display: block;
         height: 80%;
     }
