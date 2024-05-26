@@ -215,16 +215,16 @@ nav #navLogin .navLoginLink:hover {
         top: 12px;
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista #navLogoDesplegableBotones {
+    .navLogoDesplegableBotones {
         background-color: var(--bg-color-nav);
         height: 30px;
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista #navLogoDesplegableBotones:hover {
+    .navLogoDesplegableBotones:hover {
         border-bottom: 3px solid var(--primary-color);
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista #navLogoDesplegableBotones a {
+    .navLogoDesplegableBotones a {
         text-decoration: none;
         color: var(--primary-color);
         padding-left: 5px;
