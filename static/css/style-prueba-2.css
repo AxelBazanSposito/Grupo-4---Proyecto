@@ -764,10 +764,20 @@ nav #navLogin .navLoginLink:hover {
 }
 
 .contenedorNosotros h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 150%;
-    padding-bottom: 2%;
-    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 2px black;
+}
+
+#subtituloNosotros h2{
+    width: 30%;
+    min-width: 325px;
+    height: 50px;
+    background-color: var(--primary-color-opacity-50);
+    margin: 20px 0;
+    background: linear-gradient(to right, rgb(20, 158, 20), rgba(255, 255, 255, 0));
 }
 
 .imgNosotros{
@@ -835,6 +845,15 @@ nav #navLogin .navLoginLink:hover {
 
     .imgLogoNosotros{
         width: 60%;
+    }
+
+
+
+    #subtituloNosotros h2{
+        width: 90%;
+        min-width: 150px;
+        height: 50px;
+        font-size: 140%;
     }
 }
 
