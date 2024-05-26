@@ -935,6 +935,7 @@ nav #navLogin .navLoginLink:hover {
     grid-template-areas: 
     "seccion1"
     "seccion2";
+    gap: 20px;
 
     align-content: center;
     justify-content: center;
@@ -974,12 +975,127 @@ nav #navLogin .navLoginLink:hover {
     grid-area: parrafo;
 }
 
-.seccion img{
-    max-width: 225px;
-    /* max-height: 300px; */
+.seccion{
+    /* height: 450px; */
+    gap: 5%;
+    align-items: start;
+    justify-content: center;
+    grid-template-rows: 1fr 3fr;
+    background-color: var(--bg-color-nav-opacity-50);
+    padding: 1em;
 }
 
+.seccion img{
+    max-width: 300px;
+    max-height: 450px;
+    place-self: center;
+}
+.seccion2 img{
+    height: 450px;
+}
 
+.subtitulo{
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 2px black;
+    width: 55%;
+    background-color: var(--primary-color-opacity-50);
+    place-self: center;
+}
+
+.contParrafoSec2{
+    display: grid;
+    gap: 1em;
+}
+
+.parrafo{
+    font-size: 1.5em;
+    font-weight: bold;
+    color:white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px){
+    .seccion1{
+        grid-template-areas: 
+        "titulo titulo"
+        "imagen parrafo";
+    }
+    .seccion2{
+        grid-template-areas: 
+        "titulo titulo"
+        "parrafo imagen";
+    }
+    .subtitulo{
+        font-size: 2em;
+        width: 60%;
+    }
+
+    .seccion img{
+        max-width: 200px;
+        max-height: 300px;
+        place-self: center;
+    }
+    .seccion2 img{
+        height: 300px;
+    }
+
+    .parrafo{
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .grillaPrincipal{
+        grid-template-areas: 
+        "cuerpo";
+    }
+
+    .tituloHome{
+        display: none;
+    }
+
+    .cuerpo{
+        width: 90%;
+    }
+    .seccion{
+        grid-template-areas: 
+        "titulo"
+        "imagen"
+        "parrafo";
+        align-items: center;
+    }
+    .seccion1{
+        grid-template-rows: 0.5fr 2fr 3fr;
+        gap: 3%;
+    }
+    .seccion2{
+        grid-template-rows: 1fr 3fr 5fr;
+        gap: 1%;
+    }
+    .subtitulo{
+        font-size: 1.5em;
+        width: 80%;
+    }
+
+    .seccion img{
+        max-width: 200px;
+        max-height: 300px;
+        place-self: center;
+    }
+    .seccion2 img{
+        height: 300px;
+    }
+
+    .parrafo{
+        font-size: 1.2em;
+        width: 90%;
+        place-self: center;
+        text-align: center;
+    }
+
+}
 
 /* ---------------- CSS Menu/Carta ------------------ */
 .bodyMenu {
