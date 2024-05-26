@@ -809,6 +809,10 @@ nav #navLogin .navLoginLink:hover {
         background: hwb(0 100% 0% / 0.5);
     }
 
+    .imgLogoNosotros{
+        width: 35%;
+    }
+
 }
 
 @media screen and (max-width: 320px){
@@ -827,6 +831,10 @@ nav #navLogin .navLoginLink:hover {
     .mainNosotros{
         padding: 0;
         background: hwb(0 100% 0% / 0.5);
+    }
+
+    .imgLogoNosotros{
+        width: 60%;
     }
 }
 
