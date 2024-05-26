@@ -1097,6 +1097,70 @@ nav #navLogin .navLoginLink:hover {
 
 }
 
+@media screen and (max-width: 319px){
+
+    .mainHome{
+        min-height: 500px;
+    
+    }
+
+    .grillaPrincipal{
+        grid-template-areas: 
+        "cuerpo";
+    }
+
+    .tituloHome{
+        display: none;
+    }
+
+    .imagenSeccion1{
+        display: none;
+    }
+    .imagenSeccion2{
+        display: none;
+    }
+
+    .cuerpo{
+        width: 90%;
+    }
+    .seccion{
+        grid-template-areas: 
+        "titulo"
+
+        "parrafo";
+        align-items: center;
+    }
+    .seccion1{
+        grid-template-rows: 0.5fr 2fr;
+        gap: 3%;
+    }
+    .seccion2{
+        grid-template-rows: 0.5fr 2fr;
+        gap: 1%;
+    }
+    .subtitulo{
+        font-size: 1.5em;
+        width: 80%;
+    }
+
+    .seccion img{
+        max-width: 200px;
+        max-height: 300px;
+        place-self: center;
+    }
+    .seccion2 img{
+        height: 300px;
+    }
+
+    .parrafo{
+        font-size: 1.2em;
+        width: 90%;
+        place-self: center;
+        text-align: center;
+    }
+
+}
+
 /* ---------------- CSS Menu/Carta ------------------ */
 .bodyMenu {
     background-image: url(../img/backgrounds/patrick-schneider-5xltWMpkN3E-unsplash.jpg);
