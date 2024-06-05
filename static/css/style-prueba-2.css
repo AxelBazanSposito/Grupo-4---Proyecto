@@ -48,20 +48,20 @@ nav #navLogo {
     padding-bottom: 5px;
 }
 
-nav #navLogo .navImg {
+nav .navImg {
     grid-area: logoPequeño;
     height: 100%;
 }
 
-nav #navLogo #navLogoDesplegable {
+nav #navLogoDesplegable {
     display: none;
 }
 
-nav #navLogo #navImgSimplificado {
+nav #navImgSimplificado {
     display: none;
 }
 
-nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono {
+nav #navLogoDesplegableIcono {
     color: var(--primary-color)
 }
 
@@ -72,14 +72,14 @@ nav #navMenu {
     place-content: center;
 }
 
-nav #navMenu .navMenuLink {
+nav .navMenuLink {
     text-decoration: none;
     color: var(--primary-color-opacity-50);
     font-size: 1.2em;
     padding: 5px 20px;
 }
 
-#navMenu .navMenuLogo img {
+.navMenuLogo img {
     height: 100%;
     display: none;
 }
@@ -93,7 +93,7 @@ nav #navLogin {
     padding: 5px 10px;
 }
 
-nav #navLogin .navLoginLink {
+nav .navLoginLink {
     text-decoration: none;
     color: var(--primary-color);
     font-size: 1.2em;
@@ -104,17 +104,17 @@ nav #navLogin a i {
     margin: 3px 3px 3px 0px;
 }
 
-nav #navLogin #navLoginLinkIcono {
+nav #navLoginLinkIcono {
     display: none;
 }
 
 /* Modifica los links de Menu y login para que cuando le pasemos el puntero por enseima cambien */
-nav #navMenu .navMenuLink:hover {
+nav .navMenuLink:hover {
     color: var(--secondary-color);
     background-color: var(--bg-color-button);
 }
 
-nav #navLogin .navLoginLink:hover {
+nav .navLoginLink:hover {
     color: var(--secondary-color);
 }
 
@@ -135,11 +135,11 @@ nav #navLogin .navLoginLink:hover {
         background-color: red;
     } */
 
-    nav #navLogo .navImg {
+    nav .navImg {
         display: none;
     }
 
-    nav #navLogo #navImgSimplificado {
+    nav #navImgSimplificado {
         display: block;
         max-width: 100%;
         max-height: 100%;
@@ -150,7 +150,7 @@ nav #navLogin .navLoginLink:hover {
     }
 
     /* Modifica Menu */
-    nav #navMenu .navMenuLink {
+    nav .navMenuLink {
         font-size: 1em;
     }
 
@@ -161,7 +161,7 @@ nav #navLogin .navLoginLink:hover {
         padding: 3px 6px;
     }
 
-    nav #navLogin .navLoginLink {
+    nav .navLoginLink {
         font-size: 1em;
     }
 }
@@ -176,39 +176,39 @@ nav #navLogin .navLoginLink:hover {
     }
 
     /* Para el desplegable */
-    nav #navLogo #navLogoDesplegable {
+    nav #navLogoDesplegable {
         /* background-color: red; */
         height: 80%;
         margin-top: 7px;
         display: block;
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono {
+    nav #navLogoDesplegableIcono {
         /* background-color: green; */
         list-style: none;
         max-width: 36px;
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono i {
+    nav #navLogoDesplegableIcono i {
         /* background-color: white; */
         padding: 8px 9px;
         border-radius: 20px;
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono:hover i {
+    nav #navLogoDesplegableIcono:hover i {
         background-color: var(--bg-color-button);
         padding: 8px 9px;
         border-radius: 20px;
         color: var(--secondary-color);
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono #navLogoDesplegableLista {
+    nav #navLogoDesplegableLista {
         /* background-color: white; */
         display: none;
         width: 150px;
     }
 
-    nav #navLogo #navLogoDesplegable #navLogoDesplegableIcono:hover #navLogoDesplegableLista {
+    nav #navLogoDesplegableIcono:hover #navLogoDesplegableLista {
         display: block;
         list-style: none;
         position: relative;
@@ -231,16 +231,16 @@ nav #navLogin .navLoginLink:hover {
     }
 
     /* Para la IMAGEN */
-    nav #navLogo .navImg {
+    nav .navImg {
         display: none;
     }
 
     /* Modifica el area de MENÚ */
-    nav #navMenu .navMenuLink {
+    nav .navMenuLink {
         display: none;
     }
 
-    nav #navMenu .navMenuLogo .navImg {
+    nav .navMenuLogo .navImg {
         display: block;
         height: 80%;
     }
@@ -254,11 +254,11 @@ nav #navLogin .navLoginLink:hover {
         background-color: var(--bg-color-button);
     }
 
-    nav #navLogin #navLoginLinkTexto {
+    nav #navLoginLinkTexto {
         display: none;
     }
 
-    nav #navLogin #navLoginLinkIcono {
+    nav #navLoginLinkIcono {
         display: block;
     }
 
@@ -1601,6 +1601,7 @@ footer {
     background-color: black;
     color: white;
     height: 100px;
+    z-index: 1;
 }
 
 /* ------ Contacto ------ */

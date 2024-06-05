@@ -1,0 +1,824 @@
+:root {
+    --bg-color-nav: rgba(71, 71, 71, 0.85);
+    --bg-color-nav-opacity-50: rgba(71, 71, 71, 0.50);
+    --bg-color-button: rgba(128, 128, 128, 0.9);
+    --bg-color-alter: hsla(0, 0%, 100%, 0.5);
+    --primary-color: rgba(0, 255, 0, 1);
+    --primary-color-opacity-50: rgba(0, 255, 0, 0.5);
+    --secondary-color: white;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/* ---------------- CSS PARA TODAS LAS PAGINAS ------------------ */
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 55px;
+}
+
+main{
+    width: 100%;
+    min-height: 1024px;
+}
+
+.grillaPrincipal{
+    width: 100%;
+    max-height: max-content;
+    padding: 0 2%;
+    padding-bottom: 5%;
+}
+
+.titulo{
+    grid-area: titulo;
+    width: 80%;
+    height: 140px;
+    margin: 20px auto;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-content: center;
+    /* margin: 20px auto; */
+}
+
+h1{
+    width: 50%;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 2px black;
+    background-color: var(--primary-color-opacity-50);
+    place-self: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 100px;
+    z-index: 1;
+}
+
+
+
+/* ---------------- CSS Lista Reservas------------------ */
+/* ---------------- CSS Lista Reservas------------------ */
+/* ---------------- CSS Lista Reservas------------------ */
+/* ---------------- CSS Lista Reservas------------------ */
+/* ---------------- CSS Lista Reservas------------------ */
+
+.bodyListReserva{
+    background-image: url(../img/backgrounds/elena-mozhvilo-dCC7LtjU1WA-unsplash.jpg);
+}
+
+.grillaPrincipal{
+    background-color: var(--bg-color-nav-opacity-50);
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "lista";
+}
+
+.titulo{
+    grid-area: titulo;
+    background-image: url(../img/backgrounds/topviewdeskarrangementwithnotebookV2.png);
+}
+
+
+
+
+/* ---------------- CSS Index/Home ------------------ */
+/* ---------------- CSS Index/Home ------------------ */
+/* ---------------- CSS Index/Home ------------------ */
+/* ---------------- CSS Index/Home ------------------ */
+/* ---------------- CSS Index/Home ------------------ */
+
+.bodyHome{
+    background-image: url(../img/backgrounds/chris-liverani-oCsaxvGCehM-unsplash.jpg);
+}
+
+.mainHome{
+    background-color:var(--bg-color-nav-opacity-50);
+}
+.grillaPrincipal{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "cuerpo";
+}
+
+/* Especifico para Home */
+.tituloHome{
+    grid-template-areas:
+    "logo1 texto logo2";
+}
+.titulo .tituloLogo1Home{
+    grid-area: logo1;
+    width: 100%;
+    max-width: 130px;
+    height: 80%;
+}
+.titulo .tituloTextoHome{
+    grid-area: texto;
+    width: 100%;
+    max-width: 320px;
+}
+
+.titulo .tituloLogo2Home{
+    grid-area: logo2;
+    width: 100%;
+    max-width: 130px;
+    height: 80%;
+}
+/* ---------------------- */
+
+.titulo img{
+    max-height: 140px;
+    place-self: center;
+}
+
+.cuerpo{
+    grid-area: cuerpo;
+    width: 80%;
+    margin: 20px auto;
+
+    display:grid;
+    grid-template-areas: 
+    "seccion1"
+    "seccion2";
+    gap: 20px;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.seccion1{
+    grid-area: seccion1;
+    display: grid;
+    grid-template-areas: 
+    "imagen titulo"
+    "imagen parrafo";
+}
+.imagenSeccion1{
+    grid-area: imagen;
+}
+.subSec1{
+    grid-area: titulo;
+}
+.parSec1{
+    grid-area: parrafo;
+}
+
+.seccion2{
+    grid-area: seccion2;
+    display: grid;
+    grid-template-areas: 
+    "titulo imagen"
+    "parrafo imagen";
+}
+.imagenSeccion2{
+    grid-area: imagen;
+}
+.subSec2{
+    grid-area: titulo;
+}
+.parSec2{
+    grid-area: parrafo;
+}
+
+.seccion{
+    /* height: 450px; */
+    gap: 5%;
+    align-items: start;
+    justify-content: center;
+    grid-template-rows: 1fr 3fr;
+    background-color: var(--bg-color-nav-opacity-50);
+    padding: 1em;
+}
+
+.seccion img{
+    max-width: 300px;
+    max-height: 450px;
+    place-self: center;
+}
+.seccion2 img{
+    height: 450px;
+}
+
+.subtitulo{
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 2px black;
+    width: 55%;
+    background-color: var(--primary-color-opacity-50);
+    place-self: center;
+}
+
+.contParrafoSec2{
+    display: grid;
+    gap: 1em;
+}
+
+.parrafo{
+    font-size: 1.5em;
+    font-weight: bold;
+    color:white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px){
+    .seccion1{
+        grid-template-areas: 
+        "titulo titulo"
+        "imagen parrafo";
+    }
+    .seccion2{
+        grid-template-areas: 
+        "titulo titulo"
+        "parrafo imagen";
+    }
+    .subtitulo{
+        font-size: 2em;
+        width: 60%;
+    }
+
+    .seccion img{
+        max-width: 200px;
+        max-height: 300px;
+        place-self: center;
+    }
+    .seccion2 img{
+        height: 300px;
+    }
+
+    .parrafo{
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .grillaPrincipal{
+        grid-template-areas: 
+        "cuerpo";
+    }
+
+    .tituloHome{
+        display: none;
+    }
+
+    .cuerpo{
+        width: 90%;
+    }
+    .seccion{
+        grid-template-areas: 
+        "titulo"
+        "imagen"
+        "parrafo";
+        align-items: center;
+    }
+    .seccion1{
+        grid-template-rows: 0.5fr 2fr 3fr;
+        gap: 3%;
+    }
+    .seccion2{
+        grid-template-rows: 1fr 3fr 5fr;
+        gap: 1%;
+    }
+    .subtitulo{
+        font-size: 1.5em;
+        width: 80%;
+    }
+
+    .seccion img{
+        max-width: 200px;
+        max-height: 300px;
+        place-self: center;
+    }
+    .seccion2 img{
+        height: 300px;
+    }
+
+    .parrafo{
+        font-size: 1.2em;
+        width: 90%;
+        place-self: center;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 319px){
+
+    .mainHome{
+        min-height: 500px;
+    
+    }
+
+    .grillaPrincipal{
+        grid-template-areas: 
+        "cuerpo";
+    }
+
+    .tituloHome{
+        display: none;
+    }
+
+    .imagenSeccion1{
+        display: none;
+    }
+    .imagenSeccion2{
+        display: none;
+    }
+
+    .cuerpo{
+        width: 90%;
+    }
+    .seccion{
+        grid-template-areas: 
+        "titulo"
+
+        "parrafo";
+        align-items: center;
+    }
+    .seccion1{
+        grid-template-rows: 0.5fr 2fr;
+        gap: 3%;
+    }
+    .seccion2{
+        grid-template-rows: 0.5fr 2fr;
+        gap: 1%;
+    }
+    .subtitulo{
+        font-size: 1.5em;
+        width: 80%;
+    }
+
+    .seccion img{
+        max-width: 200px;
+        max-height: 300px;
+        place-self: center;
+    }
+    .seccion2 img{
+        height: 300px;
+    }
+
+    .parrafo{
+        font-size: 1.2em;
+        width: 90%;
+        place-self: center;
+        text-align: center;
+    }
+
+}
+
+/* ---------------- Barra Navegacion ------------------ */
+/* ---------------- Barra Navegacion ------------------ */
+/* ---------------- Barra Navegacion ------------------ */
+/* ---------------- Barra Navegacion ------------------ */
+/* ---------------- Barra Navegacion ------------------ */
+
+
+/* Creamos el grid de la barra de navegacion y le damos formato */
+#navBar {
+    position: fixed;
+    background-color: var(--bg-color-nav);
+    border-bottom: 5px solid var(--primary-color-opacity-50);
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 50px;
+    grid-template-areas:
+        "logoPequeño navegacion login";
+
+    place-items: center;
+
+    z-index: 1;
+}
+
+/* Modifica "Logo" de la barra de navegacion */
+nav #navLogo {
+    height: 100%;
+    padding-bottom: 5px;
+}
+
+nav .navImg {
+    grid-area: logoPequeño;
+    height: 100%;
+}
+
+nav #navLogoDesplegable {
+    display: none;
+}
+
+nav #navImgSimplificado {
+    display: none;
+}
+
+nav #navLogoDesplegableIcono {
+    color: var(--primary-color)
+}
+
+/* Modifica "Menu" de la barra de navegacion */
+nav #navMenu {
+    grid-area: navegacion;
+    height: 100%;
+    place-content: center;
+}
+
+nav .navMenuLink {
+    text-decoration: none;
+    color: var(--primary-color-opacity-50);
+    font-size: 1.2em;
+    padding: 5px 20px;
+}
+
+.navMenuLogo img {
+    height: 100%;
+    display: none;
+}
+
+/* Modifica "Login" en la barra de navegacion */
+nav #navLogin {
+    grid-area: login;
+
+    background-color: var(--bg-color-button);
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+nav .navLoginLink {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2em;
+
+}
+
+nav #navLogin a i {
+    margin: 3px 3px 3px 0px;
+}
+
+nav #navLoginLinkIcono {
+    display: none;
+}
+
+/* Modifica los links de Menu y login para que cuando le pasemos el puntero por enseima cambien */
+nav .navMenuLink:hover {
+    color: var(--secondary-color);
+    background-color: var(--bg-color-button);
+}
+
+nav .navLoginLink:hover {
+    color: var(--secondary-color);
+}
+
+/* Para pantallas de 800px a 1079px */
+@media screen and (min-width: 800px) and (max-width: 1079px) {
+
+    nav .navImg {
+        display: none;
+    }
+
+    nav #navImgSimplificado {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        margin-top: 2px;
+        ;
+
+    }
+
+    /* Modifica Menu */
+    nav .navMenuLink {
+        font-size: 1em;
+    }
+
+    /* Modifica Login */
+    nav #navLogin {
+        grid-area: login;
+        border-radius: 30px;
+        padding: 3px 6px;
+    }
+
+    nav .navLoginLink {
+        font-size: 1em;
+    }
+}
+
+/* Para pantallas de MENOS de 800px */
+
+@media screen and (max-width: 799px) {
+
+    /* Modifica el area de LOGO */
+    nav #navLogo {
+        place-items: center;
+    }
+
+    /* Para el desplegable */
+    nav #navLogoDesplegable {
+        /* background-color: red; */
+        height: 80%;
+        margin-top: 7px;
+        display: block;
+    }
+
+    nav #navLogoDesplegableIcono {
+        /* background-color: green; */
+        list-style: none;
+        max-width: 36px;
+    }
+
+    nav #navLogoDesplegableIcono i {
+        /* background-color: white; */
+        padding: 8px 9px;
+        border-radius: 20px;
+    }
+
+    nav #navLogoDesplegableIcono:hover i {
+        background-color: var(--bg-color-button);
+        padding: 8px 9px;
+        border-radius: 20px;
+        color: var(--secondary-color);
+    }
+
+    nav #navLogoDesplegableLista {
+        /* background-color: white; */
+        display: none;
+        width: 150px;
+    }
+
+    nav #navLogoDesplegableIcono:hover #navLogoDesplegableLista {
+        display: block;
+        list-style: none;
+        position: relative;
+        top: 12px;
+    }
+
+    .navLogoDesplegableBotones {
+        background-color: var(--bg-color-nav);
+        height: 30px;
+    }
+
+    .navLogoDesplegableBotones:hover {
+        border-bottom: 3px solid var(--primary-color);
+    }
+
+    .navLogoDesplegableBotones a {
+        text-decoration: none;
+        color: var(--primary-color);
+        padding-left: 5px;
+    }
+
+    /* Para la IMAGEN */
+    nav .navImg {
+        display: none;
+    }
+
+    /* Modifica el area de MENÚ */
+    nav .navMenuLink {
+        display: none;
+    }
+
+    nav .navMenuLogo .navImg {
+        display: block;
+        height: 80%;
+    }
+
+    /* Modifica el area de LOGIN */
+    nav #navLogin {
+        background-color: transparent;
+    }
+
+    nav #navLogin:hover {
+        background-color: var(--bg-color-button);
+    }
+
+    nav #navLoginLinkTexto {
+        display: none;
+    }
+
+    nav #navLoginLinkIcono {
+        display: block;
+    }
+
+    nav #navLogin a i {
+        margin: 0px;
+    }
+}
+
+
+/* ---------------- FOOTER ------------------ */
+/* ---------------- FOOTER ------------------ */
+/* ---------------- FOOTER ------------------ */
+/* ---------------- FOOTER ------------------ */
+/* ---------------- FOOTER ------------------ */
+
+.barFooter{
+    background-color: black;
+    /* background-color: var(--bg-color-nav); */
+    width: 100%;
+    height: 100%;
+    max-height: 266px;
+    display: grid;
+    grid-template-columns: 4fr 1.5fr 4fr;
+    grid-template-areas: 
+    "redes logo navegacion"
+    "copyright copyright copyright";
+
+
+    place-items: center;
+
+    color: var(--primary-color);
+}
+
+.barFooter .redesFooter{
+    grid-area: redes;
+    color: var(--primary-color-opacity-50);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 5%;
+    background-color: black;
+    padding:5%;
+}
+
+.barFooter .redesFooter div{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+
+.barFooter .redesFooter i{
+    font-size: 1.5em;
+}
+.barFooter .redesFooter p{
+    font-size: 1.2em;
+    padding: 1% 0px;
+}
+
+.barFooter .redesFooter div p{
+    padding-left: 1%;
+    font-size: 0.9em;
+
+}
+
+.barFooter .logoFooter{
+    grid-area: logo;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barFooter .logoFooter img{
+    /* height: 58%; */
+    width: 70%;
+    border: 3px solid var(--primary-color-opacity-50);
+    border-radius: 10px;
+
+}
+
+.barFooter .navegacionFooter{
+    grid-area: navegacion;
+    width: 100%;
+    height: 100%;
+
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 0 5%;
+
+    background-color: black;
+}
+
+.barFooter .navegacionFooter a {
+    text-decoration: none;
+    color: var(--primary-color-opacity-50);
+    font-size: 1.2em;
+    padding: 5px 20px;
+    text-align: end;
+    width: 150px;
+}
+
+.barFooter .navegacionFooter a:hover {
+    color: var(--secondary-color);
+    background-color: var(--bg-color-button);
+}
+.barFooter .copyFooter{
+    grid-area: copyright;
+    color: var(--primary-color);
+    border-top: 1px  solid var(--primary-color);
+    border-width: 80%;
+    width: 100%;
+    
+    display: grid;
+    grid-template-areas: "copy";
+    align-items: center;
+    justify-items: center;
+
+    background-color: black;
+    /* background-color: purple; */
+}
+
+.barFooter .copyFooter p{
+    grid-area: copy;
+    text-align: center;
+    height: 3em;
+    border-top: none;
+    /* padding: 0.8em 0; */
+}
+
+@media screen and (min-width: 389px) and (max-width: 768px) {
+
+.barFooter{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "logo redes"
+    "copyright copyright";
+    max-height: max-content;
+    width: 100%;
+}
+
+.barFooter .navegacionFooter{
+    display: none;
+}
+.barFooter .logoFooter{
+    padding: 5%;
+}
+.barFooter .logoFooter img{
+    width: 65%;
+}
+.barFooter .copyFooter p{
+    font-size: 0.8em;
+    /* padding: 0px 5px; */
+}
+
+}
+
+@media screen and (max-width: 388px){
+    .barFooter{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "logo redes"
+        "copyright copyright";
+        max-height: max-content;
+        width: 100%;
+    } 
+
+    .barFooter .navegacionFooter{
+        display: none;
+    }
+
+    .barFooter .logoFooter{
+        padding: 5%;
+    }
+    .barFooter .logoFooter img{
+        width: 55%;
+    }
+
+    .barFooter .redesFooter i{
+        font-size: 1.2em;
+    }
+    .barFooter .redesFooter p{
+        font-size: 0.9em;
+        padding: 1% 0px;
+    }    
+    .barFooter .redesFooter div p{
+        padding-left: 1%;
+        font-size: 0.6em;
+    }
+
+    .barFooter .copyFooter p{
+        font-size: 0.6em;
+        padding: 0px 5px;
+    }
+}
+
+.horaReserva[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
