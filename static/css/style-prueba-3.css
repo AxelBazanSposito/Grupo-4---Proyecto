@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     font-size: 20px;
 }
 
@@ -54,7 +55,6 @@ main{
     grid-template-columns: 1fr;
     align-content: center;
     justify-content: center;
-    /* margin: 20px auto; */
 }
 
 h1{
@@ -75,7 +75,6 @@ footer {
     height: 100px;
     z-index: 1;
 }
-
 
 
 /* ---------------- CSS Lista Reservas------------------ */
@@ -103,6 +102,32 @@ footer {
 
 .grillaPrincipalReserva .lista{
     grid-area: lista;
+    background-color: var(--secondary-color);
+    width: 90%;
+    margin: 20px auto;
+    
+    display: grid;
+    grid-area: 
+    "conceptos"
+    "filas";
+}
+
+.grillaPrincipal .listaConceptos{
+    grid-area: conceptos;
+}
+
+.listaConceptos ul{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.grillaPrincipal .listaFilas{
+    grid-area: filas;
 }
 
 
