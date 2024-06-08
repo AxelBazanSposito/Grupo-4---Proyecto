@@ -80,26 +80,62 @@
                 <h1>Lista de Reservas</h1>
             </div>
 
-            <div class="lista">
-                <div class="listaConceptos">
-                    <ul>
-                        <li>Local</li>
-                        <li>Fecha</li>
-                        <li>Hora</li>
-                        <li>Nombre</li>
-                        <li>Mail</li>
-                        <li>Cantidad</li>
-                        <li>Estado</li>
-                    </ul>
+            <form id="formListaReserva" class="formListaReserva">
+                <div class="listaBuscador">
+                    <div>
+                        <label>Fecha Inicio:</label>
+                        <input id="listaBuscarFechaInicio" class="listaBuscarFechaInicio" type="date">
+                        <p id="errorFechaInicio" class="errorFechaInicio"></p>
+                    </div>
+                    <div>
+                        <label>Fecha Fin:</label>
+                        <input class="listaBuscarFechaFin" type="date">
+                        <p id="errorFechaFin" class="errorFechaFin"></p>
+                    </div>
+                    <div class="listaBuscarButton">
+                        <button type="submit">Buscar</button>
+                    </div>
                 </div>
-                <div class="listaFilas">
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
-                    <p>4</p>
-                    <p>5</p>
+                <div class="lista">
+                    <div class="listaConceptos">
+                            <ul>
+                                <li>Local</li>
+                                <li>Fecha</li>
+                                <li>Hora</li>
+                                <li>Nombre</li>
+                                <li>Mail</li>
+                                <li>Cantidad</li>
+                                <li>Estado</li>
+                            </ul>
+                    </div>
+                    <div class="listaFilas">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>5</div>
+                            <div>6</div>
+                            <div>7</div>
+                            <div>8</div>
+                            <div>9</div>
+                            <div>10</div>
+                            <div>11</div>
+                            <div>12</div>
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>5</div>
+                            <div>6</div>
+                            <div>7</div>
+                            <div>8</div>
+                            <div>9</div>
+                            <div>10</div>
+                            <div>11</div>
+                            <div>12</div>
+                    </div>
                 </div>
-            </div>
+             </form>
 
         </div>
     </main>

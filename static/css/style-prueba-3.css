@@ -8,6 +8,19 @@
     --secondary-color: white;
     --fuente-principal:'Times New Roman', Times, serif;
     --fuente-secuendaria:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    --fuente-h1-1280: 3em;
+    --fuente-h2-1280: 2em;
+    --fuente-grande-1280: 1.5em;
+
+    --fuente-mediana-1280: 1.2em;
+    --alto-casislla-mediana-1280: 2em;
+
+    --fuente-chica-1280: 1.1em;
+    --alto-casislla-chica-1280: 1.5em;
+
+    --fuente-grande-768: 1em;
+    --fuente-mediana-768: 0.8em;
 }
 
 * {
@@ -60,7 +73,7 @@ main{
 h1{
     width: 50%;
     text-align: center;
-    font-size: 3em;
+    font-size: var(--fuente-h1-1280);
     font-weight: bold;
     color: var(--secondary-color);
     text-shadow: 2px 2px 2px black;
@@ -100,14 +113,34 @@ footer {
     background-image: url(../img/backgrounds/topviewdeskarrangementwithnotebookV2.png);
 }
 
-.grillaPrincipalReserva .lista{
+.grillaPrincipalReserva .formListaReserva{
     grid-area: lista;
+    display: grid;
+    grid-template-areas:
+    "buscador"
+    "tabla";
+}
+
+.grillaPrincipalReserva .listaBuscador{
+    grid-area: buscador;
+    display: grid;
+    grid-template-areas: 
+    "fecha1 fecha2 button";
+    justify-items: center;
+    align-items: center;
+
+    background-color: red;
+    height: 50px;
+}
+
+.grillaPrincipalReserva .lista{
+    grid-area: tabla;
     background-color: var(--secondary-color);
-    width: 90%;
+    width: 80%;
     margin: 20px auto;
     
     display: grid;
-    grid-area: 
+    grid-area:
     "conceptos"
     "filas";
 }
@@ -115,21 +148,31 @@ footer {
 .grillaPrincipal .listaConceptos{
     grid-area: conceptos;
 }
-
-.listaConceptos ul{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-
-    border-bottom: 1px solid var(--primary-color);
-}
-
 .grillaPrincipal .listaFilas{
     grid-area: filas;
 }
 
+.listaConceptos ul, .listaFilas div{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+}
+
+.listaConceptos ul{
+    border-bottom: 2px solid var(--primary-color);
+}
+.listaConceptos li{
+    font-weight: bold;
+    font-size: var(--fuente-mediana-1280);
+    height: var(--alto-casislla-mediana-1280);
+    align-content: center;
+}
+
+.listaFilas div{
+    font-size: var(--fuente-chica-1280);
+    height: var(--alto-casislla-chica-1280);
+    align-content: center;
+}
 
 /* ---------------- CSS Index/Home ------------------ */
 /* ---------------- CSS Index/Home ------------------ */
