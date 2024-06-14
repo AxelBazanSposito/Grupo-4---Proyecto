@@ -200,3 +200,5 @@ function validarNombre() {
         }
     }
 }
+
+// inputFecha.setAttribute('value', '2017-06-01')

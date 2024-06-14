@@ -1,4 +1,4 @@
-const listaReseras = ["1-1", "1-2", "1-3", "1-4", "1-5", "1-6", "1-7"];
+const listaReseras = ["Central", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"];
 // listaReseras.forEach((Element) => console.log(Element));
 
 const lista =document.getElementById("fila1")

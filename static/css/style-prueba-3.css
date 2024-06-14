@@ -154,7 +154,7 @@ footer {
 
 .listaConceptos ul, .listaFilas div{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: 1fr 1.5fr 1fr 3fr 3fr 1.5fr 1fr;
     justify-items: center;
 }
 
