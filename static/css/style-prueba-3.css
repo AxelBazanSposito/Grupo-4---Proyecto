@@ -115,6 +115,7 @@ footer {
 
 .grillaPrincipalReserva .formListaReserva{
     grid-area: lista;
+
     display: grid;
     grid-template-areas:
     "buscador"
@@ -123,6 +124,7 @@ footer {
 
 .grillaPrincipalReserva .listaBuscador{
     grid-area: buscador;
+
     display: grid;
     grid-template-areas: 
     "fecha1 fecha2 button";
@@ -135,21 +137,42 @@ footer {
 
 .grillaPrincipalReserva .lista{
     grid-area: tabla;
+
     background-color: var(--secondary-color);
     width: 80%;
     margin: 20px auto;
-    
+
     display: grid;
-    grid-area:
-    "conceptos"
-    "filas";
+    grid-template-areas:
+    "listaConceptos"
+    "listaFilas"
+    "listaFooter";
 }
 
-.grillaPrincipal .listaConceptos{
-    grid-area: conceptos;
+.lista .listaConceptos{
+    grid-area: listaConceptos;
+
+    /* background-color: rgba(0, 128, 0, 0.308); */
 }
-.grillaPrincipal .listaFilas{
-    grid-area: filas;
+.lista .listaFilas{
+    grid-area: listaFilas;
+
+    /* background-color: rgba(132, 0, 255, 0.137); */
+}
+
+.lista .listaFooter{
+    grid-area: listaFooter;
+
+    display: flex;
+    justify-content: center;
+
+    height: var(--alto-casislla-mediana-1280);
+    width: 100%;
+    gap: 5px;
+    padding: 5px;
+    border-top: 2px solid var(--primary-color);
+
+    /* background-color: rgba(255, 0, 0, 0.274); */
 }
 
 .listaConceptos ul, .listaFilas div{
@@ -169,11 +192,21 @@ footer {
 }
 
 .listaFilas div{
-    font-size: var(--fuente-chica-1280);
-    height: var(--alto-casislla-chica-1280);
+    height: var(--alto-casislla-mediana-1280);
     align-content: center;
 }
 
+.listaFilas div p{
+    font-size: var(--fuente-mediana-1280);
+}
+
+.listaFooter div{
+    display:flex;
+    align-items: center;
+}
+.listaFooter input{
+    max-width: 50px;
+}
 /* ---------------- CSS Index/Home ------------------ */
 /* ---------------- CSS Index/Home ------------------ */
 /* ---------------- CSS Index/Home ------------------ */
