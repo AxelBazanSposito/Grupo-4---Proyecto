@@ -75,6 +75,9 @@ function logArrayElements2(element) {
 }
 listaReseras2.forEach(logArrayElements2)
 
+
+
+
 // Footer Reserva //
 // Footer Reserva //
 // Footer Reserva //
