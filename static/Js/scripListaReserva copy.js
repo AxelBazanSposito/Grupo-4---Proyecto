@@ -25,11 +25,10 @@ const listaReseras2 = [
   ["23", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
   ["24", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
   ["25", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["26", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["27", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["28", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["29", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-
+  // ["26", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
+  // ["27", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
+  // ["28", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
+  // ["29", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
 ];
 
 const lista1 = document.getElementById("listaFilas")
@@ -97,7 +96,7 @@ if (cantidadPaginas > 1) {
 }
 else {
   const parrafoFooter = document.createElement('p');
-  parrafoFooter.textContent = 1;
+  parrafoFooter.textContent = "de 1";
   numPaginas.appendChild(parrafoFooter);
 }
 
@@ -128,3 +127,4 @@ function sumarValor(){
     numIngreso.setAttribute('value',valorPaginaNuevo);
   }
 }
+
