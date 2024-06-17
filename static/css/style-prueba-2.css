@@ -1278,7 +1278,7 @@ nav .navLoginLink:hover {
     flex-flow: wrap;
     height: 100%;
     gap: 3%;
-
+    row-gap: 50px;
 }
 
 .cardBox {
@@ -1290,6 +1290,7 @@ nav .navLoginLink:hover {
     transition: all 0.3s ease 0s;
     width: 30%;
     height: 100%;
+    max-height: 290px;
 }
 
 .cardBox:hover .card {
@@ -1553,6 +1554,7 @@ strong {
         width: 94.5%;
         height: 10%;
         margin: 2%;
+        max-height: none;
     }
     
     /* .mainMenu{ */
@@ -1588,9 +1590,10 @@ strong {
     }
     
     .boxesContainer{
-        gap:0;
+        gap:3%;
         justify-content: center;
     }
+
 }
 
 
