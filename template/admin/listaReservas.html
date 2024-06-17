@@ -81,7 +81,7 @@
                 <h1>Lista de Reservas</h1>
             </div>
 
-            <form id="formListaReserva" class="formListaReserva">
+            <section id="formListaReserva" class="formListaReserva">
                 <div class="listaBuscador">
                     <div>
                         <label>Fecha Inicio:</label>
@@ -112,16 +112,17 @@
                     <div id="listaFilas" class="listaFilas">
                     </div>
                     <div id="listaFooter" class="listaFooter">
-                        <button>Anterior</button>
-
-                        <input id="numIngreso" type="number" value="2">
+                        <button id="anteriorButton" onclick="restarValor()">Anterior</button>
+        
+                        <input id="numIngreso" type="number" value="1">
                         <div id="numPaginas" class="numPaginas">
                         </div>
-
-                        <button>Siguiente</button>
+        
+                        <button id="siguienteButton" onclick="sumarValor()">Siguiente</button>
                     </div>
                 </div>
-            </form>
+            </section>
+
             <script src="../../static/Js/scripListaReserva copy.js"></script>
         </div>
     </main>

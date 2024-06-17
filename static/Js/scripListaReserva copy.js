@@ -1,20 +1,3 @@
-// const listaReseras = ["Central", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"];
-// // listaReseras.forEach((Element) => console.log(Element));
-
-// const lista =document.getElementById("fila1")
-// // console.log(lista)
-
-// function logArrayElements(element) {
-//     // console.log("a[" + index + "] = " + element);
-//     const parrafo = document.createElement('p');
-//     parrafo.textContent= element;
-//     lista.appendChild(parrafo);
-//   }
-
-// listaReseras.forEach(logArrayElements);
-// // prompt(listaReseras);
-
-
 const listaReseras2 = [
   ["Central", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
   ["1", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
@@ -45,10 +28,9 @@ const listaReseras2 = [
   ["26", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
   ["27", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
   ["28", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  // ["29", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
+  ["29", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
 
 ];
-// listaReseras2.forEach((Element) => console.log(Element));
 
 const lista1 = document.getElementById("listaFilas")
 
@@ -57,21 +39,14 @@ const numInicio = 0 + (15 * (numPagina.value - 1));
 const numFinal = 15 + (15 * (numPagina.value - 1));
 
 let contador = 0;
-let contadorFilasResto = 0;
 
 for (var i = numInicio; i < numFinal; i++) {
-  // console.log(listaReseras2[i]);
   const division = document.createElement('div');
   const valorID = "fila" + contador;
   division.setAttribute('id', valorID)
   lista1.appendChild(division);
 
   const filaCompleta = listaReseras2[i];
-
-  // console.log(listaReseras2.length-(15*parseInt(listaReseras2.length/15)))
-  // console.log(listaReseras2.length % 15);
-
-
 
   if ((listaReseras2.length % 15) == 0) {
     for (var ii = 0; ii < 7; ii++) {
@@ -83,19 +58,13 @@ for (var i = numInicio; i < numFinal; i++) {
       //esto va por ensima del for de ii;
       division.appendChild(parrafo);
     }
-  } else if ((listaReseras2.length % 15) != 0 && contadorFilasResto < (listaReseras2.length % 15)) {
+  } else if ((listaReseras2.length % 15) != 0 && contador < (listaReseras2.length % 15)) {
     for (var ii = 0; ii < 7; ii++) {
       const parrafo = document.createElement('p');
       parrafo.textContent = filaCompleta[ii];
       division.appendChild(parrafo);
     }
-    // console.log((listaReseras2.length % 15) != 0 && contadorFilasResto < (listaReseras2.length % 15));
-    // console.log((listaReseras2.length % 15) != 0);
-    // console.log(contadorFilasResto);
-    // console.log(((listaReseras2.length % 15) - 1));
   }
-
-  contadorFilasResto++
   contador++;
 }
 
@@ -111,10 +80,7 @@ for (var i = numInicio; i < numFinal; i++) {
 
 const numPaginas = document.getElementById("numPaginas")
 const cantidadPaginas = (listaReseras2.length / 15)
-// console.log(numPaginas)
-// console.log(listaReseras2.length);
-// console.log(parseInt(listaReseras2.length/15))
-// console.log((listaReseras2.length / 15) >0)
+
 if (cantidadPaginas > 1) {
   if (cantidadPaginas == parseInt(cantidadPaginas)) {
     const parrafoFooter = document.createElement('p');
@@ -133,4 +99,32 @@ else {
   const parrafoFooter = document.createElement('p');
   parrafoFooter.textContent = 1;
   numPaginas.appendChild(parrafoFooter);
+}
+
+// Boton anterior //
+// Boton anterior //
+// Boton anterior //
+
+console.log(numIngreso.value);
+
+function restarValor(){
+  if(numIngreso.value > 1){
+    const valorPaginaNuevo = --numPagina.value;
+    console.log (valorPaginaNuevo);
+    numIngreso.setAttribute('value',valorPaginaNuevo);
+  }
+}
+
+// Boton siguiente //
+// Boton siguiente //
+// Boton siguiente //
+
+console.log(numIngreso.value);
+
+function sumarValor(){
+  if(numIngreso.value < 10){
+    const valorPaginaNuevo = ++numPagina.value;
+    console.log (valorPaginaNuevo);
+    numIngreso.setAttribute('value',valorPaginaNuevo);
+  }
 }
