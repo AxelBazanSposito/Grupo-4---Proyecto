@@ -1590,7 +1590,7 @@ strong {
     }
     
     .boxesContainer{
-        gap:3%;
+        gap:15px;
         justify-content: center;
     }
 
