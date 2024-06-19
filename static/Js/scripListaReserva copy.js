@@ -25,10 +25,10 @@ const listaReseras2 = [
   ["23", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
   ["24", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
   ["25", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  // ["26", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  // ["27", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  // ["28", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  // ["29", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
+  ["26", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
+  ["27", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
+  ["28", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
+  ["29", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
 ];
 
 const lista1 = document.getElementById("listaFilas")
@@ -47,23 +47,49 @@ for (var i = numInicio; i < numFinal; i++) {
 
   const filaCompleta = listaReseras2[i];
 
-  if ((listaReseras2.length % 15) == 0) {
+  // console.log((listaReseras2.length % 15) != 0);
+  // console.log(contador < (listaReseras2.length % 15));
+  // console.log(numPagina.value == parseInt(listaReseras2.length / 15) + 1)
+  // console.log(parseInt(listaReseras2.length / 15));
+
+  //////////// HAY QUE HACER PROCEDIMIENTO PARA VALIDAR QUE EL VALOR INGRESADO EN LABEL SEA > 0 Y NO TENGA CON "," ////////////
+  //////////// HAY QUE HACER PROCEDIMIENTO PARA VALIDAR QUE EL VALOR INGRESADO EN LABEL SEA > 0 Y NO TENGA CON "," ////////////
+  //////////// HAY QUE HACER PROCEDIMIENTO PARA VALIDAR QUE EL VALOR INGRESADO EN LABEL SEA > 0 Y NO TENGA CON "," ////////////
+  //////////// HAY QUE HACER PROCEDIMIENTO PARA VALIDAR QUE EL VALOR INGRESADO EN LABEL SEA > 0 Y NO TENGA CON "," ////////////
+
+  if ((listaReseras2.length % 15) == 0 &&
+    (listaReseras2 / 15) != 0 &&
+    numPagina.value <= ((parseInt(listaReseras2.length / 15)))) {
     for (var ii = 0; ii < 7; ii++) {
       const parrafo = document.createElement('p');
       parrafo.textContent = filaCompleta[ii];
-      //falla si tiene menos de 15 filas por capagina;
-      //posible solucion --> length - (15 * (parseInt(lenght/15))) --> me da los renglones de la ultima pagina;
-      //entonces necesito un if donde se ejecute esto si i de 0 hasta el valor de antes; else no hace nada;
-      //esto va por ensima del for de ii;
       division.appendChild(parrafo);
+      console.log("opcion 1");
     }
-  } else if ((listaReseras2.length % 15) != 0 && contador < (listaReseras2.length % 15)) {
-    for (var ii = 0; ii < 7; ii++) {
-      const parrafo = document.createElement('p');
-      parrafo.textContent = filaCompleta[ii];
-      division.appendChild(parrafo);
+  } else if ((listaReseras2.length % 15) != 0) {
+
+    if (numPagina.value == ((parseInt(listaReseras2.length / 15) + 1)) &&
+      contador < (listaReseras2.length % 15)) {
+        //Esto es para la ultima pagina.
+      for (var ii = 0; ii < 7; ii++) {
+        const parrafo = document.createElement('p');
+        parrafo.textContent = filaCompleta[ii];
+        division.appendChild(parrafo);
+        console.log("opcion 2");
+      }
+    } else if (numPagina.value < ((parseInt(listaReseras2.length / 15) + 1))) {
+      //Esto es para pagina intermedias.
+      for (var ii = 0; ii < 7; ii++) {
+        const parrafo = document.createElement('p');
+        parrafo.textContent = filaCompleta[ii];
+        division.appendChild(parrafo);
+        console.log("opcion 3");
+      }
     }
+  } else {
+    console.log("opcion 4");
   }
+
   contador++;
 }
 
@@ -104,13 +130,13 @@ else {
 // Boton anterior //
 // Boton anterior //
 
-console.log(numIngreso.value);
+// console.log(numIngreso.value);
 
-function restarValor(){
-  if(numIngreso.value > 1){
+function restarValor() {
+  if (numIngreso.value > 1) {
     const valorPaginaNuevo = --numPagina.value;
-    console.log (valorPaginaNuevo);
-    numIngreso.setAttribute('value',valorPaginaNuevo);
+    console.log(valorPaginaNuevo);
+    numIngreso.setAttribute('value', valorPaginaNuevo);
   }
 }
 
@@ -118,13 +144,13 @@ function restarValor(){
 // Boton siguiente //
 // Boton siguiente //
 
-console.log(numIngreso.value);
+// console.log(numIngreso.value);
 
-function sumarValor(){
-  if(numIngreso.value < 10){
+function sumarValor() {
+  if (numIngreso.value < 10) {
     const valorPaginaNuevo = ++numPagina.value;
-    console.log (valorPaginaNuevo);
-    numIngreso.setAttribute('value',valorPaginaNuevo);
+    console.log(valorPaginaNuevo);
+    numIngreso.setAttribute('value', valorPaginaNuevo);
   }
 }
 
