@@ -77,6 +77,7 @@ nav .navMenuLink {
     color: var(--primary-color-opacity-50);
     font-size: 1.2em;
     padding: 5px 20px;
+     border-radius: 25px;
 }
 
 .navMenuLogo img {
@@ -89,7 +90,7 @@ nav #navLogin {
     grid-area: login;
 
     background-color: var(--bg-color-button);
-    border-radius: 50px;
+    border-radius: 25px;
     padding: 5px 10px;
 }
 
