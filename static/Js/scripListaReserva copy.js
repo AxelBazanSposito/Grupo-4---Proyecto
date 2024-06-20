@@ -1,34 +1,49 @@
 const listaReseras2 = [
-  ["Central", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["1", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["2", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["3", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["4", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["5", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["6", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["7", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["8", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["9", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["10", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["11", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["12", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["13", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["14", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["15", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["16", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["17", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["18", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["19", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["20", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["21", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["22", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["23", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["24", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["25", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["26", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["27", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["28", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
-  ["29", "2024/12/05", "18:30", "Homero Simpson", "icelacreyo@hotmial.com", "20", "correcto"],
+  ["Central", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["1", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["2", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["3", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["4", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["5", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["6", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["7", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["8", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["9", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["10", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["11", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["12", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["13", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["14", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["15", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["16", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["17", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["18", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["19", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["20", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["21", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["22", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["23", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["24", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["25", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["26", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["27", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["28", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["29", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["30", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["31", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["32", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["33", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["34", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["35", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["36", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["37", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["38", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["39", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["40", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["41", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["42", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["43", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
+  ["44", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
 ];
 
 const lista1 = document.getElementById("listaFilas")
@@ -138,49 +153,40 @@ function restarValor() {
     console.log(valorPaginaNuevo);
     numIngreso.setAttribute('value', valorPaginaNuevo);
   }
-}
 
-// Boton siguiente //
-// Boton siguiente //
-// Boton siguiente //
+  const numIniBorrar = 0 + (15 * (numPagina.value))
+  const numFinBorrar = 15 + (15 * (numPagina.value))
+  let contadorBorrar = numIniBorrar;
+  // console.log (numIniBorrar + " " + numFinBorrar);
 
-// console.log(numIngreso.value);
-
-function sumarValor() {
-  if (numIngreso.value < 10) {
-    const valorPaginaNuevo = ++numPagina.value;
-    // console.log(valorPaginaNuevo);
-    numIngreso.setAttribute('value', valorPaginaNuevo);
-  }
-  const numIniBorrar = 0 + (15 * ((numPagina.value)-2))
-  const numFinBorrar = 15 + (15 * ((numPagina.value)-2))
-  // PARA BORRAR LA PAGINA ANTERIOR Y ESCRIBIR USO LOS NUMEROS DE ARRBIA.
-  // PARA PAGINA ANTERIOR TENDRIA QUE SUMAR "+1"
-  // console.log(numIniBorrar + " " + numFinBorrar);
-
-  for (var contadorBorrar = numIniBorrar; contadorBorrar < numFinBorrar; contadorBorrar++) {
+  //BORRA
+  for (contadorBorrar; contadorBorrar < numFinBorrar; contadorBorrar++) {
     // hay que agregar que no pueda borrar las filas de una pagina mayor que el num maximo que tenemos.
     const nombreFila = "fila"+contadorBorrar;
     // console.log("La fila que se borra es: " + nombreFila);
     const elementoDivBorrar = document.getElementById(nombreFila);
     elementoDivBorrar.remove();
   }
-
-  // console.log("Hasta aca corrio el programa bien");
-  // console.log(numIniBorrar);
-  // console.log(numFinBorrar);
+  //ESCRIBE
 
   const numIniEsc = 0 + (15 * ((numPagina.value)-1));
   const numFinEsc = 15 + (15 * ((numPagina.value)-1));
 
+  // console.log(contadorBorrar)
+  contadorBorrar = contadorBorrar-30;
+  // console.log(contadorBorrar)
+
+  // console.log("el contador de borrar es: " + contadorBorrar)
   console.log(numIniEsc + " " + numFinEsc);
+  // contador=contador+(15 * ((numPagina.value)-1));
 
   for (var i = numIniEsc; i < numFinEsc; i++) {
     // console.log("entro en el for")
     console.log(i);
+    console.log("el contadorborrar es: "+contadorBorrar)
 
     const division = document.createElement('div');
-    const valorID = "fila" + contador;
+    const valorID = "fila" + contadorBorrar;
     division.setAttribute('id', valorID)
     lista1.appendChild(division);
   
@@ -198,11 +204,11 @@ function sumarValor() {
       }
     } else if ((listaReseras2.length % 15) != 0) {
       console.log("entro a evaluar en opcion 2 y 3");
-      console.log(contador);
+      console.log(contadorBorrar);
       console.log(listaReseras2.length % 15)
   
       if (numPagina.value == ((parseInt(listaReseras2.length / 15) + 1)) &&
-        contador % 15 < (listaReseras2.length % 15)) {
+        contadorBorrar % 15 < (listaReseras2.length % 15)) {
           //Esto es para la ultima pagina.
         for (var ii = 0; ii < 7; ii++) {
           const parrafo = document.createElement('p');
@@ -222,7 +228,98 @@ function sumarValor() {
     } else {
       console.log("opcion 4");
     }
-    contador++;
+    contadorBorrar++;
+  }
+}
+
+// Boton siguiente //
+// Boton siguiente //
+// Boton siguiente //
+
+// console.log(numIngreso.value);
+
+function sumarValor() {
+  if (numIngreso.value < 10) {
+    const valorPaginaNuevo = ++numPagina.value;
+    // console.log(valorPaginaNuevo);
+    numIngreso.setAttribute('value', valorPaginaNuevo);
+  }
+  const numIniBorrar = 0 + (15 * ((numPagina.value)-2))
+  const numFinBorrar = 15 + (15 * ((numPagina.value)-2))
+  let contadorBorrar = numIniBorrar;
+  // PARA BORRAR LA PAGINA ANTERIOR Y ESCRIBIR USO LOS NUMEROS DE ARRBIA.
+  // PARA PAGINA ANTERIOR TENDRIA QUE SUMAR "+1"
+  // console.log(numIniBorrar + " " + numFinBorrar);
+
+  //BORRA
+
+  for (contadorBorrar; contadorBorrar < numFinBorrar; contadorBorrar++) {
+    // hay que agregar que no pueda borrar las filas de una pagina mayor que el num maximo que tenemos.
+    const nombreFila = "fila"+contadorBorrar;
+    // console.log("La fila que se borra es: " + nombreFila);
+    const elementoDivBorrar = document.getElementById(nombreFila);
+    elementoDivBorrar.remove();
+  }
+
+  // console.log("Hasta aca corrio el programa bien");
+  // console.log(numIniBorrar);
+  // console.log(numFinBorrar);
+
+  //ESCRIBE
+
+  const numIniEsc = 0 + (15 * ((numPagina.value)-1));
+  const numFinEsc = 15 + (15 * ((numPagina.value)-1));
+  
+  // console.log(numIniEsc + " " + numFinEsc);
+
+  for (var i = numIniEsc; i < numFinEsc; i++) {
+    // console.log("entro en el for")
+    // console.log(i);
+
+    const division = document.createElement('div');
+    const valorID = "fila" + contadorBorrar;
+    division.setAttribute('id', valorID)
+    lista1.appendChild(division);
+  
+    const filaCompleta = listaReseras2[i];
+    // console.log(filaCompleta);
+  
+    if ((listaReseras2.length % 15) == 0 &&
+      (listaReseras2 / 15) != 0 &&
+      numPagina.value <= ((parseInt(listaReseras2.length / 15)))) {
+      for (var ii = 0; ii < 7; ii++) {
+        const parrafo = document.createElement('p');
+        parrafo.textContent = filaCompleta[ii];
+        division.appendChild(parrafo);
+        console.log("opcion 1");
+      }
+    } else if ((listaReseras2.length % 15) != 0) {
+      console.log("entro a evaluar en opcion 2 y 3");
+      console.log(contadorBorrar);
+      console.log(listaReseras2.length % 15)
+  
+      if (numPagina.value == ((parseInt(listaReseras2.length / 15) + 1)) &&
+        contadorBorrar % 15 < (listaReseras2.length % 15)) {
+          //Esto es para la ultima pagina.
+        for (var ii = 0; ii < 7; ii++) {
+          const parrafo = document.createElement('p');
+          parrafo.textContent = filaCompleta[ii];
+          division.appendChild(parrafo);
+          console.log("opcion 2");
+        }
+      } else if (numPagina.value < ((parseInt(listaReseras2.length / 15) + 1))) {
+        //Esto es para pagina intermedias.
+        for (var ii = 0; ii < 7; ii++) {
+          const parrafo = document.createElement('p');
+          parrafo.textContent = filaCompleta[ii];
+          division.appendChild(parrafo);
+          console.log("opcion 3");
+        }
+      }
+    } else {
+      console.log("opcion 4");
+    }
+    contadorBorrar++;
   }
 }
 
