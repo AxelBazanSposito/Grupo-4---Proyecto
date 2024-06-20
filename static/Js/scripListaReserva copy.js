@@ -245,7 +245,7 @@ function restarValor() {
 // console.log(numIngreso.value);
 
 function sumarValor() {
-  if (numIngreso.value < 10) {
+  if (numIngreso.value < cantidadPaginas) {
     const valorPaginaNuevo = ++numPagina.value;
     // console.log(valorPaginaNuevo);
     numIngreso.setAttribute('value', valorPaginaNuevo);
@@ -258,7 +258,7 @@ function sumarValor() {
   // console.log(numIniBorrar + " " + numFinBorrar);
 
   //BORRA
-
+  
   for (contadorBorrar; contadorBorrar < numFinBorrar; contadorBorrar++) {
     // hay que agregar que no pueda borrar las filas de una pagina mayor que el num maximo que tenemos.
     const nombreFila = "fila"+contadorBorrar;
@@ -326,6 +326,6 @@ function sumarValor() {
       // console.log("opcion 4");
     }
     contadorBorrar++;
-  }
+  }  
 }
 
