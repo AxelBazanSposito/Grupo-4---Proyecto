@@ -46,6 +46,12 @@ const listaReseras2 = [
   ["44", "2024/12/05", "18:30", "Homero Simpson", "I_C_Wiener@hotmail.com", "20", "correcto"],
 ];
 
+
+// Primera carga de pantalla //
+// Primera carga de pantalla //
+// Primera carga de pantalla //
+
+
 const lista1 = document.getElementById("listaFilas")
 
 const numPagina = document.getElementById("numIngreso");
@@ -79,7 +85,7 @@ for (var i = numInicio; i < numFinal; i++) {
       const parrafo = document.createElement('p');
       parrafo.textContent = filaCompleta[ii];
       division.appendChild(parrafo);
-      console.log("opcion 1");
+      // console.log("opcion 1");
     }
   } else if ((listaReseras2.length % 15) != 0) {
 
@@ -90,7 +96,7 @@ for (var i = numInicio; i < numFinal; i++) {
         const parrafo = document.createElement('p');
         parrafo.textContent = filaCompleta[ii];
         division.appendChild(parrafo);
-        console.log("opcion 2");
+        // console.log("opcion 2");
       }
     } else if (numPagina.value < ((parseInt(listaReseras2.length / 15) + 1))) {
       //Esto es para pagina intermedias.
@@ -98,11 +104,11 @@ for (var i = numInicio; i < numFinal; i++) {
         const parrafo = document.createElement('p');
         parrafo.textContent = filaCompleta[ii];
         division.appendChild(parrafo);
-        console.log("opcion 3");
+        // console.log("opcion 3");
       }
     }
   } else {
-    console.log("opcion 4");
+    // console.log("opcion 4");
   }
 
   contador++;
@@ -150,7 +156,7 @@ else {
 function restarValor() {
   if (numIngreso.value > 1) {
     const valorPaginaNuevo = --numPagina.value;
-    console.log(valorPaginaNuevo);
+    // console.log(valorPaginaNuevo);
     numIngreso.setAttribute('value', valorPaginaNuevo);
   }
 
@@ -177,13 +183,13 @@ function restarValor() {
   // console.log(contadorBorrar)
 
   // console.log("el contador de borrar es: " + contadorBorrar)
-  console.log(numIniEsc + " " + numFinEsc);
+  // console.log(numIniEsc + " " + numFinEsc);
   // contador=contador+(15 * ((numPagina.value)-1));
 
   for (var i = numIniEsc; i < numFinEsc; i++) {
     // console.log("entro en el for")
-    console.log(i);
-    console.log("el contadorborrar es: "+contadorBorrar)
+    // console.log(i);
+    // console.log("el contadorborrar es: "+contadorBorrar)
 
     const division = document.createElement('div');
     const valorID = "fila" + contadorBorrar;
@@ -200,12 +206,12 @@ function restarValor() {
         const parrafo = document.createElement('p');
         parrafo.textContent = filaCompleta[ii];
         division.appendChild(parrafo);
-        console.log("opcion 1");
+        // console.log("opcion 1");
       }
     } else if ((listaReseras2.length % 15) != 0) {
-      console.log("entro a evaluar en opcion 2 y 3");
-      console.log(contadorBorrar);
-      console.log(listaReseras2.length % 15)
+      // console.log("entro a evaluar en opcion 2 y 3");
+      // console.log(contadorBorrar);
+      // console.log(listaReseras2.length % 15)
   
       if (numPagina.value == ((parseInt(listaReseras2.length / 15) + 1)) &&
         contadorBorrar % 15 < (listaReseras2.length % 15)) {
@@ -214,7 +220,7 @@ function restarValor() {
           const parrafo = document.createElement('p');
           parrafo.textContent = filaCompleta[ii];
           division.appendChild(parrafo);
-          console.log("opcion 2");
+          // console.log("opcion 2");
         }
       } else if (numPagina.value < ((parseInt(listaReseras2.length / 15) + 1))) {
         //Esto es para pagina intermedias.
@@ -222,11 +228,11 @@ function restarValor() {
           const parrafo = document.createElement('p');
           parrafo.textContent = filaCompleta[ii];
           division.appendChild(parrafo);
-          console.log("opcion 3");
+          // console.log("opcion 3");
         }
       }
     } else {
-      console.log("opcion 4");
+      // console.log("opcion 4");
     }
     contadorBorrar++;
   }
@@ -291,12 +297,12 @@ function sumarValor() {
         const parrafo = document.createElement('p');
         parrafo.textContent = filaCompleta[ii];
         division.appendChild(parrafo);
-        console.log("opcion 1");
+        // console.log("opcion 1");
       }
     } else if ((listaReseras2.length % 15) != 0) {
-      console.log("entro a evaluar en opcion 2 y 3");
-      console.log(contadorBorrar);
-      console.log(listaReseras2.length % 15)
+      // console.log("entro a evaluar en opcion 2 y 3");
+      // console.log(contadorBorrar);
+      // console.log(listaReseras2.length % 15)
   
       if (numPagina.value == ((parseInt(listaReseras2.length / 15) + 1)) &&
         contadorBorrar % 15 < (listaReseras2.length % 15)) {
@@ -305,7 +311,7 @@ function sumarValor() {
           const parrafo = document.createElement('p');
           parrafo.textContent = filaCompleta[ii];
           division.appendChild(parrafo);
-          console.log("opcion 2");
+          // console.log("opcion 2");
         }
       } else if (numPagina.value < ((parseInt(listaReseras2.length / 15) + 1))) {
         //Esto es para pagina intermedias.
@@ -313,11 +319,11 @@ function sumarValor() {
           const parrafo = document.createElement('p');
           parrafo.textContent = filaCompleta[ii];
           division.appendChild(parrafo);
-          console.log("opcion 3");
+          // console.log("opcion 3");
         }
       }
     } else {
-      console.log("opcion 4");
+      // console.log("opcion 4");
     }
     contadorBorrar++;
   }
