@@ -156,9 +156,9 @@ else {
 // Input Number //
 
 function capturarValor(input) {
-  console.log("el valor de numPagina es: " + numPagina.value);
+  // console.log("el valor de numPagina es: " + numPagina.value);
   const valor = input.value;
-  console.log("El valor del input es: " + valor);
+  // console.log("El valor del input es: " + valor);
 
   if (valor >= 1 && valor <= (cantidadPaginas) && valor == parseInt(valor)) {
     //de momento funciona, faltan hacer mas pruebas con decimales.
@@ -175,9 +175,6 @@ function capturarValor(input) {
 
     const numIniEsc = 0 + (15 * ((valor) - 1));
     const numFinEsc = 15 + (15 * ((valor) - 1));
-
-    // contadorBorrar = contadorBorrar - 30;
-
 
     for (var i = numIniEsc; i < numFinEsc; i++) {
 
@@ -222,8 +219,63 @@ function capturarValor(input) {
       }
       // contadorBorrar++;
     }
-  }
+  } else {
+    input.value = 1;
 
+    // BORRA // 
+
+    const elementosHijos = lista1.querySelectorAll("div"); // Selecciona todos los div hijos
+    elementosHijos.forEach(elemento => elemento.remove());
+
+    // ESCRIBE //
+
+    const numIniEsc = 0 + (15 * ((input.value) - 1));
+    const numFinEsc = 15 + (15 * ((input.value) - 1));
+
+    for (var i = numIniEsc; i < numFinEsc; i++) {
+
+      const division = document.createElement('div');
+      const valorID = "fila" + i;
+      division.setAttribute('id', valorID)
+      lista1.appendChild(division);
+
+      const filaCompleta = listaReseras2[i];
+
+      if ((listaReseras2.length % 15) == 0 &&
+        (listaReseras2 / 15) != 0 &&
+        numPagina.value <= ((parseInt(listaReseras2.length / 15)))) {
+        for (var ii = 0; ii < 7; ii++) {
+          const parrafo = document.createElement('p');
+          parrafo.textContent = filaCompleta[ii];
+          division.appendChild(parrafo);
+          // console.log("opcion 1");
+        }
+      } else if ((listaReseras2.length % 15) != 0) {
+
+        if (numPagina.value == ((parseInt(listaReseras2.length / 15) + 1)) &&
+          i % 15 < (listaReseras2.length % 15)) {
+          //Esto es para la ultima pagina.
+          for (var ii = 0; ii < 7; ii++) {
+            const parrafo = document.createElement('p');
+            parrafo.textContent = filaCompleta[ii];
+            division.appendChild(parrafo);
+            // console.log("opcion 2");
+          }
+        } else if (numPagina.value < ((parseInt(listaReseras2.length / 15) + 1))) {
+          //Esto es para pagina intermedias.
+          for (var ii = 0; ii < 7; ii++) {
+            const parrafo = document.createElement('p');
+            parrafo.textContent = filaCompleta[ii];
+            division.appendChild(parrafo);
+            // console.log("opcion 3");
+          }
+        }
+      } else {
+        // console.log("opcion 4");
+      }
+    }
+    alert("El numero introducido no es valido.");
+  }
 }
 
 // Boton anterior //
