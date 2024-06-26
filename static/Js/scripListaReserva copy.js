@@ -289,84 +289,85 @@ function restarValor() {
     const valorPaginaNuevo = --numPagina.value;
     // console.log(valorPaginaNuevo);
     numIngreso.setAttribute('value', valorPaginaNuevo);
-  }
 
-  const numIniBorrar = 0 + (15 * (numPagina.value))
-  const numFinBorrar = 15 + (15 * (numPagina.value))
-  let contadorBorrar = numIniBorrar;
-  // console.log (numIniBorrar + " " + numFinBorrar);
 
-  //BORRA
-  for (contadorBorrar; contadorBorrar < numFinBorrar; contadorBorrar++) {
-    // hay que agregar que no pueda borrar las filas de una pagina mayor que el num maximo que tenemos.
-    const nombreFila = "fila" + contadorBorrar;
-    // console.log("La fila que se borra es: " + nombreFila);
-    const elementoDivBorrar = document.getElementById(nombreFila);
-    elementoDivBorrar.remove();
-  }
+    const numIniBorrar = 0 + (15 * (numPagina.value))
+    const numFinBorrar = 15 + (15 * (numPagina.value))
+    let contadorBorrar = numIniBorrar;
+    // console.log (numIniBorrar + " " + numFinBorrar);
 
-  //ESCRIBE
-
-  const numIniEsc = 0 + (15 * ((numPagina.value) - 1));
-  const numFinEsc = 15 + (15 * ((numPagina.value) - 1));
-
-  // console.log(contadorBorrar)
-  contadorBorrar = contadorBorrar - 30;
-  // console.log(contadorBorrar)
-
-  // console.log("el contador de borrar es: " + contadorBorrar)
-  // console.log(numIniEsc + " " + numFinEsc);
-  // contador=contador+(15 * ((numPagina.value)-1));
-
-  for (var i = numIniEsc; i < numFinEsc; i++) {
-    // console.log("entro en el for")
-    // console.log(i);
-    // console.log("el contadorborrar es: "+contadorBorrar)
-
-    const division = document.createElement('div');
-    const valorID = "fila" + contadorBorrar;
-    division.setAttribute('id', valorID)
-    lista1.appendChild(division);
-
-    const filaCompleta = listaReseras2[i];
-    // console.log(filaCompleta);
-
-    if ((listaReseras2.length % 15) == 0 &&
-      (listaReseras2 / 15) != 0 &&
-      numPagina.value <= ((parseInt(listaReseras2.length / 15)))) {
-      for (var ii = 0; ii < 7; ii++) {
-        const parrafo = document.createElement('p');
-        parrafo.textContent = filaCompleta[ii];
-        division.appendChild(parrafo);
-        // console.log("opcion 1");
-      }
-    } else if ((listaReseras2.length % 15) != 0) {
-      // console.log("entro a evaluar en opcion 2 y 3");
-      // console.log(contadorBorrar);
-      // console.log(listaReseras2.length % 15)
-
-      if (numPagina.value == ((parseInt(listaReseras2.length / 15) + 1)) &&
-        contadorBorrar % 15 < (listaReseras2.length % 15)) {
-        //Esto es para la ultima pagina.
-        for (var ii = 0; ii < 7; ii++) {
-          const parrafo = document.createElement('p');
-          parrafo.textContent = filaCompleta[ii];
-          division.appendChild(parrafo);
-          // console.log("opcion 2");
-        }
-      } else if (numPagina.value < ((parseInt(listaReseras2.length / 15) + 1))) {
-        //Esto es para pagina intermedias.
-        for (var ii = 0; ii < 7; ii++) {
-          const parrafo = document.createElement('p');
-          parrafo.textContent = filaCompleta[ii];
-          division.appendChild(parrafo);
-          // console.log("opcion 3");
-        }
-      }
-    } else {
-      // console.log("opcion 4");
+    //BORRA
+    for (contadorBorrar; contadorBorrar < numFinBorrar; contadorBorrar++) {
+      // hay que agregar que no pueda borrar las filas de una pagina mayor que el num maximo que tenemos.
+      const nombreFila = "fila" + contadorBorrar;
+      // console.log("La fila que se borra es: " + nombreFila);
+      const elementoDivBorrar = document.getElementById(nombreFila);
+      elementoDivBorrar.remove();
     }
-    contadorBorrar++;
+
+    //ESCRIBE
+
+    const numIniEsc = 0 + (15 * ((numPagina.value) - 1));
+    const numFinEsc = 15 + (15 * ((numPagina.value) - 1));
+
+    // console.log(contadorBorrar)
+    contadorBorrar = contadorBorrar - 30;
+    // console.log(contadorBorrar)
+
+    // console.log("el contador de borrar es: " + contadorBorrar)
+    // console.log(numIniEsc + " " + numFinEsc);
+    // contador=contador+(15 * ((numPagina.value)-1));
+
+    for (var i = numIniEsc; i < numFinEsc; i++) {
+      // console.log("entro en el for")
+      // console.log(i);
+      // console.log("el contadorborrar es: "+contadorBorrar)
+
+      const division = document.createElement('div');
+      const valorID = "fila" + contadorBorrar;
+      division.setAttribute('id', valorID)
+      lista1.appendChild(division);
+
+      const filaCompleta = listaReseras2[i];
+      // console.log(filaCompleta);
+
+      if ((listaReseras2.length % 15) == 0 &&
+        (listaReseras2 / 15) != 0 &&
+        numPagina.value <= ((parseInt(listaReseras2.length / 15)))) {
+        for (var ii = 0; ii < 7; ii++) {
+          const parrafo = document.createElement('p');
+          parrafo.textContent = filaCompleta[ii];
+          division.appendChild(parrafo);
+          // console.log("opcion 1");
+        }
+      } else if ((listaReseras2.length % 15) != 0) {
+        // console.log("entro a evaluar en opcion 2 y 3");
+        // console.log(contadorBorrar);
+        // console.log(listaReseras2.length % 15)
+
+        if (numPagina.value == ((parseInt(listaReseras2.length / 15) + 1)) &&
+          contadorBorrar % 15 < (listaReseras2.length % 15)) {
+          //Esto es para la ultima pagina.
+          for (var ii = 0; ii < 7; ii++) {
+            const parrafo = document.createElement('p');
+            parrafo.textContent = filaCompleta[ii];
+            division.appendChild(parrafo);
+            // console.log("opcion 2");
+          }
+        } else if (numPagina.value < ((parseInt(listaReseras2.length / 15) + 1))) {
+          //Esto es para pagina intermedias.
+          for (var ii = 0; ii < 7; ii++) {
+            const parrafo = document.createElement('p');
+            parrafo.textContent = filaCompleta[ii];
+            division.appendChild(parrafo);
+            // console.log("opcion 3");
+          }
+        }
+      } else {
+        // console.log("opcion 4");
+      }
+      contadorBorrar++;
+    }
   }
 }
 
@@ -381,83 +382,84 @@ function sumarValor() {
     const valorPaginaNuevo = ++numPagina.value;
     // console.log(valorPaginaNuevo);
     numIngreso.setAttribute('value', valorPaginaNuevo);
-  }
-  const numIniBorrar = 0 + (15 * ((numPagina.value) - 2))
-  const numFinBorrar = 15 + (15 * ((numPagina.value) - 2))
-  let contadorBorrar = numIniBorrar;
-  // PARA BORRAR LA PAGINA ANTERIOR Y ESCRIBIR USO LOS NUMEROS DE ARRBIA.
-  // PARA PAGINA ANTERIOR TENDRIA QUE SUMAR "+1"
-  // console.log(numIniBorrar + " " + numFinBorrar);
 
-  //BORRA
+    const numIniBorrar = 0 + (15 * ((numPagina.value) - 2))
+    const numFinBorrar = 15 + (15 * ((numPagina.value) - 2))
+    let contadorBorrar = numIniBorrar;
+    // PARA BORRAR LA PAGINA ANTERIOR Y ESCRIBIR USO LOS NUMEROS DE ARRBIA.
+    // PARA PAGINA ANTERIOR TENDRIA QUE SUMAR "+1"
+    // console.log(numIniBorrar + " " + numFinBorrar);
 
-  for (contadorBorrar; contadorBorrar < numFinBorrar; contadorBorrar++) {
-    // hay que agregar que no pueda borrar las filas de una pagina mayor que el num maximo que tenemos.
-    const nombreFila = "fila" + contadorBorrar;
-    // console.log("La fila que se borra es: " + nombreFila);
-    const elementoDivBorrar = document.getElementById(nombreFila);
-    elementoDivBorrar.remove();
-  }
+    //BORRA
 
-  // console.log("Hasta aca corrio el programa bien");
-  // console.log(numIniBorrar);
-  // console.log(numFinBorrar);
-
-  //ESCRIBE
-
-  const numIniEsc = 0 + (15 * ((numPagina.value) - 1));
-  const numFinEsc = 15 + (15 * ((numPagina.value) - 1));
-
-  // console.log(numIniEsc + " " + numFinEsc);
-
-  for (var i = numIniEsc; i < numFinEsc; i++) {
-    // console.log("entro en el for")
-    // console.log(i);
-
-    const division = document.createElement('div');
-    const valorID = "fila" + contadorBorrar;
-    division.setAttribute('id', valorID)
-    lista1.appendChild(division);
-
-    const filaCompleta = listaReseras2[i];
-    // console.log(filaCompleta);
-
-    if ((listaReseras2.length % 15) == 0 &&
-      (listaReseras2 / 15) != 0 &&
-      numPagina.value <= ((parseInt(listaReseras2.length / 15)))) {
-      for (var ii = 0; ii < 7; ii++) {
-        const parrafo = document.createElement('p');
-        parrafo.textContent = filaCompleta[ii];
-        division.appendChild(parrafo);
-        // console.log("opcion 1");
-      }
-    } else if ((listaReseras2.length % 15) != 0) {
-      // console.log("entro a evaluar en opcion 2 y 3");
-      // console.log(contadorBorrar);
-      // console.log(listaReseras2.length % 15)
-
-      if (numPagina.value == ((parseInt(listaReseras2.length / 15) + 1)) &&
-        contadorBorrar % 15 < (listaReseras2.length % 15)) {
-        //Esto es para la ultima pagina.
-        for (var ii = 0; ii < 7; ii++) {
-          const parrafo = document.createElement('p');
-          parrafo.textContent = filaCompleta[ii];
-          division.appendChild(parrafo);
-          // console.log("opcion 2");
-        }
-      } else if (numPagina.value < ((parseInt(listaReseras2.length / 15) + 1))) {
-        //Esto es para pagina intermedias.
-        for (var ii = 0; ii < 7; ii++) {
-          const parrafo = document.createElement('p');
-          parrafo.textContent = filaCompleta[ii];
-          division.appendChild(parrafo);
-          // console.log("opcion 3");
-        }
-      }
-    } else {
-      // console.log("opcion 4");
+    for (contadorBorrar; contadorBorrar < numFinBorrar; contadorBorrar++) {
+      // hay que agregar que no pueda borrar las filas de una pagina mayor que el num maximo que tenemos.
+      const nombreFila = "fila" + contadorBorrar;
+      // console.log("La fila que se borra es: " + nombreFila);
+      const elementoDivBorrar = document.getElementById(nombreFila);
+      elementoDivBorrar.remove();
     }
-    contadorBorrar++;
+
+    // console.log("Hasta aca corrio el programa bien");
+    // console.log(numIniBorrar);
+    // console.log(numFinBorrar);
+
+    //ESCRIBE
+
+    const numIniEsc = 0 + (15 * ((numPagina.value) - 1));
+    const numFinEsc = 15 + (15 * ((numPagina.value) - 1));
+
+    // console.log(numIniEsc + " " + numFinEsc);
+
+    for (var i = numIniEsc; i < numFinEsc; i++) {
+      // console.log("entro en el for")
+      // console.log(i);
+
+      const division = document.createElement('div');
+      const valorID = "fila" + contadorBorrar;
+      division.setAttribute('id', valorID)
+      lista1.appendChild(division);
+
+      const filaCompleta = listaReseras2[i];
+      // console.log(filaCompleta);
+
+      if ((listaReseras2.length % 15) == 0 &&
+        (listaReseras2 / 15) != 0 &&
+        numPagina.value <= ((parseInt(listaReseras2.length / 15)))) {
+        for (var ii = 0; ii < 7; ii++) {
+          const parrafo = document.createElement('p');
+          parrafo.textContent = filaCompleta[ii];
+          division.appendChild(parrafo);
+          // console.log("opcion 1");
+        }
+      } else if ((listaReseras2.length % 15) != 0) {
+        // console.log("entro a evaluar en opcion 2 y 3");
+        // console.log(contadorBorrar);
+        // console.log(listaReseras2.length % 15)
+
+        if (numPagina.value == ((parseInt(listaReseras2.length / 15) + 1)) &&
+          contadorBorrar % 15 < (listaReseras2.length % 15)) {
+          //Esto es para la ultima pagina.
+          for (var ii = 0; ii < 7; ii++) {
+            const parrafo = document.createElement('p');
+            parrafo.textContent = filaCompleta[ii];
+            division.appendChild(parrafo);
+            // console.log("opcion 2");
+          }
+        } else if (numPagina.value < ((parseInt(listaReseras2.length / 15) + 1))) {
+          //Esto es para pagina intermedias.
+          for (var ii = 0; ii < 7; ii++) {
+            const parrafo = document.createElement('p');
+            parrafo.textContent = filaCompleta[ii];
+            division.appendChild(parrafo);
+            // console.log("opcion 3");
+          }
+        }
+      } else {
+        // console.log("opcion 4");
+      }
+      contadorBorrar++;
+    }
   }
 }
 
