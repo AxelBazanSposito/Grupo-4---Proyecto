@@ -235,7 +235,7 @@ async function saveReserva(){
     // Si no hay idReserva, realiza una petición POST para crear una nueva reserva
     result = await fetchData(`${BASEURL}/api/reservas/`, 'POST', reservaData);
   }
-  
+
   const formReserva = document.querySelector('#form-reserva');
   formReserva.reset();
   Swal.fire({
