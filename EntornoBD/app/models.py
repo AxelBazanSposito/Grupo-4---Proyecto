@@ -18,11 +18,11 @@ class Reserva:
             cursor.execute("""
                 UPDATE reservas SET local = %s, hora = %s, nombre = %s, email = %s, comensales = %s
                 WHERE id_reserva = %s
-            """, ( self.id_reserva,self.local, self.hora,self.nombre,self.email, self.comensales))
+            """, (self.local, self.hora,self.nombre,self.email, self.comensales,self.id_reserva))
         else:
             cursor.execute("""
                 INSERT INTO reservas (local,hora,nombre,email,comensales) VALUES (%s, %s, %s, %s, %s)
-            """, ( self.id_reserva, self.local, self.hora, self.nombre, self.email, self.comensales))
+            """, (self.local, self.hora, self.nombre, self.email, self.comensales))
             self.id_reserva = cursor.lastrowid
         db.commit()
         cursor.close()
@@ -41,7 +41,7 @@ class Reserva:
     def get_by_id(reserva_id):
         db = get_db()
         cursor = db.cursor()
-        cursor.execute("SELECT * FROM reserva WHERE id_reserva = %s", (reserva_id))
+        cursor.execute("SELECT * FROM reservas WHERE id_reserva = %s", (reserva_id,))
         row = cursor.fetchone()
         cursor.close()
         if row:
@@ -51,7 +51,7 @@ class Reserva:
     def delete(self):
         db = get_db()
         cursor = db.cursor()
-        cursor.execute("DELETE FROM reserva WHERE id_reserva = %s", (self.id_reserva,))
+        cursor.execute("DELETE FROM reservas WHERE id_reserva = %s", (self.id_reserva,))
         db.commit()
         cursor.close()
 

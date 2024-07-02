@@ -303,7 +303,7 @@ async function updateReserva(id){
   const hora = document.querySelector('#hora');
   const nombre = document.querySelector('#nombre');
   const email = document.querySelector('#email-form');
-  const comensales = document.querySelector('#comensales');
+  const comensales = document.querySelector('#comensales-form');
   
   idReserva.value = response.id_reserva;
   local.value = response.local;
