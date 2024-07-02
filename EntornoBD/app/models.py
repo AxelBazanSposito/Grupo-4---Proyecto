@@ -21,7 +21,7 @@ class Reserva:
             """, ( self.id_reserva,self.local, self.hora,self.nombre,self.email, self.comensales))
         else:
             cursor.execute("""
-                INSERT INTO reservas (hora, comensales, email,nombre,local) VALUES (%s, %s, %s, %s)
+                INSERT INTO reservas (local,hora,nombre,email,comensales) VALUES (%s, %s, %s, %s, %s)
             """, ( self.id_reserva, self.local, self.hora, self.nombre, self.email, self.comensales))
             self.id_reserva = cursor.lastrowid
         db.commit()
