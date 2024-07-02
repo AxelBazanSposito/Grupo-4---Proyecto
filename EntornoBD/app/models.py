@@ -16,13 +16,13 @@ class Reserva:
         cursor = db.cursor()
         if self.id_reserva:
             cursor.execute("""
-                UPDATE reservas SET hora = %s, comensales = %s, email = %s, nombre = %s, local = %s
+                UPDATE reservas SET local = %s, hora = %s, nombre = %s, email = %s, comensales = %s
                 WHERE id_reserva = %s
             """, ( self.id_reserva,self.local, self.hora,self.nombre,self.email, self.comensales))
         else:
             cursor.execute("""
                 INSERT INTO reservas (hora, comensales, email,nombre,local) VALUES (%s, %s, %s, %s)
-            """, ( self.id_reserva, self.local, self.hora,self.nombre, self.email, self.comensales))
+            """, ( self.id_reserva, self.local, self.hora, self.nombre, self.email, self.comensales))
             self.id_reserva = cursor.lastrowid
         db.commit()
         cursor.close()
