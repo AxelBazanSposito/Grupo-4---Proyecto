@@ -117,9 +117,10 @@ function deleteReserva(id){
       title: "¿Está seguro de eliminar la reserva?",
       showCancelButton: true,
       confirmButtonText: "Eliminar",
+      cancelButtonText:"Cancelar",
   }).then(async (result) => {
       if (result.isConfirmed) {
-        let response = await fetchData(`${BASEURL}/api/reservas/${id}`, 'ELIMINAR');
+        let response = await fetchData(`${BASEURL}/api/reservas/${id}`, 'DELETE');
         showReservas();
         Swal.fire(response.message, "", "success");
       }
