@@ -26,7 +26,7 @@ async function fetchData(url, method, data = null) {
     return await response.json();  // Devuelve la respuesta en formato JSON
   } catch (error) {
     console.error('Fetch error:', error);
-    alert('"Ocurrió un error al recuperar los datos. Por favor, inténtalo nuevamente');
+    alert('"Ocurrió un error al recuperar los datos. Por favor, inténtalo nuevamente"');
   }
 }
 
