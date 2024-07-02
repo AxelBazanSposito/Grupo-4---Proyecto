@@ -8,7 +8,7 @@ def create_reserva():
     data = request.json
     new_reserva = Reserva(local=data['local'],hora=data['hora'], nombre=data['nombre'], email=data['email'], comensales=data['comensales'])
     new_reserva.saveReserva()
-    return jsonify({'message': 'Reserva creada con exito'}), 201
+    return jsonify({'message': 'Reserva creada'}), 201
 
 def get_all_reservas():
     reservas = Reserva.get_all()
@@ -33,11 +33,11 @@ def update_reserva(reserva_id):
     reserva.comensales = data['comensales']
     # reserva.estado = data['estado']
     reserva.saveReserva()
-    return jsonify({'message': 'Tu reserva se agendó con exito'})
+    return jsonify({'message': 'Tu reserva se agendó'})
 
 def delete_reserva(reserva_id):
     reserva = Reserva.get_by_id(reserva_id)
     if not reserva:
         return jsonify({'message': 'Reserva no encontrada'}), 404
     reserva.delete()
-    return jsonify({'message': 'Reserva eliminada con exito'})
+    return jsonify({'message': 'Reserva eliminada'})
