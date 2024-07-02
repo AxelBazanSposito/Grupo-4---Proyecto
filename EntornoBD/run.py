@@ -17,11 +17,11 @@ CORS(app)
 
 # Rutas para el CRUD de la entidad Reserva ( Agregar ruta de acceso html carpeta!!!)
 app.route('/', methods=['GET'])(index)
-app.route('/template/reserva.html', methods=['POST'])(create_reserva)
-app.route('/', methods=['GET'])(get_all_reservas)
-app.route('/api/reserva/<int:reserva_id>', methods=['GET'])(get_reserva)
-app.route('/api/reserva/<int:reserva_id>', methods=['PUT'])(update_reserva)
-app.route('/api/reserva/<int:reserva_id>', methods=['DELETE'])(delete_reserva)
+app.route('/api/reservas/', methods=['POST'])(create_reserva)
+app.route('/api/reservas/', methods=['GET'])(get_all_reservas)
+app.route('/api/reservas/<int:reserva_id>', methods=['GET'])(get_reserva)
+app.route('/api/reservas/<int:reserva_id>', methods=['PUT'])(update_reserva)
+app.route('/api/reservas/<int:reserva_id>', methods=['DELETE'])(delete_reserva)
 
 if __name__ == '__main__':
     app.run(debug=True)

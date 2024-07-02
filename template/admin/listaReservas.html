@@ -97,18 +97,22 @@
                         <button type="submit">Buscar</button>
                     </div>
                 </div>
-                <div class="lista">
-                    <div class="listaConceptos">
-                        <ul>
-                            <li>Local</li>
-                            <li>Fecha</li>
-                            <li>Hora</li>
-                            <li>Nombre</li>
-                            <li>Mail</li>
-                            <li>Cantidad</li>
-                            <li>Estado</li>
-                        </ul>
-                    </div>
+                <div id="lista" class="lista">
+                    <table id="lista-table-reservas" class="table">
+                        <thead class="listaConceptos">
+                            <tr>
+                                <th>Local</th>
+                                <th>Fecha</th>
+                                <th>Hora</th>
+                                <th>Nombre</th>
+                                <th>Mail</th>
+                                <th>Comensales</th>
+                                <!-- <th>Estado</th> -->
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-table-reservas">
+                        </tbody>
+                    </table>
                     <div id="listaFilas" class="listaFilas">
                     </div>
                     <div id="listaFooter" class="listaFooter">
@@ -124,6 +128,7 @@
             </section>
 
             <script src="../../static/Js/scripListaReserva copy.js"></script>
+            <script src="../../static/Js/reserva.js"></script>
         </div>
     </main>
 

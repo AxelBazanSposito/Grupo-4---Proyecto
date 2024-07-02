@@ -6,8 +6,8 @@ def index():
 
 def create_reserva():
     data = request.json
-    new_reserva = Reserva(id_reserva=data['id_reserva'],local=data['local'],hora=data['hora'], fecha=data['Fecha'], nombre=data['nombre'], email=data['email'], comensales=data['comensales'], estado=data['estado'])
-    new_reserva.save()
+    new_reserva = Reserva(id_reserva=data['id_reserva'],local=data['local'],hora=data['hora'], nombre=data['nombre'], email=data['email'], comensales=data['comensales'])
+    new_reserva.saveReserva()
     return jsonify({'message': 'Reserva created successfully'}), 201
 
 def get_all_reservas():
@@ -20,20 +20,20 @@ def get_reserva(reserva_id):
         return jsonify({'message': 'Reserva not found'}), 404
     return jsonify(reserva.serialize())
 
-def update_reserva(movie_id):
-    reserva = Reserva.get_by_id(movie_id)
+def update_reserva(reserva_id):
+    reserva = Reserva.get_by_id(reserva_id)
     if not reserva:
         return jsonify({'message': 'Reserva not found'}), 404
     data = request.json
     reserva.id_reserva = data['id_reserva']
     reserva.local = data['local']
-    reserva.fecha = data['fecha']
+    # reserva.fecha = data['fecha']
     reserva.hora = data['hora']
     reserva.nombre= data['nombre']
     reserva.email = data['email']
     reserva.comensales = data['comensales']
-    reserva.estado = data['estado']
-    reserva.save()
+    # reserva.estado = data['estado']
+    reserva.saveReserva()
     return jsonify({'message': 'Reserva updated successfully'})
 
 def delete_reserva(reserva_id):
