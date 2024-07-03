@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -76,13 +76,13 @@
         <div class="contReserva">
             <h1>Reservas</h1>
             <h2>Realise su reserva aqui</h2>
-            <form id="formReserva" class="formReserva">
+            <!-- <form id="formReserva" class="formReserva">
                 <div>
-                    <!-- <div>
+                    <div>
                         <label for="fecha">Fecha:</label>
                         <input id="fechaReserva" class="fechaReserva" name="fecha" type="date">
                         <p id="errorFecha" class="errorFecha"></p>
-                    </div> -->
+                    </div>
 
                     <div>
                         <label for="hora">Hora:</label>
@@ -123,8 +123,50 @@
                         <input type="hidden" name="id" id="id-reserva">
                         <button class="btn-reserva" type="submit" id="btn-save-reserva" onclick="saveReserva()">Reservar</button>
                     </div>
+
+
                 </div>
+            </form> -->
+            <form action="#"  id="form-reserva">
+                <div class="d-flex">
+                    <div class="form-control d-flex-column">
+                        <label for="local">Local</label>
+                        <input type="text" class="input-search" name="local" id="local">
+                    </div>
+
+                    <div class="form-control d-flex-column">
+                        <label for="hora">Hora</label>
+                        <input type="time" class="input-search" name="hora" id="hora">
+                    </div>
+                    
+                    <div class="form-control d-flex-column">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="input-search" name="nombre" id="nombre">
+                    </div>
+
+                    <div class="form-control d-flex-column">
+                        <label for="email">Email</label>
+                        <input type="text" class="input-search" name="email" id="email-form">
+                    </div>   
+
+                    <div class="form-control d-flex-column">
+                        <label for="comensales">Comensales</label>
+                        <input type="number" class="input-search" name="comensales" id="comensales-form">
+                    </div>   
+
+                    <input style="display: none;" name="id" id="id-reserva">
+                    <button class="btn-cac" type="button" id="btn-save-reserva">Reservar</button>
+                </div>
+            </form> 
+
+            <div>
+                <a class="navMenuLink" href="./crud-movies.html">Gestion de Reservas</a>
+            </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/crud-movies-fetch.js"></script>
+    <script src="../static/js/index.js"></script>
 
     <footer class="barFooter">
         <div class="redesFooter">
@@ -164,4 +206,4 @@
     </footer>
 </body>
 
-</html> -->
+</html>

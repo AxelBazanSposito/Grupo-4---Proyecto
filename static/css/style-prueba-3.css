@@ -58,10 +58,10 @@ main{
 
 .titulo{
     grid-area: titulo;
-    /* width: 80%; */
-    width: 100%;
+
+    width: 80%;
     height: 140px;
-    /* margin: 20px auto; */
+    margin: 20px auto;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -238,6 +238,58 @@ footer {
 .listaFooter input{
     max-width: 50px;
 }
+
+/* ---------------- CSS Gestion Reservas ------------------ */
+/* ---------------- CSS Gestion Reservas ------------------ */
+/* ---------------- CSS Gestion Reservas ------------------ */
+/* ---------------- CSS Gestion Reservas ------------------ */
+/* ---------------- CSS Gestion Reservas ------------------ */
+
+.bodyCrud{
+    background-image: url(../img/backgrounds/hanny-naibaho-Soeu0ffDa-s-unsplash.jpg);
+}
+
+.mainCrud{
+    min-height: 800px;
+    background-color: var(--bg-color-nav-opacity-50);
+}
+
+.grillaPrincipalCrud{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "seccion1 seccion2";
+}
+
+.seccion1{
+    grid-area: seccion1;
+    background-color: blue;
+}
+.seccion2{
+    grid-area: seccion2;
+    background-color: orange;
+}
+
+.grillaPrincipalCrud .titulo{
+    background-image: url(../img/backgrounds/conjunto-especias-hierbas-aromaticas-indias-sobre-fondo-piedra-negra-curcuma-eneldo-pimenton-canela-azafran-albahaca-romero-cuchara-vista-superior-bosquejo_253362-8651.jpg);
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "encabezado"
+    "cuerpo";
+}
+
+.description{
+    grid-area: encabezado;
+}
+.cuerpo{
+    grid-area: cuerpo;
+}
+
+
 /* ---------------- CSS Index/Home ------------------ */
 /* ---------------- CSS Index/Home ------------------ */
 /* ---------------- CSS Index/Home ------------------ */
