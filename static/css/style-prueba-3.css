@@ -267,14 +267,14 @@ footer {
     min-height: 500px;
     width: 95%;
     margin: 0 auto;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .seccion2{
     grid-area: seccion2;
     min-height: 500px;
     width: 98%;
     margin: 0 auto;
-    background-color: orange;
+    /* background-color: orange; */
 }
 .contCuerpo{
     display: grid;
@@ -289,6 +289,7 @@ footer {
 
     height: 100%;
     margin: 0 auto;
+    background-color: var(--bg-color-nav)
 }
 
 
@@ -298,26 +299,58 @@ footer {
 
 .description1{
     grid-area: encabezado;
-    background-color: white;
+    /* background-color: var(--bg-color-nav) */
     text-align: center;
     align-self: center;
     height: 100%;
 }
 .cuerpo1{
     grid-area: cuerpo;
-    background-color: aqua;
+    /* background-color: var(--bg-color-nav) */
 }
 .description2{
     grid-area: encabezado;
-    background-color: white;
+    /* background-color: var(--bg-color-nav) */
     text-align: center;
     align-self: center;
     height: 100%;
 }
 .cuerpo2{
     grid-area: cuerpo;
-    background-color: aqua;
-    display: grid;
+    /* background-color: var(--bg-color-nav) */
+    /* display: grid; */
+}
+
+.table {
+    margin: 30px 0px;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #FFF;
+    vertical-align: top;
+    border-color: #dee2e6;
+}
+
+.table th,
+.table td {
+    padding: 8px; 
+    text-align: center;
+}
+.table th{
+    border-bottom: 1px solid #ffffff;
+}
+.table td{
+    border-bottom: 1px solid #4f4f4f;
+}
+
+h2{
+    font-size: var(--fuente-h2-1280);
+    /* text-align: center; */
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 2px black;
+    width: 75%;
+    background-color: var(--primary-color-opacity-50);
+    /* place-self: center; */
 }
 
 /* ---------------- Barra Navegacion ------------------ */
