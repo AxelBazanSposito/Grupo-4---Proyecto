@@ -306,13 +306,23 @@ footer {
 }
 .cuerpo1{
     grid-area: cuerpo;
+    font-family: var(--fuente-principal);
+    font-size: var(--fuente-grande-1280);
+    text-shadow: black;
+    font-style:inherit;
+    color:antiquewhite;
+    margin: 8%;
     /* background-color: var(--bg-color-nav) */
+}
+.input-search{
+    margin: 5%;
 }
 .description2{
     grid-area: encabezado;
     /* background-color: var(--bg-color-nav) */
     text-align: center;
     align-self: center;
+    align-content: center;    
     height: 100%;
 }
 .cuerpo2{
@@ -342,7 +352,7 @@ footer {
     border-bottom: 1px solid #4f4f4f;
 }
 
-h2{
+h2,h3{
     font-size: var(--fuente-h2-1280);
     /* text-align: center; */
     font-weight: bold;
@@ -351,6 +361,14 @@ h2{
     width: 75%;
     background-color: var(--primary-color-opacity-50);
     /* place-self: center; */
+}
+
+h2{
+    margin:0 12%;
+}
+
+h3{
+    margin: 0 auto;
 }
 
 /* ---------------- Barra Navegacion ------------------ */
