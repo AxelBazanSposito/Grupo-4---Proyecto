@@ -264,328 +264,60 @@ footer {
 
 .seccion1{
     grid-area: seccion1;
+    min-height: 500px;
+    width: 95%;
+    margin: 0 auto;
     background-color: blue;
-
-    display: grid;
-    grid-template-areas: 
-    "encabezado1"
-    "cuerpo1";
 }
 .seccion2{
     grid-area: seccion2;
+    min-height: 500px;
+    width: 98%;
+    margin: 0 auto;
     background-color: orange;
-
-    display: grid;
-    grid-template-areas: 
-    "encabezado2"
-    "cuerpo2";
 }
+.contCuerpo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas: 
+    "encabezado"
+    "cuerpo";
+
+    justify-content: center;
+    align-content: center;
+
+    height: 100%;
+    margin: 0 auto;
+}
+
 
 .grillaPrincipalCrud .titulo{
     background-image: url(../img/backgrounds/conjunto-especias-hierbas-aromaticas-indias-sobre-fondo-piedra-negra-curcuma-eneldo-pimenton-canela-azafran-albahaca-romero-cuchara-vista-superior-bosquejo_253362-8651.jpg);
 }
 
 .description1{
-    grid-area: encabezado1;
+    grid-area: encabezado;
     background-color: white;
+    text-align: center;
+    align-self: center;
+    height: 100%;
 }
 .cuerpo1{
-    grid-area: cuerpo1;
+    grid-area: cuerpo;
     background-color: aqua;
 }
 .description2{
-    grid-area: encabezado2;
+    grid-area: encabezado;
     background-color: white;
+    text-align: center;
+    align-self: center;
+    height: 100%;
 }
 .cuerpo2{
-    grid-area: cuerpo2;
-    background-color: aqua;
-}
-
-
-/* ---------------- CSS Index/Home ------------------ */
-/* ---------------- CSS Index/Home ------------------ */
-/* ---------------- CSS Index/Home ------------------ */
-/* ---------------- CSS Index/Home ------------------ */
-/* ---------------- CSS Index/Home ------------------ */
-
-.bodyHome{
-    background-image: url(../img/backgrounds/chris-liverani-oCsaxvGCehM-unsplash.jpg);
-}
-
-.mainHome{
-    background-color:var(--bg-color-nav-opacity-50);
-}
-.grillaPrincipal{
-    display: grid;
-    grid-template-areas: 
-    "titulo"
-    "cuerpo";
-}
-
-/* Especifico para Home */
-.tituloHome{
-    grid-template-areas:
-    "logo1 texto logo2";
-}
-.titulo .tituloLogo1Home{
-    grid-area: logo1;
-    width: 100%;
-    max-width: 130px;
-    height: 80%;
-}
-.titulo .tituloTextoHome{
-    grid-area: texto;
-    width: 100%;
-    max-width: 320px;
-}
-
-.titulo .tituloLogo2Home{
-    grid-area: logo2;
-    width: 100%;
-    max-width: 130px;
-    height: 80%;
-}
-/* ---------------------- */
-
-.titulo img{
-    max-height: 140px;
-    place-self: center;
-}
-
-.cuerpo{
     grid-area: cuerpo;
-    width: 80%;
-    margin: 20px auto;
-
-    display:grid;
-    grid-template-areas: 
-    "seccion1"
-    "seccion2";
-    gap: 20px;
-
-    align-content: center;
-    justify-content: center;
-}
-
-.seccion1{
-    grid-area: seccion1;
+    background-color: aqua;
     display: grid;
-    grid-template-areas: 
-    "imagen titulo"
-    "imagen parrafo";
-}
-.imagenSeccion1{
-    grid-area: imagen;
-}
-.subSec1{
-    grid-area: titulo;
-}
-.parSec1{
-    grid-area: parrafo;
-}
-
-.seccion2{
-    grid-area: seccion2;
-    display: grid;
-    grid-template-areas: 
-    "titulo imagen"
-    "parrafo imagen";
-}
-.imagenSeccion2{
-    grid-area: imagen;
-}
-.subSec2{
-    grid-area: titulo;
-}
-.parSec2{
-    grid-area: parrafo;
-}
-
-.seccion{
-    /* height: 450px; */
-    gap: 5%;
-    align-items: start;
-    justify-content: center;
-    grid-template-rows: 1fr 3fr;
-    background-color: var(--bg-color-nav-opacity-50);
-    padding: 1em;
-}
-
-.seccion img{
-    max-width: 300px;
-    max-height: 450px;
-    place-self: center;
-}
-.seccion2 img{
-    height: 450px;
-}
-
-.subtitulo{
-    font-size: 2em;
-    text-align: center;
-    font-weight: bold;
-    color: var(--secondary-color);
-    text-shadow: 2px 2px 2px black;
-    width: 55%;
-    background-color: var(--primary-color-opacity-50);
-    place-self: center;
-}
-
-.contParrafoSec2{
-    display: grid;
-    gap: 1em;
-}
-
-.parrafo{
-    font-size: 1.5em;
-    font-weight: bold;
-    color:white;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1280px){
-    .seccion1{
-        grid-template-areas: 
-        "titulo titulo"
-        "imagen parrafo";
-    }
-    .seccion2{
-        grid-template-areas: 
-        "titulo titulo"
-        "parrafo imagen";
-    }
-    .subtitulo{
-        font-size: 2em;
-        width: 60%;
-    }
-
-    .seccion img{
-        max-width: 200px;
-        max-height: 300px;
-        place-self: center;
-    }
-    .seccion2 img{
-        height: 300px;
-    }
-
-    .parrafo{
-        font-size: 1.2em;
-    }
-}
-@media screen and (min-width: 320px) and (max-width: 767px){
-
-    .grillaPrincipal{
-        grid-template-areas: 
-        "cuerpo";
-    }
-
-    .tituloHome{
-        display: none;
-    }
-
-    .cuerpo{
-        width: 90%;
-    }
-    .seccion{
-        grid-template-areas: 
-        "titulo"
-        "imagen"
-        "parrafo";
-        align-items: center;
-    }
-    .seccion1{
-        grid-template-rows: 0.5fr 2fr 3fr;
-        gap: 3%;
-    }
-    .seccion2{
-        grid-template-rows: 1fr 3fr 5fr;
-        gap: 1%;
-    }
-    .subtitulo{
-        font-size: 1.5em;
-        width: 80%;
-    }
-
-    .seccion img{
-        max-width: 200px;
-        max-height: 300px;
-        place-self: center;
-    }
-    .seccion2 img{
-        height: 300px;
-    }
-
-    .parrafo{
-        font-size: 1.2em;
-        width: 90%;
-        place-self: center;
-        text-align: center;
-    }
-
-}
-
-@media screen and (max-width: 319px){
-
-    .mainHome{
-        min-height: 500px;
-    
-    }
-
-    .grillaPrincipal{
-        grid-template-areas: 
-        "cuerpo";
-    }
-
-    .tituloHome{
-        display: none;
-    }
-
-    .imagenSeccion1{
-        display: none;
-    }
-    .imagenSeccion2{
-        display: none;
-    }
-
-    .cuerpo{
-        width: 90%;
-    }
-    .seccion{
-        grid-template-areas: 
-        "titulo"
-
-        "parrafo";
-        align-items: center;
-    }
-    .seccion1{
-        grid-template-rows: 0.5fr 2fr;
-        gap: 3%;
-    }
-    .seccion2{
-        grid-template-rows: 0.5fr 2fr;
-        gap: 1%;
-    }
-    .subtitulo{
-        font-size: 1.5em;
-        width: 80%;
-    }
-
-    .seccion img{
-        max-width: 200px;
-        max-height: 300px;
-        place-self: center;
-    }
-    .seccion2 img{
-        height: 300px;
-    }
-
-    .parrafo{
-        font-size: 1.2em;
-        width: 90%;
-        place-self: center;
-        text-align: center;
-    }
-
 }
 
 /* ---------------- Barra Navegacion ------------------ */

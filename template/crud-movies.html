@@ -94,78 +94,84 @@
 
             <section id="form" class="container seccion1">
 
-                <div class="description1">
-                    <p>Haz tu reserva</p>
+                <div class="contCuerpo">
+                    
+                    <div class="description1">
+                        <h2>Gestionar Reservas</h2>
+                    </div>
+    
+                    <div class="cuerpo1">
+                        <form action="#" id="form-reserva">
+    
+                            <div class="d-flex">
+        
+                                <div class="form-control d-flex-column">
+                                    <label for="local">Local</label>
+                                    <input type="text" class="input-search" name="local" id="local">
+                                </div>
+        
+                                <div class="form-control d-flex-column">
+                                    <label for="hora">Hora</label>
+                                    <input type="time" class="input-search" name="hora" id="hora">
+                                </div>
+        
+                                <div class="form-control d-flex-column">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" class="input-search" name="nombre" id="nombre">
+                                </div>
+        
+                                <div class="form-control d-flex-column">
+                                    <label for="email">Email</label>
+                                    <input type="text" class="input-search" name="email" id="email-form">
+                                </div>
+        
+                                <div class="form-control d-flex-column">
+                                    <label for="comensales">Comensales</label>
+                                    <input type="number" class="input-search" name="comensales" id="comensales-form">
+                                </div>
+        
+                                <input style="display: none;" name="id" id="id-reserva">
+                                <button class="btn-cac" type="button" id="btn-save-reserva">Reservar</button>
+        
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
-
-                <div class="cuerpo1">
-                    <form action="#" id="form-reserva">
-
-                        <div class="d-flex">
-    
-                            <div class="form-control d-flex-column">
-                                <label for="local">Local</label>
-                                <input type="text" class="input-search" name="local" id="local">
-                            </div>
-    
-                            <div class="form-control d-flex-column">
-                                <label for="hora">Hora</label>
-                                <input type="time" class="input-search" name="hora" id="hora">
-                            </div>
-    
-                            <div class="form-control d-flex-column">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" class="input-search" name="nombre" id="nombre">
-                            </div>
-    
-                            <div class="form-control d-flex-column">
-                                <label for="email">Email</label>
-                                <input type="text" class="input-search" name="email" id="email-form">
-                            </div>
-    
-                            <div class="form-control d-flex-column">
-                                <label for="comensales">Comensales</label>
-                                <input type="number" class="input-search" name="comensales" id="comensales-form">
-                            </div>
-    
-                            <input style="display: none;" name="id" id="id-reserva">
-                            <button class="btn-cac" type="button" id="btn-save-reserva">Reservar</button>
-    
-                        </div>
-                    </form>
-                </div>
-
 
             </section>
 
             <section id="list" class="container seccion2">
 
-                <div class="description2">
-                    <p class="subtitle">Lista de Reservas</p>
-                </div>
+                <div class="contCuerpo">
 
-                <div class="cuerpo2">
-                    <table id="list-table-reservas" class="table">
-                        <thead>
-                            <tr>
-                                <th>Local</th>
-                                <th>Hora</th>
-                                <th>Nombre</th>
-                                <th>Email</th>
-                                <th>Comensales</th>
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
+                    <div class="description2">
+                        <h2>Lista de Reservas</h2>
+                    </div>
     
-                        <tbody id="tbody-table-reservas">
-                        </tbody>
-    
-                    </table>
+                    <div class="cuerpo2">
+                        <table id="list-table-reservas" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Local</th>
+                                    <th>Hora</th>
+                                    <th>Nombre</th>
+                                    <th>Email</th>
+                                    <th>Comensales</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+        
+                            <tbody id="tbody-table-reservas">
+                            </tbody>
+        
+                        </table>
+                    </div>
                 </div>
 
             </section>
-        </div>
 
+        </div>
 
     </main>
 
