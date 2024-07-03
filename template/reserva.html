@@ -127,18 +127,23 @@
 
                 </div>
             </form> -->
-            <form action="#"  id="form-reserva">
+            <form action="#" id="form-reserva">
                 <div class="d-flex">
                     <div class="form-control d-flex-column">
                         <label for="local">Local</label>
-                        <input type="text" class="input-search" name="local" id="local">
+                        <select type="text" class="input-search" name="local" id="local">
+                            <!-- <option value="default">Seleccione local</option> -->
+                            <option value="Central">Central</option>
+                            <option value="Local 1">Local 1</option>
+                            <option value="Local 2">Local 2</option>
+                        </select>
                     </div>
 
                     <div class="form-control d-flex-column">
                         <label for="hora">Hora</label>
-                        <input type="time" class="input-search" name="hora" id="hora">
+                        <input type="time" class="input-search" name="hora" id="hora" min="09:00" max="18:00" step="1800" value="09:00">
                     </div>
-                    
+
                     <div class="form-control d-flex-column">
                         <label for="nombre">Nombre</label>
                         <input type="text" class="input-search" name="nombre" id="nombre">
@@ -147,18 +152,19 @@
                     <div class="form-control d-flex-column">
                         <label for="email">Email</label>
                         <input type="text" class="input-search" name="email" id="email-form">
-                    </div>   
+                    </div>
 
                     <div class="form-control d-flex-column">
                         <label for="comensales">Comensales</label>
-                        <input type="number" class="input-search" name="comensales" id="comensales-form">
-                    </div>   
+                        <input type="number" class="input-search" name="comensales" id="comensales-form"  min="1" max="25"
+                        value="1">
+                    </div>
 
                     <input style="display: none;" name="id" id="id-reserva">
                     <button class="btn-cac" type="button" id="btn-save-reserva">Reservar</button>
                 </div>
-            </form> 
-<!-- 
+            </form>
+            <!-- 
             <div>
                 <a class="navMenuLink" href="./crud-vegan.html">Gestion de Reservas</a>
             </div> -->
