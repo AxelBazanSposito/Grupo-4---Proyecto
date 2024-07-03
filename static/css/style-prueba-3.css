@@ -265,28 +265,41 @@ footer {
 .seccion1{
     grid-area: seccion1;
     background-color: blue;
+
+    display: grid;
+    grid-template-areas: 
+    "encabezado1"
+    "cuerpo1";
 }
 .seccion2{
     grid-area: seccion2;
     background-color: orange;
+
+    display: grid;
+    grid-template-areas: 
+    "encabezado2"
+    "cuerpo2";
 }
 
 .grillaPrincipalCrud .titulo{
     background-image: url(../img/backgrounds/conjunto-especias-hierbas-aromaticas-indias-sobre-fondo-piedra-negra-curcuma-eneldo-pimenton-canela-azafran-albahaca-romero-cuchara-vista-superior-bosquejo_253362-8651.jpg);
 }
 
-.container{
-    display: grid;
-    grid-template-areas: 
-    "encabezado"
-    "cuerpo";
+.description1{
+    grid-area: encabezado1;
+    background-color: white;
 }
-
-.description{
-    grid-area: encabezado;
+.cuerpo1{
+    grid-area: cuerpo1;
+    background-color: aqua;
 }
-.cuerpo{
-    grid-area: cuerpo;
+.description2{
+    grid-area: encabezado2;
+    background-color: white;
+}
+.cuerpo2{
+    grid-area: cuerpo2;
+    background-color: aqua;
 }
 
 
