@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Reservas</title>
-    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../static/img/fabicon/logo-simplificado-fondo-negro.ico">
 
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
@@ -13,13 +13,11 @@
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:wght@200..1000&display=swap"
         rel="stylesheet">
 
-    <!-- Agregar fontawesome -->
-    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
-
-    <!-- HACEMOS REFERENCIA A UN DOCUMENTO CSS EXTERNO -->
-    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
-    <!-- <link rel="stylesheet" href="../static/css/crud-movies.css"> -->
     <link rel="stylesheet" href="../static/css/style-prueba-3.css">
+    <!-- Agregar fontawesome -->
+    <script src="https://kit.fontawesome.com/95e43c16b2.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <!-- Agregamos CCS en linea -->
@@ -95,44 +93,44 @@
             <section id="form" class="container seccion1">
 
                 <div class="contCuerpo">
-                    
+
                     <div class="description1">
-                        <h2>Gestionar Reservas</h2>
+                        <h3>Gestión</h3>
                     </div>
-    
+
                     <div class="cuerpo1">
                         <form action="#" id="form-reserva">
-    
+
                             <div class="d-flex">
-        
+
                                 <div class="form-control d-flex-column">
                                     <label for="local">Local</label>
                                     <input type="text" class="input-search" name="local" id="local">
                                 </div>
-        
+
                                 <div class="form-control d-flex-column">
                                     <label for="hora">Hora</label>
                                     <input type="time" class="input-search" name="hora" id="hora">
                                 </div>
-        
+
                                 <div class="form-control d-flex-column">
                                     <label for="nombre">Nombre</label>
                                     <input type="text" class="input-search" name="nombre" id="nombre">
                                 </div>
-        
+
                                 <div class="form-control d-flex-column">
                                     <label for="email">Email</label>
                                     <input type="text" class="input-search" name="email" id="email-form">
                                 </div>
-        
+
                                 <div class="form-control d-flex-column">
                                     <label for="comensales">Comensales</label>
                                     <input type="number" class="input-search" name="comensales" id="comensales-form">
                                 </div>
-        
+
                                 <input style="display: none;" name="id" id="id-reserva">
                                 <button class="btn-cac" type="button" id="btn-save-reserva">Reservar</button>
-        
+
                             </div>
                         </form>
                     </div>
@@ -148,7 +146,7 @@
                     <div class="description2">
                         <h3>Lista de Reservas</h3>
                     </div>
-    
+
                     <div class="cuerpo2">
                         <table id="list-table-reservas" class="table">
                             <thead>
@@ -161,10 +159,10 @@
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
-        
+
                             <tbody id="tbody-table-reservas">
                             </tbody>
-        
+
                         </table>
                     </div>
                 </div>
